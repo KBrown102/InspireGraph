@@ -1,0 +1,100 @@
+[
+  {
+    "name": "MakePlay AI",
+    "url": "https://makeplay.ai/",
+    "type": "UGC平台",
+    "scrape": true,
+    "note": "一句话AI生成游戏平台，用户自生成作品最多，采集价值最高"
+  },
+  {
+    "name": "Poki",
+    "url": "https://poki.com/zh",
+    "type": "聚合平台",
+    "scrape": true,
+    "note": "全球休闲网页游戏聚合站，热门榜单反映当下玩家口味"
+  },
+  {
+    "name": "YORG.io",
+    "url": "https://yorg.io/",
+    "type": "单一游戏",
+    "scrape": false,
+    "note": "塔防+基地建造+资源链，白天建造夜晚僵尸攻防"
+  },
+  {
+    "name": "小霸王其乐无穷 (yikm)",
+    "url": "https://www.yikm.net/",
+    "type": "怀旧模拟器",
+    "scrape": true,
+    "note": "FC红白机在线模拟器，几千款怀旧游戏库，采集经典玩法"
+  },
+  {
+    "name": "React Tetris",
+    "url": "https://chvin.github.io/react-tetris/",
+    "type": "单一游戏",
+    "scrape": false,
+    "note": "开源俄罗斯方块复刻，掌机拟物UI，代码可学习"
+  },
+  {
+    "name": "Papergames",
+    "url": "https://papergames.io/zh/",
+    "type": "聚合平台",
+    "scrape": true,
+    "note": "双人在线对战纸上游戏（井字棋/四子棋/海战棋/UNO类）"
+  },
+  {
+    "name": "Fuun.fun",
+    "url": "https://fuun.fun/",
+    "type": "聚合平台",
+    "scrape": true,
+    "note": "创意趣味网页小游戏/玩具合集"
+  },
+  {
+    "name": "Slither.io",
+    "url": "http://slither.com/io",
+    "type": "单一游戏",
+    "scrape": false,
+    "note": "贪吃蛇大作战，io多人竞技鼻祖"
+  },
+  {
+    "name": "Thisissand",
+    "url": "https://thisissand.com/",
+    "type": "单一游戏·可复刻",
+    "scrape": false,
+    "note": "沙粒堆积艺术创作，禅意解压，复刻优先级高"
+  },
+  {
+    "name": "人生重开模拟器",
+    "url": "https://liferestart.syaro.io/public/index.html",
+    "type": "单一游戏·可复刻",
+    "scrape": false,
+    "note": "文字随机人生模拟，开源，事件表驱动，可复刻"
+  },
+  {
+    "name": "Mikutap",
+    "url": "https://aidn.jp/mikutap/",
+    "type": "单一游戏·可复刻",
+    "scrape": false,
+    "note": "点击音乐互动玩具，音画一体，复刻优先级高"
+  },
+  {
+    "name": "Slow Roads",
+    "url": "https://slowroads.io/",
+    "type": "单一游戏·可复刻",
+    "scrape": false,
+    "note": "无尽公路禅意驾驶，程序化生成地形，用户想要其资源（注意：资源为程序生成+打包混淆，需自行用three.js重建同风格）"
+  },
+  {
+    "name": "扫雷",
+    "url": "",
+    "type": "经典玩法·可复刻",
+    "scrape": false,
+    "note": "经典逻辑翻格玩法，无需抓取，直接可做"
+  },
+  {
+    "name": "4399",
+    "url": "https://www.4399.com/",
+    "type": "聚合平台",
+    "scrape": true,
+    "note": "童年Flash小游戏门户，怀旧题材库，热榜可采集"
+  }
+]

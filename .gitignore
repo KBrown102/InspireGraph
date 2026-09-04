@@ -1,0 +1,18 @@
+# ===== 运行时产物（run.cjs 每次执行生成，不入库） =====
+last-run.json
+thinking-log.md
+
+# ===== 采集数据备份 =====
+*.bak-*.json
+
+# ===== 临时/一次性文件 =====
+tmp-*.json
+tmp-*.cjs
+
+# ===== WorkBuddy 本地工具状态 =====
+.workbuddy/
+
+# ===== 系统文件 =====
+Thumbs.db
+.DS_Store
+desktop.ini

@@ -1,0 +1,9003 @@
+{
+  "neurons": [
+    {
+      "id": "web:makeplay-ai生成",
+      "label": "AI生成游戏",
+      "group": "采集",
+      "weight": 0.9,
+      "freq": 15,
+      "lastSeen": 0,
+      "kw": [
+        "AI生成",
+        "一句话做游戏",
+        "UGC"
+      ]
+    },
+    {
+      "id": "web:poki-热榜",
+      "label": "休闲热榜",
+      "group": "采集",
+      "weight": 0.9,
+      "freq": 15,
+      "lastSeen": 0,
+      "kw": [
+        "休闲",
+        "即点即玩",
+        "热门"
+      ]
+    },
+    {
+      "id": "web:yorg-塔防建造",
+      "label": "塔防+建造",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "塔防",
+        "基地建造",
+        "资源链",
+        "昼夜循环"
+      ]
+    },
+    {
+      "id": "web:yikm-怀旧FC",
+      "label": "FC怀旧",
+      "group": "采集",
+      "weight": 0.9,
+      "freq": 13,
+      "lastSeen": 0,
+      "kw": [
+        "怀旧",
+        "红白机",
+        "像素",
+        "童年"
+      ]
+    },
+    {
+      "id": "web:tetris-方块",
+      "label": "俄罗斯方块",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "方块",
+        "消除",
+        "拟物UI",
+        "掌机"
+      ]
+    },
+    {
+      "id": "web:papergames-对战",
+      "label": "双人纸上对战",
+      "group": "采集",
+      "weight": 0.8,
+      "freq": 6,
+      "lastSeen": 0,
+      "kw": [
+        "双人",
+        "对战",
+        "棋盘",
+        "回合制"
+      ]
+    },
+    {
+      "id": "web:fuun-玩具",
+      "label": "网页玩具",
+      "group": "采集",
+      "weight": 0.65,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "玩具",
+        "创意交互",
+        "无目标",
+        "奇趣收藏"
+      ]
+    },
+    {
+      "id": "web:slither-贪吃蛇",
+      "label": "io贪吃蛇",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "贪吃蛇",
+        "多人",
+        "成长",
+        "io"
+      ]
+    },
+    {
+      "id": "web:thisissand-沙画",
+      "label": "沙粒堆积",
+      "group": "采集",
+      "weight": 0.85,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "沙",
+        "堆积",
+        "解压",
+        "创作",
+        "禅意"
+      ]
+    },
+    {
+      "id": "web:liferestart-人生",
+      "label": "人生重开",
+      "group": "采集",
+      "weight": 0.8,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "人生模拟",
+        "随机事件",
+        "文字",
+        "轮回"
+      ]
+    },
+    {
+      "id": "web:mikutap-音画",
+      "label": "点击音画",
+      "group": "采集",
+      "weight": 0.85,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "音乐",
+        "点击",
+        "音画一体",
+        "律动"
+      ]
+    },
+    {
+      "id": "web:slowroads-驾驶",
+      "label": "禅意驾驶",
+      "group": "采集",
+      "weight": 0.85,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "驾驶",
+        "无尽公路",
+        "程序生成",
+        "放空",
+        "禅意"
+      ]
+    },
+    {
+      "id": "web:minesweeper-扫雷",
+      "label": "扫雷",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "扫雷",
+        "逻辑",
+        "翻格",
+        "推理"
+      ]
+    },
+    {
+      "id": "web:4399-童年",
+      "label": "4399童年",
+      "group": "采集",
+      "weight": 0.75,
+      "freq": 3,
+      "lastSeen": 0,
+      "kw": [
+        "童年",
+        "Flash",
+        "怀旧",
+        "闯关"
+      ]
+    },
+    {
+      "id": "web:makeplay-coin-pusher",
+      "label": "推币机",
+      "group": "采集",
+      "weight": 0.9,
+      "freq": 9,
+      "lastSeen": 0,
+      "kw": [
+        "推币机",
+        "街机",
+        "物理堆积"
+      ]
+    },
+    {
+      "id": "web:makeplay-neon-fly",
+      "label": "霓虹穿梭飞行",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "霓虹",
+        "飞行穿梭",
+        "反应"
+      ]
+    },
+    {
+      "id": "web:makeplay-bellstorm",
+      "label": "日语学习游戏化",
+      "group": "采集",
+      "weight": 0.75,
+      "freq": 4,
+      "lastSeen": 0,
+      "kw": [
+        "语言学习",
+        "教育游戏化",
+        "边玩边学"
+      ]
+    },
+    {
+      "id": "web:makeplay-gen-recon",
+      "label": "拍照生成3D场景",
+      "group": "采集",
+      "weight": 0.8,
+      "freq": 3,
+      "lastSeen": 0,
+      "kw": [
+        "照片转3D",
+        "现实入游",
+        "AI场景重建"
+      ]
+    },
+    {
+      "id": "web:makeplay-coin-economy",
+      "label": "游玩赚币打赏创作者",
+      "group": "采集",
+      "weight": 0.65,
+      "freq": 3,
+      "lastSeen": 0,
+      "kw": [
+        "玩赚代币",
+        "打赏",
+        "创作者经济",
+        "UGC激励"
+      ]
+    },
+    {
+      "id": "web:makeplay-xiaoping",
+      "label": "笑屏协议",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "中文叙事",
+        "悬疑协议",
+        "UGC作品"
+      ]
+    },
+    {
+      "id": "web:poki-stickman-hook",
+      "label": "火柴人钩索摆荡",
+      "group": "采集",
+      "weight": 0.7000000000000001,
+      "freq": 3,
+      "lastSeen": 0,
+      "kw": [
+        "钩索摆荡",
+        "物理",
+        "一键操作"
+      ]
+    },
+    {
+      "id": "web:poki-2048",
+      "label": "2048数字合成",
+      "group": "采集",
+      "weight": 0.7000000000000001,
+      "freq": 3,
+      "lastSeen": 0,
+      "kw": [
+        "数字合成",
+        "滑动",
+        "极简"
+      ]
+    },
+    {
+      "id": "web:poki-dino-run",
+      "label": "恐龙无尽跑酷",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "无尽跑酷",
+        "单键",
+        "断网彩蛋"
+      ]
+    },
+    {
+      "id": "web:poki-smash-karts",
+      "label": "多人卡丁车混战",
+      "group": "采集",
+      "weight": 0.65,
+      "freq": 4,
+      "lastSeen": 0,
+      "kw": [
+        "多人混战",
+        "卡丁车",
+        "道具",
+        "io竞技"
+      ]
+    },
+    {
+      "id": "web:poki-bad-icecream",
+      "label": "冰淇淋迷宫收集",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "迷宫收集",
+        "双人合作",
+        "冰块机关"
+      ]
+    },
+    {
+      "id": "web:yikm-contra",
+      "label": "魂斗罗横版射击",
+      "group": "采集",
+      "weight": 0.75,
+      "freq": 4,
+      "lastSeen": 0,
+      "kw": [
+        "横版射击",
+        "双人合作",
+        "关卡Boss"
+      ]
+    },
+    {
+      "id": "web:yikm-snowbros",
+      "label": "雪人兄弟滚雪球",
+      "group": "采集",
+      "weight": 0.65,
+      "freq": 3,
+      "lastSeen": 0,
+      "kw": [
+        "固定屏平台",
+        "雪球滚压",
+        "合作闯关"
+      ]
+    },
+    {
+      "id": "web:yikm-tank",
+      "label": "坦克大战基地防守",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "坦克",
+        "基地防守",
+        "地形破坏",
+        "双人"
+      ]
+    },
+    {
+      "id": "web:yikm-adventure-island",
+      "label": "冒险岛体力跑关",
+      "group": "采集",
+      "weight": 0.65,
+      "freq": 3,
+      "lastSeen": 0,
+      "kw": [
+        "横版跑关",
+        "体力消耗",
+        "水果补给"
+      ]
+    },
+    {
+      "id": "web:yikm-goldminer",
+      "label": "黄金矿工钩子抓取",
+      "group": "采集",
+      "weight": 0.7,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "钩子抓取",
+        "时机判断",
+        "单键",
+        "收益取舍"
+      ]
+    },
+    {
+      "id": "web:yikm-nekketsu",
+      "label": "热血系列运动乱斗",
+      "group": "采集",
+      "weight": 0.7,
+      "freq": 4,
+      "lastSeen": 0,
+      "kw": [
+        "热血",
+        "运动乱斗",
+        "无规则",
+        "像素喜剧"
+      ]
+    },
+    {
+      "id": "web:yikm-linklink",
+      "label": "宠物连连看",
+      "group": "采集",
+      "weight": 0.65,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "连连看",
+        "配对消除",
+        "路径规则"
+      ]
+    },
+    {
+      "id": "web:yikm-forest-icefire",
+      "label": "森林冰火人双协作",
+      "group": "采集",
+      "weight": 0.7,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "双角色",
+        "冰火属性",
+        "协作解谜",
+        "同屏双人"
+      ]
+    },
+    {
+      "id": "web:papergames-daily-tourney",
+      "label": "每日锦标赛排名",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "每日锦标赛",
+        "全球排名",
+        "轻竞技"
+      ]
+    },
+    {
+      "id": "web:papergames-link-invite",
+      "label": "一键链接邀战",
+      "group": "采集",
+      "weight": 0.65,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "共享链接",
+        "即点对战",
+        "零注册门槛"
+      ]
+    },
+    {
+      "id": "web:papergames-connect4",
+      "label": "四子棋重力落子",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "连四",
+        "重力落子",
+        "回合制"
+      ]
+    },
+    {
+      "id": "web:papergames-battleship",
+      "label": "海战棋猜坐标",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "猜坐标",
+        "隐藏信息",
+        "推理对战"
+      ]
+    },
+    {
+      "id": "web:fuun-taoyuanxiang",
+      "label": "桃源乡像素田园",
+      "group": "采集",
+      "weight": 0.75,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "像素中国风",
+        "文字经营",
+        "春耕秋收",
+        "世外桃源"
+      ]
+    },
+    {
+      "id": "web:fuun-heraclos",
+      "label": "赫拉克罗斯3D解谜",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "3D平台",
+        "动作解谜",
+        "精美渲染",
+        "不情愿的冒险"
+      ]
+    },
+    {
+      "id": "web:fuun-snake-move",
+      "label": "蛇形移动黑白解谜",
+      "group": "采集",
+      "weight": 0.7,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "黑白反转",
+        "推箱子",
+        "双色世界",
+        "格子解谜"
+      ]
+    },
+    {
+      "id": "web:fuun-trash-robot",
+      "label": "垃圾机器人铺路规划",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "积木铺路",
+        "路线规划",
+        "自动行进",
+        "间接操控"
+      ]
+    },
+    {
+      "id": "web:fuun-magic-jump",
+      "label": "魔性跳跃柱间收集",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "极简动作",
+        "柱间跳跃",
+        "收集宝石",
+        "高分挑战"
+      ]
+    },
+    {
+      "id": "web:fuun-porthole",
+      "label": "舷窗看世界",
+      "group": "采集",
+      "weight": 0.8,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "舷窗视角",
+        "全球风景",
+        "氛围放空",
+        "无玩法体验"
+      ]
+    },
+    {
+      "id": "web:fuun-makemepulse",
+      "label": "重力互动小品场景",
+      "group": "采集",
+      "weight": 0.78,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "互动小品",
+        "重力感",
+        "精致场景",
+        "放松"
+      ]
+    },
+    {
+      "id": "web:fuun-boring-ai",
+      "label": "反向图灵测试",
+      "group": "采集",
+      "weight": 0.7,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "扮演AI",
+        "真人互撩",
+        "反向图灵",
+        "废话文学讽刺"
+      ]
+    },
+    {
+      "id": "web:fuun-kick-ball",
+      "label": "把球踢回去",
+      "group": "采集",
+      "weight": 0.65,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "脚法模拟",
+        "社死情境",
+        "荒诞幽默",
+        "群体嘲讽"
+      ]
+    },
+    {
+      "id": "web:fuun-treasure-mimic",
+      "label": "宝箱怪卡组构筑",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "Roguelike",
+        "卡组构筑",
+        "地下城探索",
+        "背包英雄"
+      ]
+    },
+    {
+      "id": "web:4399-towerdefense",
+      "label": "塔防专题建塔御敌",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "塔防",
+        "建塔御敌",
+        "波次进攻"
+      ]
+    },
+    {
+      "id": "web:4399-maze",
+      "label": "迷宫专题破解通道",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "迷宫",
+        "通道破解",
+        "方向探索"
+      ]
+    },
+    {
+      "id": "web:4399-pvz",
+      "label": "植物大战僵尸",
+      "group": "采集",
+      "weight": 0.75,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "植物防守",
+        "阳光资源",
+        "波次策略",
+        "国民级"
+      ]
+    },
+    {
+      "id": "web:4399-aoqi",
+      "label": "奥奇传说精灵养成",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "精灵收集",
+        "回合对战",
+        "养成",
+        "图鉴"
+      ]
+    },
+    {
+      "id": "web:makeplay-thunderforge",
+      "label": "雷霆锻造",
+      "group": "采集",
+      "weight": 0.9,
+      "freq": 8,
+      "lastSeen": 0,
+      "kw": [
+        "锻造打铁",
+        "装备养成",
+        "经营"
+      ]
+    },
+    {
+      "id": "web:makeplay-word-fortune",
+      "label": "单词财富拼词",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "拼词",
+        "文字",
+        "词汇赚币"
+      ]
+    },
+    {
+      "id": "web:makeplay-purrk-up",
+      "label": "猫咪派对Purrk Up",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "猫咪",
+        "可爱",
+        "吸猫"
+      ]
+    },
+    {
+      "id": "web:makeplay-grand-larceny",
+      "label": "大盗窃案潜行",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "潜行偷窃",
+        "开放世界",
+        "犯罪"
+      ]
+    },
+    {
+      "id": "web:makeplay-wings-valor",
+      "label": "空战英豪",
+      "group": "采集",
+      "weight": 0.6000000000000001,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "飞行射击",
+        "空战",
+        "制空"
+      ]
+    },
+    {
+      "id": "web:makeplay-gripfall",
+      "label": "抓握坠落挑战",
+      "group": "采集",
+      "weight": 0.9,
+      "freq": 8,
+      "lastSeen": 0,
+      "kw": [
+        "攀爬抓握",
+        "物理",
+        "坠落"
+      ]
+    },
+    {
+      "id": "web:poki-temple-run2",
+      "label": "神庙逃亡3D跑酷",
+      "group": "采集",
+      "weight": 0.65,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "3D跑酷",
+        "躲避陷阱",
+        "转弯"
+      ]
+    },
+    {
+      "id": "web:poki-rodeo-stampede",
+      "label": "骑兽狂奔驯兽",
+      "group": "采集",
+      "weight": 0.65,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "骑兽",
+        "驯服收集",
+        "空中动物园"
+      ]
+    },
+    {
+      "id": "web:poki-moto-x3m",
+      "label": "摩托特技计时",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "摩托越野",
+        "特技翻滚",
+        "计时"
+      ]
+    },
+    {
+      "id": "web:poki-penalty2",
+      "label": "点球对决",
+      "group": "采集",
+      "weight": 0.6000000000000001,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "点球",
+        "足球",
+        "射门扑救"
+      ]
+    },
+    {
+      "id": "web:poki-venge",
+      "label": "Venge竞技FPS",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "FPS",
+        "多人竞技",
+        "射击"
+      ]
+    },
+    {
+      "id": "web:yikm-mario",
+      "label": "超级马里奥横版跳跃",
+      "group": "采集",
+      "weight": 0.7,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "横版跳跃",
+        "踩踏消灭",
+        "隐藏砖块",
+        "关卡节奏"
+      ]
+    },
+    {
+      "id": "web:yikm-harvest-moon",
+      "label": "牧场物语农场经营",
+      "group": "采集",
+      "weight": 0.82,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "农场经营",
+        "四季耕作",
+        "村民好感",
+        "慢生活",
+        "治愈养成"
+      ]
+    },
+    {
+      "id": "web:yikm-pokemon",
+      "label": "口袋妖怪收集养成",
+      "group": "采集",
+      "weight": 0.72,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "精灵收集",
+        "属性克制",
+        "回合战斗",
+        "图鉴填满",
+        "进化"
+      ]
+    },
+    {
+      "id": "web:yikm-zelda-minish",
+      "label": "塞尔达缩小帽尺度解谜",
+      "group": "采集",
+      "weight": 0.78,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "体型缩放",
+        "同场景两种尺度",
+        "道具开路",
+        "地牢解谜"
+      ]
+    },
+    {
+      "id": "web:yikm-castlevania",
+      "label": "恶魔城银河城探索",
+      "group": "采集",
+      "weight": 0.65,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "银河城",
+        "能力解锁地图",
+        "回头路变通路",
+        "探索地图填色"
+      ]
+    },
+    {
+      "id": "web:yikm-sanguo",
+      "label": "三国战纪横版闯关",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "街机清关",
+        "双人合作",
+        "连招搓招",
+        "投币续关"
+      ]
+    },
+    {
+      "id": "web:yikm-fire-emblem",
+      "label": "火焰纹章格子战棋",
+      "group": "采集",
+      "weight": 0.62,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "格子战棋",
+        "地形加成",
+        "角色永久死亡",
+        "回合调度"
+      ]
+    },
+    {
+      "id": "web:yikm-beat-kids",
+      "label": "狂扁小朋友宣泄格斗",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "无脑连打",
+        "宣泄爽感",
+        "恶搞题材",
+        "Flash童年"
+      ]
+    },
+    {
+      "id": "web:yikm-metal-slug",
+      "label": "合金弹头街机射击",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 3,
+      "lastSeen": 0,
+      "kw": [
+        "横版射击",
+        "手绘逐帧动画",
+        "载具",
+        "夸张爆炸"
+      ]
+    },
+    {
+      "id": "web:papergames-tictactoe",
+      "label": "井字棋极简对弈",
+      "group": "采集",
+      "weight": 0.58,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "三连成线",
+        "规则最小",
+        "秒懂上手",
+        "小格棋盘"
+      ]
+    },
+    {
+      "id": "web:papergames-gomoku",
+      "label": "五子棋连五成线",
+      "group": "采集",
+      "weight": 0.62,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "连五",
+        "自由棋盘",
+        "攻守兼备",
+        "纸笔游戏"
+      ]
+    },
+    {
+      "id": "web:papergames-tournament-modes",
+      "label": "多赛制锦标赛组织",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "单败双败",
+        "瑞士轮",
+        "循环赛",
+        "512人赛事",
+        "自建比赛"
+      ]
+    },
+    {
+      "id": "web:papergames-emoji-shop",
+      "label": "游戏币表情商店",
+      "group": "采集",
+      "weight": 0.58,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "玩得多赚币",
+        "怪奇头像",
+        "表情交流",
+        "无文字社交"
+      ]
+    },
+    {
+      "id": "web:papergames-classroom",
+      "label": "课堂团建破冰场景",
+      "group": "采集",
+      "weight": 0.62,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "师生同玩",
+        "远程团建",
+        "周五破冰",
+        "无广告环境",
+        "亲子连线"
+      ]
+    },
+    {
+      "id": "web:makeplay-tulong",
+      "label": "屠龙无双·放置割草",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "屠龙",
+        "放置",
+        "挂机",
+        "割草",
+        "9.4K",
+        "自动战斗"
+      ]
+    },
+    {
+      "id": "web:makeplay-guandu",
+      "label": "官渡棋局·策略对弈",
+      "group": "采集",
+      "weight": 0.58,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "官渡",
+        "棋局",
+        "策略",
+        "对弈",
+        "战棋",
+        "1.5K"
+      ]
+    },
+    {
+      "id": "web:makeplay-biejiyan",
+      "label": "别急眼·慢节奏解压",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "别急眼",
+        "慢节奏",
+        "不着急",
+        "解压",
+        "1.6K",
+        "反焦虑"
+      ]
+    },
+    {
+      "id": "web:makeplay-bonfire",
+      "label": "Bonfire Warden·篝火经营",
+      "group": "采集",
+      "weight": 0.62,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "篝火",
+        "经营",
+        "守护",
+        "cozy",
+        "2.4K",
+        "温暖"
+      ]
+    },
+    {
+      "id": "web:makeplay-beadmaster",
+      "label": "拼豆大师·拼图收纳",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "拼豆",
+        "拼图",
+        "收纳",
+        "手作",
+        "像素拼贴"
+      ]
+    },
+    {
+      "id": "web:makeplay-niuhaveholiday",
+      "label": "牛马有假·职场解压",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "牛马",
+        "职场",
+        "解压",
+        "放假",
+        "打工人",
+        "社畜"
+      ]
+    },
+    {
+      "id": "web:makeplay-cityhelper",
+      "label": "城市小帮手·整理归位",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "城市",
+        "整理",
+        "归位",
+        "排列",
+        "秩序"
+      ]
+    },
+    {
+      "id": "web:makeplay-fishing",
+      "label": "钓鱼日记·悠闲垂钓",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "钓鱼",
+        "垂钓",
+        "悠闲",
+        "日记",
+        "cozy",
+        "慢节奏"
+      ]
+    },
+    {
+      "id": "web:makeplay-boxing",
+      "label": "箱入为主·空间收纳",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "箱入",
+        "收纳",
+        "空间",
+        "整理",
+        "装箱"
+      ]
+    },
+    {
+      "id": "web:makeplay-yiqibaofu",
+      "label": "一气暴富·合成经营",
+      "group": "采集",
+      "weight": 0.58,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "合成",
+        "经营",
+        "暴富",
+        "merge",
+        "发家"
+      ]
+    },
+    {
+      "id": "web:makeplay-vorix",
+      "label": "Vorix·工厂防守波次",
+      "group": "采集",
+      "weight": 0.9,
+      "freq": 8,
+      "lastSeen": 0,
+      "kw": [
+        "工厂",
+        "防守",
+        "波次",
+        "produce",
+        "升级角色",
+        "waves"
+      ]
+    },
+    {
+      "id": "web:yikm-tmnt",
+      "label": "激龟快打(忍者神龟格斗)",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "横版格斗",
+        "IP改编",
+        "双人同屏"
+      ]
+    },
+    {
+      "id": "web:yikm-kof",
+      "label": "拳皇系列",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "对战格斗",
+        "必杀连招",
+        "角色差异"
+      ]
+    },
+    {
+      "id": "web:yikm-sf2",
+      "label": "街头霸王2",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "一对一对战",
+        "指令输入",
+        "平衡性"
+      ]
+    },
+    {
+      "id": "web:yikm-dino",
+      "label": "恐龙快打",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "横版清关",
+        "末世题材",
+        "多人合作"
+      ]
+    },
+    {
+      "id": "web:yikm-orlegend",
+      "label": "西游释厄传",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "连招系统",
+        "神话题材",
+        "清关"
+      ]
+    },
+    {
+      "id": "web:yikm-wof",
+      "label": "三国志(吞食天地)",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "横版清关",
+        "饭食回血",
+        "三国"
+      ]
+    },
+    {
+      "id": "web:yikm-summon-night",
+      "label": "召唤之夜-铸剑物语",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "锻造养成",
+        "工匠模拟",
+        "战斗"
+      ]
+    },
+    {
+      "id": "web:yikm-srw",
+      "label": "超级机器人大战",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "战棋",
+        "机体养成",
+        "跨IP同台"
+      ]
+    },
+    {
+      "id": "web:yikm-shanke",
+      "label": "闪客快打3",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "Flash射击",
+        "闯关",
+        "像素暴力"
+      ]
+    },
+    {
+      "id": "web:yikm-bleach-naruto",
+      "label": "死神VS火影",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "同人格斗",
+        "UGC改造",
+        "IP混搭"
+      ]
+    },
+    {
+      "id": "web:papergames-gruppo",
+      "label": "Gruppo无广告团建模式",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "无广告",
+        "团建",
+        "512人赛制"
+      ]
+    },
+    {
+      "id": "web:papergames-guest",
+      "label": "免注册访客即玩",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "免注册",
+        "分享链接",
+        "零门槛"
+      ]
+    },
+    {
+      "group": "采集",
+      "weight": 0.8,
+      "freq": 5,
+      "lastSeen": 0,
+      "id": "web:makeplay-subway-runner",
+      "label": "地铁跑酷模板",
+      "kw": [
+        "跑酷",
+        "自动前进",
+        "躲障",
+        "模板化"
+      ]
+    },
+    {
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "id": "web:makeplay-xunyu",
+      "label": "寻羽",
+      "kw": [
+        "收集羽毛",
+        "轻探索",
+        "国风",
+        "清新"
+      ]
+    },
+    {
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "id": "web:makeplay-whistlefall",
+      "label": "Whistlefall 口哨坠落",
+      "kw": [
+        "下落",
+        "节奏",
+        "平台",
+        "轻动作"
+      ]
+    },
+    {
+      "group": "采集",
+      "weight": 0.65,
+      "freq": 2,
+      "lastSeen": 0,
+      "id": "web:makeplay-crownseed",
+      "label": "Crownseed 皇冠合成",
+      "kw": [
+        "合成",
+        "种植",
+        "养成",
+        "皇冠"
+      ]
+    },
+    {
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "id": "web:makeplay-yufeng",
+      "label": "驭风",
+      "kw": [
+        "风力操控",
+        "飞行",
+        "气流",
+        "单指"
+      ]
+    },
+    {
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "id": "web:makeplay-infun-defense",
+      "label": "Infun One Defense 塔防",
+      "kw": [
+        "塔防",
+        "单指",
+        "波次",
+        "防守"
+      ]
+    },
+    {
+      "group": "采集",
+      "weight": 0.7,
+      "freq": 3,
+      "lastSeen": 0,
+      "id": "web:makeplay-fifteen-min",
+      "label": "Fifteen Minutes to Live",
+      "kw": [
+        "限时生存",
+        "叙事",
+        "15分钟",
+        "抉择"
+      ]
+    },
+    {
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "id": "web:makeplay-gta-los-santos",
+      "label": "GTA Los Santos 沙盒",
+      "kw": [
+        "开放世界",
+        "沙盒",
+        "UGC还原",
+        "驾驶"
+      ]
+    },
+    {
+      "group": "采集",
+      "weight": 0.65,
+      "freq": 2,
+      "lastSeen": 0,
+      "id": "web:poki-there-is-no-game",
+      "label": "There Is No Game 元游戏",
+      "kw": [
+        "元游戏",
+        "反套路",
+        "解谜",
+        "打破第四面墙"
+      ]
+    },
+    {
+      "group": "采集",
+      "weight": 0.65,
+      "freq": 2,
+      "lastSeen": 0,
+      "id": "web:poki-water-color-sort",
+      "label": "Water Color Sort 水排序",
+      "kw": [
+        "水排序",
+        "试管分色",
+        "解压",
+        "秩序"
+      ]
+    },
+    {
+      "group": "采集",
+      "weight": 0.65,
+      "freq": 2,
+      "lastSeen": 0,
+      "id": "web:poki-shenzhen-mahjong",
+      "label": "Shenzhen Mahjong 深圳麻将",
+      "kw": [
+        "麻将",
+        "国风",
+        "棋牌",
+        "策略"
+      ]
+    },
+    {
+      "group": "采集",
+      "weight": 0.65,
+      "freq": 2,
+      "lastSeen": 0,
+      "id": "web:poki-nonogram",
+      "label": "Nonogram 数织",
+      "kw": [
+        "数织",
+        "逻辑填色",
+        "推理",
+        "像素画"
+      ]
+    },
+    {
+      "group": "采集",
+      "weight": 0.65,
+      "freq": 2,
+      "lastSeen": 0,
+      "id": "web:poki-merge-rot",
+      "label": "Merge Rot 合成",
+      "kw": [
+        "合成",
+        "反转",
+        "趣味",
+        "merge"
+      ]
+    },
+    {
+      "group": "采集",
+      "weight": 0.65,
+      "freq": 2,
+      "lastSeen": 0,
+      "id": "web:poki-not-not",
+      "label": "Not Not 反向指令",
+      "kw": [
+        "反向指令",
+        "反应训练",
+        "大脑",
+        "极简"
+      ]
+    },
+    {
+      "group": "采集",
+      "weight": 0.65,
+      "freq": 2,
+      "lastSeen": 0,
+      "id": "web:poki-brain-test",
+      "label": "Brain Test 脑筋急转弯",
+      "kw": [
+        "脑筋急转弯",
+        "陷阱题",
+        "幽默",
+        "解谜"
+      ]
+    },
+    {
+      "id": "web:yikm-brawler",
+      "label": "暴烈人格斗",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": "格斗"
+    },
+    {
+      "id": "web:yikm-parrot",
+      "label": "鹦鹉历险记平台冒险",
+      "group": "采集",
+      "weight": 0.58,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": "平台跳跃"
+    },
+    {
+      "id": "web:yikm-dragonseal",
+      "label": "龙之刻印动作冒险",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": "动作冒险"
+    },
+    {
+      "id": "web:yikm-samurai",
+      "label": "侍魂系列武士格斗",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": "格斗"
+    },
+    {
+      "id": "web:yikm-captain-commando",
+      "label": "名将清版过关",
+      "group": "采集",
+      "weight": 0.62,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": "清版"
+    },
+    {
+      "id": "web:yikm-snowbros2",
+      "label": "雪人兄弟2滚雪球",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": "滚雪球"
+    },
+    {
+      "id": "web:yikm-ww-frontline2",
+      "label": "二战前线2横版射击",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": "横版射击"
+    },
+    {
+      "id": "web:makeplay-last-beat",
+      "label": "Last Beat Standing",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "节奏",
+        "生存",
+        "战斗",
+        "新上架"
+      ]
+    },
+    {
+      "id": "web:makeplay-wake-ruins",
+      "label": "Wake the Ruins",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "遗迹",
+        "解谜",
+        "探索",
+        "NEW"
+      ]
+    },
+    {
+      "id": "web:makeplay-knightey",
+      "label": "Knightey",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "骑士",
+        "动作",
+        "AI生成",
+        "UPDATED"
+      ]
+    },
+    {
+      "id": "web:makeplay-zombie-qfb",
+      "label": "QFB Matando Zombies",
+      "group": "采集",
+      "weight": 0.65,
+      "freq": 4,
+      "lastSeen": 0,
+      "kw": [
+        "僵尸",
+        "射击",
+        "生存",
+        "葡语"
+      ]
+    },
+    {
+      "id": "web:makeplay-segue-bem",
+      "label": "Segue o Bem",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "跟随",
+        "善举",
+        "NEW",
+        "休闲"
+      ]
+    },
+    {
+      "id": "web:makeplay-hiss-hex",
+      "label": "Hiss & Hex",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "蛇",
+        "魔法",
+        "NEW",
+        "元素"
+      ]
+    },
+    {
+      "id": "web:poki-blocky-blast",
+      "label": "Blocky Blast Puzzle",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "方块",
+        "消除",
+        "益智",
+        "落块"
+      ]
+    },
+    {
+      "id": "web:poki-bubble-shooter",
+      "label": "Bubble Shooter",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "泡泡",
+        "射击",
+        "三消",
+        "休闲"
+      ]
+    },
+    {
+      "id": "web:poki-who-is",
+      "label": "Who Is?",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "推理",
+        "找茬",
+        "问答",
+        "热门"
+      ]
+    },
+    {
+      "id": "web:poki-sudoku",
+      "label": "Sudoku",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "数独",
+        "数字",
+        "逻辑",
+        "严格规则"
+      ]
+    },
+    {
+      "id": "web:poki-spectrum",
+      "label": "Spectrum",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "颜色",
+        "匹配",
+        "解压",
+        "无惩罚"
+      ]
+    },
+    {
+      "id": "web:poki-logic-master",
+      "label": "Logic Master",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "逻辑",
+        "脑筋急转弯",
+        "挑战",
+        "推理"
+      ]
+    },
+    {
+      "id": "web:poki-blocky-out",
+      "label": "Blocky Out",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "方块",
+        "拼图",
+        "清理空间",
+        "落块"
+      ]
+    },
+    {
+      "id": "web:poki-jigsaw-surprise",
+      "label": "Jigsaw Surprise",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "拼图",
+        "图画",
+        "碎片",
+        "惊喜"
+      ]
+    },
+    {
+      "id": "web:poki-watermelon-drop",
+      "label": "Watermelon Drop",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "合成",
+        "水果",
+        "2048类",
+        "合并"
+      ]
+    },
+    {
+      "id": "web:poki-word-chains",
+      "label": "Word Chains",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "单词",
+        "字母",
+        "词链",
+        "寻找"
+      ]
+    },
+    {
+      "id": "web:poki-word-boss",
+      "label": "Word Boss",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "单词",
+        "猜词",
+        "Boss",
+        "字母"
+      ]
+    },
+    {
+      "id": "web:poki-hangman",
+      "label": "Hangman",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "猜词",
+        "字母",
+        "hangman",
+        "单词"
+      ]
+    },
+    {
+      "id": "web:yikm-contra-force",
+      "label": "魂斗罗力量 横版射击",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "魂斗罗力量",
+        "Contra Force",
+        "横版射击",
+        "特种部队",
+        "FC"
+      ]
+    },
+    {
+      "id": "web:yikm-contra-4in1",
+      "label": "魂斗罗(美版)4合1 合卡射击",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "魂斗罗4合1",
+        "4合1",
+        "合卡",
+        "横版射击",
+        "FC"
+      ]
+    },
+    {
+      "id": "web:yikm-nekketsu-record",
+      "label": "热血新纪录 田径运动会",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "热血新纪录",
+        "田径",
+        "运动会",
+        "热血系列",
+        "FC"
+      ]
+    },
+    {
+      "id": "web:yikm-nekketsu-jidaimugeki",
+      "label": "热血时代剧 追逐闯关",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "热血时代剧",
+        "时代剧",
+        "追逐",
+        "热血系列",
+        "FC"
+      ]
+    },
+    {
+      "id": "web:yikm-nekketsu-hockey",
+      "label": "热血曲棍球 冰上对抗",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "热血曲棍球",
+        "曲棍球",
+        "冰上",
+        "热血系列",
+        "FC"
+      ]
+    },
+    {
+      "id": "web:yikm-nekketsu-fight",
+      "label": "热血格斗传说 格斗乱斗",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "热血格斗传说",
+        "River City Ransom",
+        "格斗",
+        "热血系列",
+        "FC"
+      ]
+    },
+    {
+      "id": "web:yikm-adventure-island-2",
+      "label": "冒险岛2 跑关冒险",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "冒险岛2",
+        "Adventure Island 2",
+        "平台跑关",
+        "高桥名人",
+        "FC"
+      ]
+    },
+    {
+      "id": "web:yikm-adventure-island-3",
+      "label": "冒险岛3 跑关冒险",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "冒险岛3",
+        "Adventure Island 3",
+        "平台跑关",
+        "高桥名人",
+        "FC"
+      ]
+    },
+    {
+      "id": "web:yikm-adventure-island-4",
+      "label": "冒险岛4 跑关冒险",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "冒险岛4",
+        "Adventure Island 4",
+        "平台跑关",
+        "高桥名人",
+        "FC"
+      ]
+    },
+    {
+      "id": "web:makeplay-animal-empire",
+      "label": "动物帝国 Animal Empire",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "动物",
+        "经营",
+        "idle",
+        "empire"
+      ]
+    },
+    {
+      "id": "web:makeplay-a-lua-corta",
+      "label": "A Lua Corta",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "冒险",
+        "解谜",
+        "动作"
+      ]
+    },
+    {
+      "id": "web:makeplay-marbleous-fit",
+      "label": "Marbleous Fit 弹珠健身",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "弹珠",
+        "物理",
+        "健身"
+      ]
+    },
+    {
+      "id": "web:makeplay-one-shot-standoff",
+      "label": "One Shot Standoff 一击对决",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 3,
+      "lastSeen": 0,
+      "kw": [
+        "射击",
+        "一击",
+        "对决"
+      ]
+    },
+    {
+      "id": "web:makeplay-shadow-destroyer",
+      "label": "Shadow Destroyer 暗影破坏",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 3,
+      "lastSeen": 0,
+      "kw": [
+        "动作",
+        "破坏",
+        "AI生成"
+      ]
+    },
+    {
+      "id": "web:makeplay-merge-chronicles",
+      "label": "Merge Chronicles 合成编年史",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "合成",
+        "剧情",
+        "merge"
+      ]
+    },
+    {
+      "id": "web:makeplay-bubu",
+      "label": "Bubu dan Jejak Ciptaan",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "儿童",
+        "创造",
+        "冒险"
+      ]
+    },
+    {
+      "id": "web:makeplay-trench-front",
+      "label": "堑壕战 Trench Front",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "战争",
+        "塔防",
+        "策略"
+      ]
+    },
+    {
+      "id": "web:makeplay-szogletesen",
+      "label": "Szögletesen zseniális",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "几何",
+        "解谜",
+        "匈牙利"
+      ]
+    },
+    {
+      "id": "web:makeplay-merge-angle",
+      "label": "Merge & Angle 三角城堡",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "合成",
+        "几何",
+        "三角"
+      ]
+    },
+    {
+      "id": "web:makeplay-lovedek",
+      "label": "Lövedék 精准命中",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "射击",
+        "精准",
+        "匈牙利"
+      ]
+    },
+    {
+      "id": "web:makeplay-she-is-mine",
+      "label": "She is Mine! 带妹狂飙",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "跑酷",
+        "双人",
+        "竞速"
+      ]
+    },
+    {
+      "id": "web:poki-digger-escape",
+      "label": "Digger Escape 挖洞逃生",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "挖掘",
+        "解谜",
+        "逃生"
+      ]
+    },
+    {
+      "id": "web:poki-cow-bay",
+      "label": "Cow Bay 奶牛港湾",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 3,
+      "lastSeen": 0,
+      "kw": [
+        "经营",
+        "养殖",
+        "休闲"
+      ]
+    },
+    {
+      "id": "web:poki-idle-mining",
+      "label": "Idle Mining Empire 挂机矿场",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "挂机",
+        "采矿",
+        "idle"
+      ]
+    },
+    {
+      "id": "web:poki-sea-catcher",
+      "label": "Sea Catcher 海洋捕捉",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "捕鱼",
+        "休闲",
+        "海洋"
+      ]
+    },
+    {
+      "id": "web:poki-idle-lumber",
+      "label": "Idle Lumber Inc 挂机伐木",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "挂机",
+        "伐木",
+        "经营"
+      ]
+    },
+    {
+      "id": "web:poki-tiny-towers",
+      "label": "Tiny Towers 迷你高塔",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "建造",
+        "经营",
+        "塔楼"
+      ]
+    },
+    {
+      "id": "web:poki-idle-success",
+      "label": "Idle Success 挂机成功",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "挂机",
+        "经营",
+        "idle"
+      ]
+    },
+    {
+      "id": "web:poki-idle-ants",
+      "label": "Idle Ants 挂机蚂蚁",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "挂机",
+        "蚂蚁",
+        "模拟"
+      ]
+    },
+    {
+      "id": "web:poki-anthill-wars",
+      "label": "Anthill Wars 蚁丘战争",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "策略",
+        "蚂蚁",
+        "战争"
+      ]
+    },
+    {
+      "id": "web:poki-idle-settlers",
+      "label": "Idle Settlers 挂机拓荒",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "挂机",
+        "建造",
+        "拓荒"
+      ]
+    },
+    {
+      "id": "web:poki-pickcrafter",
+      "label": "PickCrafter 挖矿工匠",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "挖矿",
+        "挂机",
+        "合成"
+      ]
+    },
+    {
+      "id": "web:poki-coin-factory",
+      "label": "Coin Factory 造币工厂",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "挂机",
+        "造币",
+        "经营"
+      ]
+    },
+    {
+      "id": "web:poki-monkey-mart",
+      "label": "Monkey Mart 猴子超市",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "经营",
+        "超市",
+        "休闲"
+      ]
+    },
+    {
+      "id": "web:poki-hide-and-paint",
+      "label": "涂色躲藏",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "涂色",
+        "躲藏",
+        "动作",
+        "创意"
+      ]
+    },
+    {
+      "id": "web:poki-ragdoll-hit",
+      "label": "布偶击打",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "物理解笑",
+        "布偶",
+        "打击",
+        "动作"
+      ]
+    },
+    {
+      "id": "web:poki-repuls",
+      "label": "排斥竞技",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "io",
+        "多人",
+        "排斥力",
+        "竞技"
+      ]
+    },
+    {
+      "id": "web:poki-magic-battleground",
+      "label": "魔法竞技场",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "魔法",
+        "对战",
+        "竞技场",
+        "动作"
+      ]
+    },
+    {
+      "id": "web:poki-lands-of-blight",
+      "label": "枯萎之地",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "冒险",
+        "探索",
+        "暗黑",
+        "动作"
+      ]
+    },
+    {
+      "id": "web:poki-level-devil",
+      "label": "恶魔关卡",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "陷阱",
+        "解密",
+        "关卡",
+        "整蛊"
+      ]
+    },
+    {
+      "id": "web:poki-apple-knight",
+      "label": "苹果骑士",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "平台",
+        "地牢",
+        "复古",
+        "动作"
+      ]
+    },
+    {
+      "id": "web:poki-blast-buddies",
+      "label": "爆破伙伴",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "爆破",
+        "物理",
+        "合作",
+        "动作"
+      ]
+    },
+    {
+      "id": "web:poki-inkstep",
+      "label": "水墨步进",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "水墨",
+        "平台",
+        "极简",
+        "动作"
+      ]
+    },
+    {
+      "id": "web:poki-xarena",
+      "label": "X竞技场",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "竞技场",
+        "对战",
+        "多人",
+        "动作"
+      ]
+    },
+    {
+      "id": "web:makeplay-room-to-move",
+      "label": "Room to Move 腾挪空间",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "NEW",
+        "空间腾挪",
+        "推箱变体",
+        "解谜",
+        "AI生成"
+      ]
+    },
+    {
+      "id": "web:makeplay-spin-your-luck",
+      "label": "Spin Your Luck 转运盘",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "NEW",
+        "转盘",
+        "运气",
+        "轻博彩感",
+        "即时反馈"
+      ]
+    },
+    {
+      "id": "web:makeplay-ufo-farm",
+      "label": "UFO农场入侵·抓牛",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "NEW",
+        "UFO",
+        "抓取",
+        "农场",
+        "荒诞幽默"
+      ]
+    },
+    {
+      "id": "web:makeplay-fully-powered",
+      "label": "fully powered 满电冲刺",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "UPDATED",
+        "能量",
+        "冲刺",
+        "街机",
+        "数值成长"
+      ]
+    },
+    {
+      "id": "web:makeplay-neon-miami",
+      "label": "霓虹迈阿蜜",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "霓虹",
+        "复古未来",
+        "城市",
+        "驾驶",
+        "合成波"
+      ]
+    },
+    {
+      "id": "web:makeplay-luy-laeung",
+      "label": "លុយឡើងជាន់ 钱层攀升",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "NEW",
+        "柬埔寨语",
+        "数值攀升",
+        "堆叠",
+        "小语种UGC"
+      ]
+    },
+    {
+      "id": "web:poki-drift-boss",
+      "label": "Drift Boss 漂移老板",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "漂移",
+        "一键操作",
+        "无尽",
+        "4.5星",
+        "休闲竞速"
+      ]
+    },
+    {
+      "id": "web:poki-polytrack",
+      "label": "PolyTrack 低多边形赛道",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "低多边形",
+        "赛道编辑",
+        "计时",
+        "UGC赛道",
+        "4.4星"
+      ]
+    },
+    {
+      "id": "web:poki-drive-mad",
+      "label": "Drive Mad 疯狂驾驶",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "障碍赛",
+        "物理翻车",
+        "关卡制",
+        "4.4星",
+        "重试快"
+      ]
+    },
+    {
+      "id": "web:poki-eggy-car",
+      "label": "Eggy Car 鸡蛋车",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "平衡",
+        "不能掉蛋",
+        "物理",
+        "越野",
+        "轻紧张"
+      ]
+    },
+    {
+      "id": "web:poki-grand-prix-hero",
+      "label": "Grand Prix Hero 大奖赛英雄",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "方程式",
+        "竞速",
+        "赛道",
+        "超车",
+        "拟真感"
+      ]
+    },
+    {
+      "id": "web:poki-cyber-cars-punk",
+      "label": "Cyber Cars Punk Racing",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "赛博朋克",
+        "未来车",
+        "霓虹赛道",
+        "竞速",
+        "风格化"
+      ]
+    },
+    {
+      "id": "web:poki-monster-tracks",
+      "label": "Monster Tracks 怪物赛道",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "怪物卡车",
+        "障碍",
+        "越野",
+        "碾压",
+        "物理"
+      ]
+    },
+    {
+      "id": "web:poki-sling-drift",
+      "label": "Sling Drift 弹射漂移",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "一键漂移",
+        "弯道",
+        "节奏",
+        "极简",
+        "高速"
+      ]
+    },
+    {
+      "id": "web:poki-crazy-cars",
+      "label": "Crazy Cars 疯狂汽车",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "开放世界",
+        "自由驾驶",
+        "双人",
+        "城市",
+        "无目标"
+      ]
+    },
+    {
+      "id": "web:poki-city-rider",
+      "label": "City Rider 城市骑手",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "城市",
+        "穿梭",
+        "自由驾驶",
+        "交通流",
+        "速度感"
+      ]
+    },
+    {
+      "id": "web:poki-demolition-derby",
+      "label": "Demolition Derby 撞车竞技",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "撞车",
+        "竞技",
+        "破坏",
+        "生存",
+        "解压"
+      ]
+    },
+    {
+      "id": "web:poki-blacktop-police",
+      "label": "Blacktop 警车追逐",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "追逐",
+        "双人",
+        "警匪",
+        "对抗",
+        "驾驶"
+      ]
+    },
+    {
+      "id": "web:makeplay-violet-contact",
+      "label": "Violet Contact",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "AI生成",
+        "新作",
+        "BOOST",
+        "视觉射击"
+      ]
+    },
+    {
+      "id": "web:makeplay-sahara-breakout",
+      "label": "Sahara Breakout",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "沙漠",
+        "突围",
+        "新作",
+        "AI生成"
+      ]
+    },
+    {
+      "id": "web:makeplay-tracto-miaou",
+      "label": "Tracto-Miaou",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "拖拉机",
+        "猫",
+        "趣味",
+        "AI生成"
+      ]
+    },
+    {
+      "id": "web:makeplay-no-backup",
+      "label": "No Backup",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "新作",
+        "无备份",
+        "AI生成"
+      ]
+    },
+    {
+      "id": "web:makeplay-pixel-dash",
+      "label": "Pixel Dash",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "像素",
+        "冲刺",
+        "跑酷",
+        "AI生成"
+      ]
+    },
+    {
+      "id": "web:makeplay-dlm-dungeon",
+      "label": "DLM Dungeon Loot & Monsters",
+      "group": "采集",
+      "weight": 0.62,
+      "freq": 3,
+      "lastSeen": 0,
+      "kw": [
+        "地牢",
+        "战利品",
+        "怪物",
+        "Roguelike"
+      ]
+    },
+    {
+      "id": "web:makeplay-curtain-call",
+      "label": "Ruh-Roh Curtain Call",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "舞台",
+        "谢幕",
+        "喜剧",
+        "AI生成"
+      ]
+    },
+    {
+      "id": "web:makeplay-dodge-or-die",
+      "label": "Dodge or Die by Bana-Fi",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "闪避",
+        "生存",
+        "反应"
+      ]
+    },
+    {
+      "id": "web:poki-funny-shooter2",
+      "label": "Funny Shooter 2",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "卡通射击",
+        "清版",
+        "搞笑"
+      ]
+    },
+    {
+      "id": "web:poki-combat-online2",
+      "label": "Combat Online 2",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "FPS",
+        "在线多人",
+        "对战"
+      ]
+    },
+    {
+      "id": "web:poki-getaway-shootout",
+      "label": "Getaway Shootout",
+      "group": "采集",
+      "weight": 0.58,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "双人",
+        "屋顶",
+        "抢夺武器"
+      ]
+    },
+    {
+      "id": "web:poki-rooftop-snipers",
+      "label": "Rooftop Snipers",
+      "group": "采集",
+      "weight": 0.58,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "双人",
+        "屋顶",
+        "时机"
+      ]
+    },
+    {
+      "id": "web:poki-cryzen-io",
+      "label": "Cryzen.io",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        ".io",
+        "在线",
+        "反应"
+      ]
+    },
+    {
+      "id": "web:poki-zombie-rush",
+      "label": "Zombie Rush",
+      "group": "采集",
+      "weight": 0.58,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "波次生存",
+        "僵尸",
+        "射击"
+      ]
+    },
+    {
+      "id": "web:poki-raft-wars",
+      "label": "Raft Wars",
+      "group": "采集",
+      "weight": 0.56,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "回合制",
+        "弹道",
+        "解谜射击"
+      ]
+    },
+    {
+      "id": "web:poki-mr-bullet",
+      "label": "Mr Bullet",
+      "group": "采集",
+      "weight": 0.56,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "物理",
+        "解谜",
+        "精准"
+      ]
+    },
+    {
+      "id": "web:poki-narrow-one",
+      "label": "Narrow.One",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "弓箭",
+        "对战",
+        "精准"
+      ]
+    },
+    {
+      "id": "web:poki-archery-world",
+      "label": "Archery World Tour",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "弓箭",
+        "远程",
+        "调整"
+      ]
+    },
+    {
+      "id": "web:poki-sniper-code",
+      "label": "The Sniper Code",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "狙击",
+        "潜伏",
+        "时机"
+      ]
+    },
+    {
+      "id": "web:poki-lethal-sniper",
+      "label": "Lethal Sniper 3D",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "3D",
+        "狙击",
+        "军队"
+      ]
+    },
+    {
+      "id": "web:4399-shenshoujiji",
+      "label": "生死狙击",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "射击",
+        "FPS",
+        "竞技"
+      ]
+    },
+    {
+      "id": "web:4399-saierhao",
+      "label": "赛尔号",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "星球探险",
+        "精灵",
+        "回合"
+      ]
+    },
+    {
+      "id": "web:4399-aolaxing",
+      "label": "奥拉星",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "精灵养成",
+        "收集",
+        "战斗"
+      ]
+    },
+    {
+      "id": "web:4399-aobidao",
+      "label": "奥比岛",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "社区",
+        "养成",
+        "装扮"
+      ]
+    },
+    {
+      "id": "web:4399-dandantang",
+      "label": "弹弹堂",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "弹射",
+        "对战",
+        "Q版"
+      ]
+    },
+    {
+      "id": "web:4399-huoxianjingying",
+      "label": "火线精英",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "射击",
+        "FPS",
+        "多人"
+      ]
+    },
+    {
+      "id": "web:4399-luokewangguo",
+      "label": "洛克王国",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "精灵养成",
+        "魔法",
+        "回合"
+      ]
+    },
+    {
+      "id": "web:4399-zaomengxiyou",
+      "label": "造梦西游online",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "动作",
+        "闯关",
+        "西游"
+      ]
+    },
+    {
+      "id": "web:4399-huangjingkuanggong",
+      "label": "黄金矿工",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "挖掘",
+        "休闲",
+        "经典"
+      ]
+    },
+    {
+      "id": "web:4399-lianliankan",
+      "label": "连连看",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "消除",
+        "配对",
+        "休闲"
+      ]
+    },
+    {
+      "id": "web:4399-bingwahuowa",
+      "label": "双人冰娃火娃",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "双人",
+        "解谜",
+        "合作"
+      ]
+    },
+    {
+      "id": "web:4399-doudizhu",
+      "label": "斗地主",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "棋牌",
+        "扑克",
+        "国民"
+      ]
+    },
+    {
+      "id": "web:4399-miniworld",
+      "label": "迷你世界",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "沙盒",
+        "建造",
+        "生存"
+      ]
+    },
+    {
+      "id": "web:4399-tiaopaoba",
+      "label": "逃跑吧少年",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "非对称",
+        "对抗",
+        "追逐"
+      ]
+    },
+    {
+      "id": "web:poki-speed-stars",
+      "label": "速跑之星",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "田径",
+        "节奏",
+        "跑酷"
+      ]
+    },
+    {
+      "id": "web:poki-penalty-shooters2",
+      "label": "点球大战2",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "点球",
+        "足球",
+        "射门"
+      ]
+    },
+    {
+      "id": "web:poki-retro-bowl",
+      "label": "复古橄榄球",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "美式足球",
+        "像素",
+        "复古"
+      ]
+    },
+    {
+      "id": "web:poki-table-tennis-go",
+      "label": "乒乓Go",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "乒乓",
+        "球类",
+        "休闲"
+      ]
+    },
+    {
+      "id": "web:poki-basketball-stars",
+      "label": "篮球之星",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "篮球",
+        "街头",
+        "1v1"
+      ]
+    },
+    {
+      "id": "web:poki-soccer",
+      "label": "足球",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "足球",
+        "运营",
+        "团队"
+      ]
+    },
+    {
+      "id": "web:poki-basketball",
+      "label": "篮球",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "篮球",
+        "投篮",
+        "休闲"
+      ]
+    },
+    {
+      "id": "web:poki-american-football",
+      "label": "美式橄榄球",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "橄榄球",
+        "冲撞",
+        "战术"
+      ]
+    },
+    {
+      "id": "web:poki-combat-sports",
+      "label": "格斗体育",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "格斗",
+        "体育",
+        "对战"
+      ]
+    },
+    {
+      "id": "web:poki-table-sports",
+      "label": "桌上体育",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "桌球",
+        "体育",
+        "技巧"
+      ]
+    },
+    {
+      "id": "web:poki-small-world-cup",
+      "label": "微型世界杯",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "足球",
+        "趣味",
+        "物理"
+      ]
+    },
+    {
+      "id": "web:poki-football-legends",
+      "label": "足球传奇",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "足球",
+        "明星",
+        "竞技"
+      ]
+    },
+    {
+      "id": "web:poki-basketball-legends2020",
+      "label": "篮球传奇2020",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "篮球",
+        "明星",
+        "竞技"
+      ]
+    },
+    {
+      "id": "web:4399-热榜",
+      "label": "4399热榜",
+      "group": "采集",
+      "weight": 0.85,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "国民",
+        "即点即玩",
+        "经典"
+      ]
+    },
+    {
+      "id": "web:makeplay-damath-duel",
+      "label": "Damath Duel·数学对决棋",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "数学",
+        "对决",
+        "棋",
+        "策略"
+      ]
+    },
+    {
+      "id": "web:makeplay-emilia-ragdoll",
+      "label": "Emília 拼布娃娃·手作角色",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "布偶",
+        "手作",
+        "角色",
+        "休闲"
+      ]
+    },
+    {
+      "id": "web:makeplay-farkle",
+      "label": "Farkle Around·骰子博弈",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "骰子",
+        "博弈",
+        "休闲",
+        "概率"
+      ]
+    },
+    {
+      "id": "web:makeplay-gato-botas",
+      "label": "Gato de botas·穿靴猫AI冒险",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "穿靴猫",
+        "冒险",
+        "AI",
+        "平台"
+      ]
+    },
+    {
+      "id": "web:makeplay-last-bell",
+      "label": "The Last Bell·钟声解谜",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "钟声",
+        "解谜",
+        "氛围"
+      ]
+    },
+    {
+      "id": "web:makeplay-dalayman",
+      "label": "Dalayman·节奏音乐",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "节奏",
+        "音乐",
+        "休闲"
+      ]
+    },
+    {
+      "id": "web:makeplay-dhaba",
+      "label": "Dhaba O'Clock·餐厅时间管理",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "餐厅",
+        "时间管理",
+        "经营",
+        "模拟"
+      ]
+    },
+    {
+      "id": "web:makeplay-knights-joust",
+      "label": "KNIGHT'S JOUST·骑士长矛比武",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "骑士",
+        "比武",
+        "动作",
+        "对战"
+      ]
+    },
+    {
+      "id": "web:poki-poor-bunny",
+      "label": "Poor Bunny·躲陷阱收胡萝卜",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "敏捷",
+        "躲避",
+        "收集",
+        "双人"
+      ]
+    },
+    {
+      "id": "web:poki-tube-jumpers",
+      "label": "Tube Jumpers·跳管躲避",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "跳跃",
+        "躲避",
+        "双人",
+        "竞技"
+      ]
+    },
+    {
+      "id": "web:poki-tag",
+      "label": "Tag·双人抓人",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "抓人",
+        "双人",
+        "休闲",
+        "竞技"
+      ]
+    },
+    {
+      "id": "web:poki-house-of-hazards",
+      "label": "House of Hazards·轮流设陷阱",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "陷阱",
+        "双人",
+        "欢乐",
+        "对抗"
+      ]
+    },
+    {
+      "id": "web:poki-soccer-legends",
+      "label": "Soccer Legends·合作射门",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "足球",
+        "合作",
+        "双人",
+        "体育"
+      ]
+    },
+    {
+      "id": "web:poki-golf-battle",
+      "label": "Golf Battle·双人高尔夫对战",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "高尔夫",
+        "对战",
+        "双人",
+        "体育"
+      ]
+    },
+    {
+      "id": "web:poki-ragdoll-soccer",
+      "label": "Ragdoll Soccer·布娃娃足球",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "足球",
+        "布娃娃",
+        "物理",
+        "双人"
+      ]
+    },
+    {
+      "id": "web:poki-temple-of-boom",
+      "label": "Temple of Boom·合作打怪",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "合作",
+        "动作",
+        "双人",
+        "战斗"
+      ]
+    },
+    {
+      "id": "web:poki-rooftop-snipers-2",
+      "label": "Rooftop Snipers 2·屋顶对狙",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "狙击",
+        "对战",
+        "双人",
+        "动作"
+      ]
+    },
+    {
+      "id": "web:poki-shady-bears",
+      "label": "Shady Bears·街机双人",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "街机",
+        "双人",
+        "休闲",
+        "像素"
+      ]
+    },
+    {
+      "id": "web:poki-rowdy-wrestling",
+      "label": "Rowdy Wrestling·摔角对战",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "摔角",
+        "对战",
+        "双人",
+        "欢乐"
+      ]
+    },
+    {
+      "id": "web:poki-master-chess",
+      "label": "Master Chess·双人国际象棋",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "象棋",
+        "策略",
+        "双人",
+        "经典"
+      ]
+    },
+    {
+      "id": "web:makeplay-bucks-stop-here",
+      "label": "Bucks Stop Here",
+      "group": "采集",
+      "weight": 0.7,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "经营",
+        "止损",
+        "资金管理",
+        "模拟"
+      ]
+    },
+    {
+      "id": "web:makeplay-maxed-ever-after",
+      "label": "Maxed Ever After",
+      "group": "采集",
+      "weight": 0.7,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "角色成长",
+        "满级",
+        "剧情",
+        "RPG"
+      ]
+    },
+    {
+      "id": "web:makeplay-scrabble-scramble",
+      "label": "Scrabble Scramble",
+      "group": "采集",
+      "weight": 0.7,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "拼词",
+        "解谜",
+        "文字",
+        "单词"
+      ]
+    },
+    {
+      "id": "web:makeplay-bid-buy",
+      "label": "Bid & Buy",
+      "group": "采集",
+      "weight": 0.7,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "拍卖",
+        "竞价",
+        "AI",
+        "经济"
+      ]
+    },
+    {
+      "id": "web:makeplay-clara-friends3",
+      "label": "Clara Gabrielly os seus amigos 3",
+      "group": "采集",
+      "weight": 0.7,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "社交",
+        "派对",
+        "休闲",
+        "多人"
+      ]
+    },
+    {
+      "id": "web:makeplay-medal-panic-jp",
+      "label": "メダルパニックJP",
+      "group": "采集",
+      "weight": 0.7,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "奖牌",
+        "弹珠",
+        "街机",
+        "日语"
+      ]
+    },
+    {
+      "id": "web:makeplay-puzzle-puddings",
+      "label": "Puzzle & Puddings 大戦",
+      "group": "采集",
+      "weight": 0.7,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "拼图",
+        "布丁",
+        "对战",
+        "休闲"
+      ]
+    },
+    {
+      "id": "web:makeplay-route-riches",
+      "label": "Route to Riches",
+      "group": "采集",
+      "weight": 0.7,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "路线",
+        "经营",
+        "致富",
+        "策略"
+      ]
+    },
+    {
+      "id": "web:poki-bounce-ball",
+      "label": "Bounce Ball",
+      "group": "采集",
+      "weight": 0.7,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "弹球",
+        "反弹",
+        "闯关",
+        "物理"
+      ]
+    },
+    {
+      "id": "web:poki-idle-evolution",
+      "label": "Idle Evolution: Primordia",
+      "group": "采集",
+      "weight": 0.7,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "放置",
+        "进化",
+        "原始",
+        "增量"
+      ]
+    },
+    {
+      "id": "web:poki-escape-pickaxe",
+      "label": "Escape Pickaxe Swing",
+      "group": "采集",
+      "weight": 0.7,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "挖镐",
+        "摆荡",
+        "逃生",
+        "动作"
+      ]
+    },
+    {
+      "id": "web:poki-money-maker",
+      "label": "Money Maker",
+      "group": "采集",
+      "weight": 0.7,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "堆钱",
+        "消费",
+        "放置",
+        "爽感"
+      ]
+    },
+    {
+      "id": "web:makeplay-paper-apocalypse",
+      "label": "Kâğıt Kıyamet 纸末日",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "纸艺",
+        "末日",
+        "土耳其",
+        "解谜",
+        "NEW"
+      ]
+    },
+    {
+      "id": "web:makeplay-night-shift",
+      "label": "Gece Mesaisi 夜班",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "夜班",
+        "土耳其",
+        "模拟",
+        "打工",
+        "NEW"
+      ]
+    },
+    {
+      "id": "web:makeplay-gabut",
+      "label": "Gabut 发呆",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "放置",
+        "印尼",
+        "解压",
+        "无目标",
+        "UPDATED"
+      ]
+    },
+    {
+      "id": "web:makeplay-muusman-underfoot",
+      "label": "Muusman Underfoot 脚底视角",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "脚底视角",
+        "幽默",
+        "小品",
+        "物理",
+        "NEW"
+      ]
+    },
+    {
+      "id": "web:makeplay-common-ground",
+      "label": "Common Ground 共同立场",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "对话",
+        "叙事",
+        "社交",
+        "选择",
+        "UPDATED"
+      ]
+    },
+    {
+      "id": "web:makeplay-room-for-forever",
+      "label": "Room for Forever 永恒房间",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "叙事",
+        "情感",
+        "房间",
+        "视觉小说",
+        "NEW"
+      ]
+    },
+    {
+      "id": "web:makeplay-blue-lights-out",
+      "label": "Blue Lights Out v2 熄灯",
+      "group": "采集",
+      "weight": 0.6,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "熄灯",
+        "逻辑",
+        "解谜",
+        "翻格",
+        "UPDATED"
+      ]
+    },
+    {
+      "id": "web:makeplay-ewr-reborn",
+      "label": "EWR 4.2 REBORN 摔角",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "摔角",
+        "体育",
+        "复兴",
+        "竞技",
+        "NEW"
+      ]
+    },
+    {
+      "id": "web:makeplay-corta-clara-sonic",
+      "label": "Corta Clara & Sonic 巴西合作",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "索尼克",
+        "巴西",
+        "合作",
+        "粉丝向",
+        "NEW"
+      ]
+    },
+    {
+      "id": "web:makeplay-dupla-outro-mundo",
+      "label": "Dupla de Outro Mundo 异世界双人",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "双人",
+        "巴西",
+        "合作",
+        "异世界",
+        "NEW"
+      ]
+    },
+    {
+      "id": "web:4399-zmxy",
+      "label": "造梦西游之黎尤浩劫篇",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "横版",
+        "动作冒险",
+        "地府",
+        "国漫IP"
+      ]
+    },
+    {
+      "id": "web:4399-sanguo-kuaida",
+      "label": "4399三国快打",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "横版",
+        "动作竞技",
+        "街机",
+        "三国"
+      ]
+    },
+    {
+      "id": "web:4399-qiuqiu-hero",
+      "label": "球球英雄",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "合成",
+        "消除",
+        "塔防",
+        "球球"
+      ]
+    },
+    {
+      "id": "web:4399-naikuai",
+      "label": "奶块",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "合成",
+        "建造",
+        "生存",
+        "联机"
+      ]
+    },
+    {
+      "id": "web:4399-xipu",
+      "label": "西普大陆",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "萌宠",
+        "回合制",
+        "策略",
+        "收集"
+      ]
+    },
+    {
+      "id": "web:4399-mini-world",
+      "label": "迷你世界",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "沙盒",
+        "自由建造",
+        "探索",
+        "开放世界"
+      ]
+    },
+    {
+      "id": "web:makeplay-deadly-army",
+      "label": "DEADLY ARMY OF DARKNESS",
+      "group": "采集",
+      "weight": 0.8,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "黑暗军团",
+        "roguelike",
+        "NEW",
+        "AI生成"
+      ]
+    },
+    {
+      "id": "web:makeplay-all-hands",
+      "label": "All Hands Missing",
+      "group": "采集",
+      "weight": 0.78,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "All Hands Missing",
+        "NEW",
+        "AI生成",
+        "解谜"
+      ]
+    },
+    {
+      "id": "web:makeplay-every-other-heart",
+      "label": "Every Other Heart",
+      "group": "采集",
+      "weight": 0.78,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "Every Other Heart",
+        "NEW",
+        "叙事",
+        "AI生成"
+      ]
+    },
+    {
+      "id": "web:makeplay-brick-hearth",
+      "label": "Brick by Hearth",
+      "group": "采集",
+      "weight": 0.79,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "Brick by Hearth",
+        "NEW",
+        "温馨",
+        "砖块建造"
+      ]
+    },
+    {
+      "id": "web:makeplay-spook-scoop",
+      "label": "Spook Scoop",
+      "group": "采集",
+      "weight": 0.78,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "Spook Scoop",
+        "NEW",
+        "惊悚",
+        "抓捕"
+      ]
+    },
+    {
+      "id": "web:makeplay-zu-pi",
+      "label": "祖率已满",
+      "group": "采集",
+      "weight": 0.77,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "祖率已满",
+        "圆周率",
+        "数学",
+        "AI生成"
+      ]
+    },
+    {
+      "id": "web:makeplay-moonsteel",
+      "label": "Moonsteel Oath",
+      "group": "采集",
+      "weight": 0.78,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "Moonsteel Oath",
+        "UPDATED",
+        "誓言",
+        "RPG"
+      ]
+    },
+    {
+      "id": "web:makeplay-last-survived",
+      "label": "Last survived",
+      "group": "采集",
+      "weight": 0.78,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "Last survived",
+        "UPDATED",
+        "幸存",
+        "生存"
+      ]
+    },
+    {
+      "id": "web:makeplay-room-forever-lgbt",
+      "label": "Room for Forever (Lesbian)",
+      "group": "采集",
+      "weight": 0.78,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "Room for Forever",
+        "Lesbian",
+        "NEW",
+        "叙事"
+      ]
+    },
+    {
+      "id": "web:poki-brain-test-tricky",
+      "label": "Brain Test: Tricky Puzzles",
+      "group": "采集",
+      "weight": 0.81,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "Brain Test",
+        "脑筋急转弯",
+        "陷阱题",
+        "4.3星"
+      ]
+    },
+    {
+      "id": "web:poki-google-feud",
+      "label": "Google Feud",
+      "group": "采集",
+      "weight": 0.79,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "Google Feud",
+        "问答",
+        "联想搜索"
+      ]
+    },
+    {
+      "id": "web:poki-tens",
+      "label": "Tens!",
+      "group": "采集",
+      "weight": 0.79,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "Tens!",
+        "数字消除",
+        "凑十",
+        "逻辑"
+      ]
+    },
+    {
+      "id": "web:poki-world-screw",
+      "label": "World of Screw",
+      "group": "采集",
+      "weight": 0.8,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "World of Screw",
+        "拧螺丝",
+        "物理解谜"
+      ]
+    },
+    {
+      "id": "web:poki-travel-merge",
+      "label": "Travel Merge",
+      "group": "采集",
+      "weight": 0.79,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "Travel Merge",
+        "合成旅行",
+        "merge"
+      ]
+    },
+    {
+      "id": "web:poki-brain-test-5",
+      "label": "Brain Test 5",
+      "group": "采集",
+      "weight": 0.79,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "Brain Test 5",
+        "脑筋急转弯",
+        "续作"
+      ]
+    },
+    {
+      "id": "web:poki-free-the-key",
+      "label": "Free The Key",
+      "group": "采集",
+      "weight": 0.79,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "Free The Key",
+        "钥匙解谜",
+        "方块逃脱"
+      ]
+    },
+    {
+      "id": "web:poki-hexellent",
+      "label": "Hexellent",
+      "group": "采集",
+      "weight": 0.78,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "Hexellent",
+        "六边形",
+        "逻辑"
+      ]
+    },
+    {
+      "id": "web:makeplay-memoire",
+      "label": "Mémoire de Bord",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "记忆",
+        "叙事",
+        "日志",
+        "卡牌"
+      ]
+    },
+    {
+      "id": "web:makeplay-arion-honey",
+      "label": "Arion: Honey Slime Farm",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "史莱姆",
+        "放置",
+        "经营",
+        "蜂蜜"
+      ]
+    },
+    {
+      "id": "web:makeplay-120coloruno",
+      "label": "120 Color Uno",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "卡牌",
+        "色彩",
+        "Uno",
+        "数字"
+      ]
+    },
+    {
+      "id": "web:makeplay-pawtrait",
+      "label": "Pawtrait Pop",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "宠物",
+        "肖像",
+        "消除",
+        "AI"
+      ]
+    },
+    {
+      "id": "web:makeplay-battlebrawlhk",
+      "label": "Battle Brawl Hong Kong",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "格斗",
+        "乱斗",
+        "香港",
+        "动作"
+      ]
+    },
+    {
+      "id": "web:makeplay-teia",
+      "label": "Teia ou Nunca",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "网",
+        "织",
+        "解谜",
+        "葡语"
+      ]
+    },
+    {
+      "id": "web:makeplay-colorbball",
+      "label": "Color Basketball Association",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "篮球",
+        "色彩",
+        "运动",
+        "投篮"
+      ]
+    },
+    {
+      "id": "web:makeplay-pixelhunt",
+      "label": "Pixel Hunt",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "像素",
+        "狩猎",
+        "探索",
+        "冒险"
+      ]
+    },
+    {
+      "id": "web:makeplay-undergroundgal",
+      "label": "UnderGround.Gal",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "地下",
+        "画廊",
+        "探索",
+        "解谜"
+      ]
+    },
+    {
+      "id": "web:makeplay-onemoreblock",
+      "label": "One more block",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "方块",
+        "堆叠",
+        "平衡",
+        "物理"
+      ]
+    },
+    {
+      "id": "web:makeplay-defendiman",
+      "label": "DEFEND YOUR IMAN",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "防守",
+        "塔防",
+        "IMAN",
+        "策略"
+      ]
+    },
+    {
+      "id": "web:makeplay-holdthunder",
+      "label": "Hold the Thunder",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "雷电",
+        "存活",
+        "反应",
+        "动作"
+      ]
+    },
+    {
+      "id": "web:makeplay-textmode",
+      "label": "TextMode Fashion",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "文字",
+        "时尚",
+        "换装",
+        "创意"
+      ]
+    },
+    {
+      "id": "web:poki-crashsandbox",
+      "label": "Crash Sandbox",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "沙盒",
+        "物理",
+        "破坏",
+        "实验"
+      ]
+    },
+    {
+      "id": "web:poki-blockrp",
+      "label": "BlockRP",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "方块",
+        "RPG",
+        "生活",
+        "职业"
+      ]
+    },
+    {
+      "id": "web:poki-boba",
+      "label": "Boba, Please!",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "奶茶",
+        "经营",
+        "模拟",
+        "顾客"
+      ]
+    },
+    {
+      "id": "web:poki-myarmybase",
+      "label": "My Army Base",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "军事",
+        "基地",
+        "管理",
+        "建造"
+      ]
+    },
+    {
+      "id": "web:poki-raiseafarm",
+      "label": "Raise A Farm",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "农场",
+        "经营",
+        "养殖",
+        "种植"
+      ]
+    },
+    {
+      "id": "web:poki-littleplanet",
+      "label": "Little Planet Lumberjack",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "伐木",
+        "星球",
+        "资源",
+        "管理"
+      ]
+    },
+    {
+      "id": "web:poki-ragdollchaos",
+      "label": "Ragdoll Chaos",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "布娃娃",
+        "物理",
+        "混乱",
+        "搞笑"
+      ]
+    },
+    {
+      "id": "web:poki-dwerg",
+      "label": "Dwerg",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "矮人",
+        "经营",
+        "建造",
+        "探索"
+      ]
+    },
+    {
+      "id": "web:poki-tinybaker",
+      "label": "Tiny Baker Ocean Jelly Cake",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "烘焙",
+        "蛋糕",
+        "甜点",
+        "迷你"
+      ]
+    },
+    {
+      "id": "web:poki-pandomine",
+      "label": "Pando Mystery Mine",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "矿洞",
+        "挖掘",
+        "探索",
+        "资源"
+      ]
+    },
+    {
+      "id": "web:poki-robocleaner",
+      "label": "Robo Cleaner Simulator",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "机器人",
+        "清洁",
+        "整理",
+        "模拟"
+      ]
+    },
+    {
+      "id": "web:poki-sandboxelem",
+      "label": "Sandbox of Elements",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "元素",
+        "沙盒",
+        "反应",
+        "生成"
+      ]
+    },
+    {
+      "id": "web:poki-picnic",
+      "label": "Picnic Maker",
+      "group": "采集",
+      "weight": 0.68,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "野餐",
+        "布置",
+        "模拟",
+        "休闲"
+      ]
+    },
+    {
+      "id": "web:makeplay-motel-world-farm",
+      "label": "Motel World & Farm",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "经营",
+        "农场",
+        "模拟"
+      ]
+    },
+    {
+      "id": "web:makeplay-clever-preserve",
+      "label": "Clever Preserve",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "解谜",
+        "保护",
+        "休闲"
+      ]
+    },
+    {
+      "id": "web:makeplay-esgardia",
+      "label": "Esgardia: Tale of Arion",
+      "group": "采集",
+      "weight": 0.55,
+      "freq": 2,
+      "lastSeen": 0,
+      "kw": [
+        "RPG",
+        "冒险",
+        "AI"
+      ]
+    },
+    {
+      "id": "web:makeplay-reel-or-deal",
+      "label": "Reel or Deal",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "卡牌",
+        "策略",
+        "休闲"
+      ]
+    },
+    {
+      "id": "web:makeplay-juragan-dungeon",
+      "label": "Juragan Dungeon",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "地牢",
+        "策略",
+        "UPDATED"
+      ]
+    },
+    {
+      "id": "web:makeplay-little-alchemist",
+      "label": "Little_Alchemist",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "合成",
+        "炼金",
+        "BOOST"
+      ]
+    },
+    {
+      "id": "web:makeplay-mr-hush",
+      "label": "Mr hush (Release)",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "恐怖",
+        "解谜",
+        "NEW"
+      ]
+    },
+    {
+      "id": "web:makeplay-one-last-round",
+      "label": "One Last Round Before Bed",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "休闲",
+        "睡前",
+        "NEW"
+      ]
+    },
+    {
+      "id": "web:makeplay-ride-side-story",
+      "label": "Ride Side Story",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "叙事",
+        "冒险",
+        "NEW"
+      ]
+    },
+    {
+      "id": "web:makeplay-mercury-made-me",
+      "label": "Mercury Made Me",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "解谜",
+        "叙事",
+        "NEW"
+      ]
+    },
+    {
+      "id": "web:makeplay-flyswatter",
+      "label": "Flyswatter",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "点击",
+        "解压",
+        "NEW"
+      ]
+    },
+    {
+      "id": "web:poki-turbo-trail",
+      "label": "Turbo Trail",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "赛车",
+        "速度",
+        "模拟"
+      ]
+    },
+    {
+      "id": "web:poki-barn-baron",
+      "label": "Barn Baron",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "经营",
+        "农场",
+        "谷仓"
+      ]
+    },
+    {
+      "id": "web:poki-dig-clean",
+      "label": "Dig & Clean",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "挖掘",
+        "清理",
+        "休闲"
+      ]
+    },
+    {
+      "id": "web:poki-platypus-coffee",
+      "label": "Platypus Coffee",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "咖啡",
+        "经营",
+        "模拟"
+      ]
+    },
+    {
+      "id": "web:poki-little-farm-world",
+      "label": "Little Farm World",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "农场",
+        "种植",
+        "休闲"
+      ]
+    },
+    {
+      "id": "web:poki-office-manager",
+      "label": "Office Manager",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "经营",
+        "职场",
+        "模拟"
+      ]
+    },
+    {
+      "id": "web:poki-petnest",
+      "label": "Petnest.io",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "宠物",
+        "照料",
+        "模拟"
+      ]
+    },
+    {
+      "id": "web:poki-moms-diary-cooking",
+      "label": "Mom's Diary Cooking Games",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "烹饪",
+        "模拟",
+        "生活"
+      ]
+    },
+    {
+      "id": "web:poki-grass-cutter",
+      "label": "Grass Cutter",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "割草",
+        "放置",
+        "模拟"
+      ]
+    },
+    {
+      "id": "web:poki-dogs-life",
+      "label": "Dog's Life",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "宠物",
+        "生活",
+        "模拟"
+      ]
+    },
+    {
+      "id": "web:poki-harvest-loop",
+      "label": "Harvest Loop",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "农场",
+        "循环",
+        "收获"
+      ]
+    },
+    {
+      "id": "web:makeplay-street-parkour-copy",
+      "label": "Street Parkour Copy",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "跑酷",
+        "街头",
+        "复刻"
+      ]
+    },
+    {
+      "id": "web:makeplay-uncharted-world",
+      "label": "Uncharted world",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "探索",
+        "开放世界",
+        "冒险"
+      ]
+    },
+    {
+      "id": "web:makeplay-save-the-kitten",
+      "label": "Save the Kitten !!",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "解谜",
+        "救援",
+        "萌宠"
+      ]
+    },
+    {
+      "id": "web:makeplay-tina-sweet-potato",
+      "label": "Tina's Roasted Sweet Potato Adventure",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "美食",
+        "冒险",
+        "生活"
+      ]
+    },
+    {
+      "id": "web:makeplay-street-parkour",
+      "label": "Street Parkour",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "跑酷",
+        "街头",
+        "动作"
+      ]
+    },
+    {
+      "id": "web:makeplay-idleborn",
+      "label": "Idleborn",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "放置",
+        "挂机",
+        "养成"
+      ]
+    },
+    {
+      "id": "web:makeplay-crowd-shock",
+      "label": "Crowd Shock",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "人群",
+        "策略",
+        "冲击"
+      ]
+    },
+    {
+      "id": "web:makeplay-glow-home-xeno",
+      "label": "Glow Home, Xeno",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "解谜",
+        "光",
+        "归家"
+      ]
+    },
+    {
+      "id": "web:makeplay-louder-than-rent",
+      "label": "Louder Than Rent",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "叙事",
+        "生活",
+        "音乐"
+      ]
+    },
+    {
+      "id": "web:makeplay-living-off-ink",
+      "label": "Living Off Ink",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "叙事",
+        "创作",
+        "文字"
+      ]
+    },
+    {
+      "id": "web:makeplay-clunky-dragon",
+      "label": "Clunky Dragon",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "平台",
+        "龙",
+        "冒险"
+      ]
+    },
+    {
+      "id": "web:makeplay-50-steps-to-gold",
+      "label": "50 Steps to Gold",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "步进",
+        "寻宝",
+        "策略"
+      ]
+    },
+    {
+      "id": "web:poki-cat-pizza",
+      "label": "Cat Pizza",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "经营",
+        "披萨",
+        "萌宠"
+      ]
+    },
+    {
+      "id": "web:poki-war-of-sticks",
+      "label": "War of Sticks",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "策略",
+        "火柴人",
+        "战争"
+      ]
+    },
+    {
+      "id": "web:poki-beach-boxing",
+      "label": "Beach Boxing Simulator",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "体育",
+        "拳击",
+        "模拟"
+      ]
+    },
+    {
+      "id": "web:poki-buildcraft",
+      "label": "Buildcraft",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "沙盒",
+        "建造",
+        "创造"
+      ]
+    },
+    {
+      "id": "web:poki-dirtnap-sandbox",
+      "label": "Dirtnap | Sandbox",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "沙盒",
+        "自由",
+        "创造"
+      ]
+    },
+    {
+      "id": "web:poki-perfect-hotel",
+      "label": "我的完美酒店",
+      "group": "采集",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "经营",
+        "酒店",
+        "管理"
+      ]
+    }
+  ],
+  "synapses": [
+    {
+      "a": "web:thisissand-沙画",
+      "b": "web:mikutap-音画",
+      "strength": 0.6,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:mikutap-音画",
+      "b": "web:slowroads-驾驶",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:thisissand-沙画",
+      "b": "web:slowroads-驾驶",
+      "strength": 0.55,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-怀旧FC",
+      "b": "web:4399-童年",
+      "strength": 0.7,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-怀旧FC",
+      "b": "web:tetris-方块",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:liferestart-人生",
+      "b": "web:4399-童年",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:minesweeper-扫雷",
+      "b": "web:papergames-对战",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-ai生成",
+      "b": "web:poki-热榜",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:slither-贪吃蛇",
+      "b": "web:poki-热榜",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-gen-recon",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.5,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-coin-economy",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-2048",
+      "b": "web:tetris-方块",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-dino-run",
+      "b": "web:poki-stickman-hook",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-coin-pusher",
+      "b": "web:thisissand-沙画",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-bellstorm",
+      "b": "web:liferestart-人生",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:yikm-contra",
+      "b": "web:yikm-tank",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:yikm-contra",
+      "b": "web:yikm-snowbros",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:yikm-contra",
+      "b": "web:yikm-怀旧FC",
+      "strength": 0.5,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-goldminer",
+      "b": "web:makeplay-coin-pusher",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:yikm-linklink",
+      "b": "web:poki-2048",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:yikm-forest-icefire",
+      "b": "web:poki-bad-icecream",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:papergames-link-invite",
+      "b": "web:papergames-daily-tourney",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:papergames-connect4",
+      "b": "web:papergames-对战",
+      "strength": 0.5,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:papergames-battleship",
+      "b": "web:papergames-对战",
+      "strength": 0.5,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:papergames-battleship",
+      "b": "web:minesweeper-扫雷",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:fuun-taoyuanxiang",
+      "b": "web:fuun-玩具",
+      "strength": 0.5,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:fuun-taoyuanxiang",
+      "b": "web:liferestart-人生",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:fuun-snake-move",
+      "b": "web:fuun-trash-robot",
+      "strength": 0.55,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "web:fuun-trash-robot",
+      "b": "web:minesweeper-扫雷",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:fuun-porthole",
+      "b": "web:slowroads-驾驶",
+      "strength": 0.6,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:fuun-makemepulse",
+      "b": "web:mikutap-音画",
+      "strength": 0.6,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:fuun-makemepulse",
+      "b": "web:thisissand-沙画",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "web:fuun-makemepulse",
+      "b": "web:fuun-porthole",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "web:fuun-boring-ai",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:fuun-kick-ball",
+      "b": "web:fuun-玩具",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:fuun-magic-jump",
+      "b": "web:poki-dino-run",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:fuun-treasure-mimic",
+      "b": "web:liferestart-人生",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:fuun-heraclos",
+      "b": "web:yikm-forest-icefire",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:4399-towerdefense",
+      "b": "web:yorg-塔防建造",
+      "strength": 0.6,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:4399-towerdefense",
+      "b": "web:4399-pvz",
+      "strength": 0.65,
+      "myelin": 0.55,
+      "state": "active"
+    },
+    {
+      "a": "web:4399-pvz",
+      "b": "web:4399-童年",
+      "strength": 0.55,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:4399-maze",
+      "b": "web:poki-bad-icecream",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:4399-aoqi",
+      "b": "web:4399-童年",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "web:4399-aoqi",
+      "b": "web:papergames-对战",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-purrk-up",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-word-fortune",
+      "b": "web:poki-2048",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-thunderforge",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-wings-valor",
+      "b": "web:makeplay-neon-fly",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-gripfall",
+      "b": "web:poki-stickman-hook",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-temple-run2",
+      "b": "web:poki-dino-run",
+      "strength": 0.6,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-rodeo-stampede",
+      "b": "web:poki-temple-run2",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-rodeo-stampede",
+      "b": "web:4399-aoqi",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-moto-x3m",
+      "b": "web:poki-smash-karts",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-penalty2",
+      "b": "web:fuun-kick-ball",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-venge",
+      "b": "web:poki-smash-karts",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-mario",
+      "b": "web:yikm-怀旧FC",
+      "strength": 0.6,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-mario",
+      "b": "web:yikm-adventure-island",
+      "strength": 0.55,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-mario",
+      "b": "web:fuun-magic-jump",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:yikm-harvest-moon",
+      "b": "web:fuun-taoyuanxiang",
+      "strength": 0.72,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-harvest-moon",
+      "b": "web:yikm-怀旧FC",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-harvest-moon",
+      "b": "web:liferestart-人生",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:yikm-pokemon",
+      "b": "web:4399-aoqi",
+      "strength": 0.65,
+      "myelin": 0.55,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-pokemon",
+      "b": "web:poki-rodeo-stampede",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-zelda-minish",
+      "b": "web:fuun-snake-move",
+      "strength": 0.6,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-zelda-minish",
+      "b": "web:yikm-castlevania",
+      "strength": 0.6,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-zelda-minish",
+      "b": "web:fuun-heraclos",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-castlevania",
+      "b": "web:4399-maze",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:yikm-sanguo",
+      "b": "web:yikm-contra",
+      "strength": 0.6,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-sanguo",
+      "b": "web:yikm-metal-slug",
+      "strength": 0.55,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-metal-slug",
+      "b": "web:yikm-contra",
+      "strength": 0.65,
+      "myelin": 0.55,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-fire-emblem",
+      "b": "web:papergames-gomoku",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:yikm-fire-emblem",
+      "b": "web:yikm-pokemon",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-beat-kids",
+      "b": "web:yikm-nekketsu",
+      "strength": 0.55,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-beat-kids",
+      "b": "web:fuun-kick-ball",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "web:papergames-tictactoe",
+      "b": "web:papergames-对战",
+      "strength": 0.55,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "web:papergames-tictactoe",
+      "b": "web:papergames-gomoku",
+      "strength": 0.7,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:papergames-gomoku",
+      "b": "web:papergames-connect4",
+      "strength": 0.65,
+      "myelin": 0.55,
+      "state": "active"
+    },
+    {
+      "a": "web:papergames-tournament-modes",
+      "b": "web:papergames-daily-tourney",
+      "strength": 0.7,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:papergames-tournament-modes",
+      "b": "web:papergames-classroom",
+      "strength": 0.6,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:papergames-emoji-shop",
+      "b": "web:papergames-对战",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "web:papergames-emoji-shop",
+      "b": "web:makeplay-coin-economy",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:papergames-classroom",
+      "b": "web:papergames-link-invite",
+      "strength": 0.6,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:papergames-classroom",
+      "b": "web:yikm-forest-icefire",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-tulong",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-tulong",
+      "b": "web:makeplay-coin-economy",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-guandu",
+      "b": "web:papergames-gomoku",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-guandu",
+      "b": "web:yikm-fire-emblem",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-biejiyan",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-biejiyan",
+      "b": "web:liferestart-人生",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-bonfire",
+      "b": "web:yikm-harvest-moon",
+      "strength": 0.6,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-bonfire",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-beadmaster",
+      "b": "web:makeplay-boxing",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-beadmaster",
+      "b": "web:thisissand-沙画",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-niuhaveholiday",
+      "b": "web:fuun-kick-ball",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-cityhelper",
+      "b": "web:makeplay-boxing",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-fishing",
+      "b": "web:yikm-harvest-moon",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-boxing",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-yiqibaofu",
+      "b": "web:makeplay-coin-economy",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-yiqibaofu",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-vorix",
+      "b": "web:4399-towerdefense",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-vorix",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:yikm-怀旧FC",
+      "b": "web:yikm-tmnt",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:yikm-怀旧FC",
+      "b": "web:yikm-kof",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:yikm-怀旧FC",
+      "b": "web:yikm-sf2",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:yikm-怀旧FC",
+      "b": "web:yikm-dino",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:yikm-怀旧FC",
+      "b": "web:yikm-orlegend",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:yikm-怀旧FC",
+      "b": "web:yikm-wof",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:yikm-怀旧FC",
+      "b": "web:yikm-summon-night",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:yikm-怀旧FC",
+      "b": "web:yikm-srw",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:yikm-怀旧FC",
+      "b": "web:yikm-shanke",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:yikm-怀旧FC",
+      "b": "web:yikm-bleach-naruto",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:papergames-对战",
+      "b": "web:papergames-gruppo",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:papergames-对战",
+      "b": "web:papergames-guest",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:yikm-kof",
+      "b": "web:yikm-sf2",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:yikm-dino",
+      "b": "web:yikm-orlegend",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:yikm-wof",
+      "b": "web:yikm-orlegend",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:yikm-kof",
+      "b": "web:yikm-bleach-naruto",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:yikm-tmnt",
+      "b": "web:yikm-dino",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-subway-runner",
+      "b": "web:poki-temple-run2",
+      "strength": 0.5,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-gta-los-santos",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-crownseed",
+      "b": "web:makeplay-yiqibaofu",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-infun-defense",
+      "b": "web:4399-towerdefense",
+      "strength": 0.5,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-whistlefall",
+      "b": "web:poki-dino-run",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-yufeng",
+      "b": "web:makeplay-neon-fly",
+      "strength": 0.5,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-xunyu",
+      "b": "web:fuun-taoyuanxiang",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-fifteen-min",
+      "b": "web:liferestart-人生",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-water-color-sort",
+      "b": "web:poki-2048",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-merge-rot",
+      "b": "web:makeplay-yiqibaofu",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-shenzhen-mahjong",
+      "b": "web:papergames-gomoku",
+      "strength": 0.5,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-there-is-no-game",
+      "b": "web:fuun-boring-ai",
+      "strength": 0.5,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-not-not",
+      "b": "web:fuun-magic-jump",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-nonogram",
+      "b": "web:minesweeper-扫雷",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-brain-test",
+      "b": "web:fuun-boring-ai",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:yikm-brawler",
+      "b": "web:yikm-怀旧FC",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-parrot",
+      "b": "web:yikm-怀旧FC",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-dragonseal",
+      "b": "web:yikm-怀旧FC",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-samurai",
+      "b": "web:yikm-怀旧FC",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-captain-commando",
+      "b": "web:yikm-怀旧FC",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-snowbros2",
+      "b": "web:yikm-怀旧FC",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-ww-frontline2",
+      "b": "web:yikm-怀旧FC",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-snowbros2",
+      "b": "web:yikm-snowbros",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-samurai",
+      "b": "web:yikm-kof",
+      "strength": 0.65,
+      "myelin": 0.65,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-samurai",
+      "b": "web:yikm-sf2",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-ww-frontline2",
+      "b": "web:yikm-contra",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-ww-frontline2",
+      "b": "web:yikm-metal-slug",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-brawler",
+      "b": "web:yikm-nekketsu",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-captain-commando",
+      "b": "web:yikm-dino",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-last-beat",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-wake-ruins",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-knightey",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-zombie-qfb",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-segue-bem",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-hiss-hex",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-blocky-blast",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-bubble-shooter",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-who-is",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-sudoku",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-spectrum",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-logic-master",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-blocky-out",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-jigsaw-surprise",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-watermelon-drop",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-word-chains",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-word-boss",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-hangman",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-watermelon-drop",
+      "b": "web:poki-merge-rot",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-blocky-blast",
+      "b": "web:poki-blocky-out",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-word-chains",
+      "b": "web:poki-word-boss",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-spectrum",
+      "b": "web:poki-water-color-sort",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-logic-master",
+      "b": "web:poki-brain-test",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-last-beat",
+      "b": "web:makeplay-vorix",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-zombie-qfb",
+      "b": "web:makeplay-gripfall",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-sudoku",
+      "b": "web:poki-nonogram",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-hiss-hex",
+      "b": "web:makeplay-knightey",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:yikm-contra-force",
+      "b": "web:yikm-怀旧FC",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-contra-4in1",
+      "b": "web:yikm-怀旧FC",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-nekketsu-record",
+      "b": "web:yikm-怀旧FC",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-nekketsu-jidaimugeki",
+      "b": "web:yikm-怀旧FC",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-nekketsu-hockey",
+      "b": "web:yikm-怀旧FC",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-nekketsu-fight",
+      "b": "web:yikm-怀旧FC",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-adventure-island-2",
+      "b": "web:yikm-怀旧FC",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-adventure-island-3",
+      "b": "web:yikm-怀旧FC",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-adventure-island-4",
+      "b": "web:yikm-怀旧FC",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-contra-force",
+      "b": "web:yikm-contra",
+      "strength": 0.82,
+      "myelin": 0.82,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-contra-4in1",
+      "b": "web:yikm-contra",
+      "strength": 0.78,
+      "myelin": 0.78,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-contra-4in1",
+      "b": "web:yikm-contra-force",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-contra-force",
+      "b": "web:yikm-metal-slug",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-nekketsu-record",
+      "b": "web:yikm-nekketsu",
+      "strength": 0.82,
+      "myelin": 0.82,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-nekketsu-jidaimugeki",
+      "b": "web:yikm-nekketsu",
+      "strength": 0.8,
+      "myelin": 0.8,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-nekketsu-hockey",
+      "b": "web:yikm-nekketsu",
+      "strength": 0.8,
+      "myelin": 0.8,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-nekketsu-fight",
+      "b": "web:yikm-nekketsu",
+      "strength": 0.82,
+      "myelin": 0.82,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-nekketsu-fight",
+      "b": "web:yikm-beat-kids",
+      "strength": 0.55,
+      "myelin": 0.55,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-adventure-island-2",
+      "b": "web:yikm-adventure-island",
+      "strength": 0.84,
+      "myelin": 0.84,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-adventure-island-3",
+      "b": "web:yikm-adventure-island",
+      "strength": 0.84,
+      "myelin": 0.84,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-adventure-island-4",
+      "b": "web:yikm-adventure-island",
+      "strength": 0.84,
+      "myelin": 0.84,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-adventure-island-2",
+      "b": "web:yikm-mario",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-adventure-island-3",
+      "b": "web:yikm-mario",
+      "strength": 0.58,
+      "myelin": 0.58,
+      "state": "active"
+    },
+    {
+      "a": "web:yikm-adventure-island-4",
+      "b": "web:yikm-mario",
+      "strength": 0.58,
+      "myelin": 0.58,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-animal-empire",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-a-lua-corta",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-marbleous-fit",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-one-shot-standoff",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-shadow-destroyer",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-merge-chronicles",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-bubu",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-trench-front",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-szogletesen",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-merge-angle",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-lovedek",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-she-is-mine",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-digger-escape",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-cow-bay",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-idle-mining",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-sea-catcher",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-idle-lumber",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-tiny-towers",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-idle-success",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-idle-ants",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-anthill-wars",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-idle-settlers",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-pickcrafter",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-coin-factory",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-monkey-mart",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-merge-chronicles",
+      "b": "web:makeplay-merge-angle",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-one-shot-standoff",
+      "b": "web:makeplay-lovedek",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-shadow-destroyer",
+      "b": "web:makeplay-one-shot-standoff",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-idle-mining",
+      "b": "web:poki-idle-lumber",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-idle-success",
+      "b": "web:poki-idle-ants",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-idle-settlers",
+      "b": "web:poki-pickcrafter",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-coin-factory",
+      "b": "web:poki-idle-success",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-cow-bay",
+      "b": "web:poki-monkey-mart",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-anthill-wars",
+      "b": "web:poki-idle-ants",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-hide-and-paint",
+      "b": "web:poki-热榜",
+      "strength": 0.6,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-ragdoll-hit",
+      "b": "web:poki-热榜",
+      "strength": 0.6,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-repuls",
+      "b": "web:poki-热榜",
+      "strength": 0.6,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-magic-battleground",
+      "b": "web:poki-热榜",
+      "strength": 0.6,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-lands-of-blight",
+      "b": "web:poki-热榜",
+      "strength": 0.6,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-level-devil",
+      "b": "web:poki-热榜",
+      "strength": 0.6,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-apple-knight",
+      "b": "web:poki-热榜",
+      "strength": 0.6,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-blast-buddies",
+      "b": "web:poki-热榜",
+      "strength": 0.6,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-inkstep",
+      "b": "web:poki-热榜",
+      "strength": 0.6,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-xarena",
+      "b": "web:poki-热榜",
+      "strength": 0.6,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-ragdoll-hit",
+      "b": "web:poki-blast-buddies",
+      "strength": 0.5,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-apple-knight",
+      "b": "web:poki-inkstep",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-magic-battleground",
+      "b": "web:poki-xarena",
+      "strength": 0.5,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-repuls",
+      "b": "web:poki-xarena",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-ai生成",
+      "b": "web:makeplay-room-to-move",
+      "strength": 0.55,
+      "myelin": 0.55,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-ai生成",
+      "b": "web:makeplay-spin-your-luck",
+      "strength": 0.55,
+      "myelin": 0.55,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-ai生成",
+      "b": "web:makeplay-ufo-farm",
+      "strength": 0.55,
+      "myelin": 0.55,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-ai生成",
+      "b": "web:makeplay-fully-powered",
+      "strength": 0.55,
+      "myelin": 0.55,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-ai生成",
+      "b": "web:makeplay-neon-miami",
+      "strength": 0.55,
+      "myelin": 0.55,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-ai生成",
+      "b": "web:makeplay-luy-laeung",
+      "strength": 0.55,
+      "myelin": 0.55,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-热榜",
+      "b": "web:poki-drift-boss",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-热榜",
+      "b": "web:poki-polytrack",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-热榜",
+      "b": "web:poki-drive-mad",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-热榜",
+      "b": "web:poki-eggy-car",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-热榜",
+      "b": "web:poki-grand-prix-hero",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-热榜",
+      "b": "web:poki-cyber-cars-punk",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-热榜",
+      "b": "web:poki-monster-tracks",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-热榜",
+      "b": "web:poki-sling-drift",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-热榜",
+      "b": "web:poki-crazy-cars",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-热榜",
+      "b": "web:poki-city-rider",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-热榜",
+      "b": "web:poki-demolition-derby",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-热榜",
+      "b": "web:poki-blacktop-police",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-drift-boss",
+      "b": "web:poki-sling-drift",
+      "strength": 0.58,
+      "myelin": 0.58,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-drive-mad",
+      "b": "web:poki-monster-tracks",
+      "strength": 0.55,
+      "myelin": 0.55,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-eggy-car",
+      "b": "web:poki-drive-mad",
+      "strength": 0.52,
+      "myelin": 0.52,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-crazy-cars",
+      "b": "web:poki-city-rider",
+      "strength": 0.58,
+      "myelin": 0.58,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-demolition-derby",
+      "b": "web:poki-smash-karts",
+      "strength": 0.55,
+      "myelin": 0.55,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-blacktop-police",
+      "b": "web:poki-crazy-cars",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-grand-prix-hero",
+      "b": "web:poki-polytrack",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-cyber-cars-punk",
+      "b": "web:poki-grand-prix-hero",
+      "strength": 0.48,
+      "myelin": 0.48,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-moto-x3m",
+      "b": "web:poki-drive-mad",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-neon-miami",
+      "b": "web:poki-cyber-cars-punk",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-spin-your-luck",
+      "b": "web:makeplay-coin-economy",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-ufo-farm",
+      "b": "web:makeplay-animal-empire",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-room-to-move",
+      "b": "web:makeplay-boxing",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-fully-powered",
+      "b": "web:makeplay-subway-runner",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-violet-contact",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-sahara-breakout",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-tracto-miaou",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-no-backup",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-pixel-dash",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-dlm-dungeon",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-curtain-call",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-dodge-or-die",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-funny-shooter2",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-combat-online2",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-getaway-shootout",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-rooftop-snipers",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-cryzen-io",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-zombie-rush",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-raft-wars",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-mr-bullet",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-narrow-one",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-archery-world",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-sniper-code",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-lethal-sniper",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-funny-shooter2",
+      "b": "web:poki-combat-online2",
+      "strength": 0.35,
+      "myelin": 0.35,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-getaway-shootout",
+      "b": "web:poki-rooftop-snipers",
+      "strength": 0.35,
+      "myelin": 0.35,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-sniper-code",
+      "b": "web:poki-lethal-sniper",
+      "strength": 0.35,
+      "myelin": 0.35,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-mr-bullet",
+      "b": "web:poki-raft-wars",
+      "strength": 0.35,
+      "myelin": 0.35,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-narrow-one",
+      "b": "web:poki-archery-world",
+      "strength": 0.35,
+      "myelin": 0.35,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-zombie-rush",
+      "b": "web:poki-cryzen-io",
+      "strength": 0.35,
+      "myelin": 0.35,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-dodge-or-die",
+      "b": "web:makeplay-pixel-dash",
+      "strength": 0.35,
+      "myelin": 0.35,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-dlm-dungeon",
+      "b": "web:makeplay-violet-contact",
+      "strength": 0.35,
+      "myelin": 0.35,
+      "state": "weakened"
+    },
+    {
+      "a": "web:4399-shenshoujiji",
+      "b": "web:4399-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:4399-saierhao",
+      "b": "web:4399-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:4399-aolaxing",
+      "b": "web:4399-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:4399-aobidao",
+      "b": "web:4399-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:4399-dandantang",
+      "b": "web:4399-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:4399-huoxianjingying",
+      "b": "web:4399-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:4399-luokewangguo",
+      "b": "web:4399-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:4399-zaomengxiyou",
+      "b": "web:4399-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:4399-huangjingkuanggong",
+      "b": "web:4399-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:4399-lianliankan",
+      "b": "web:4399-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:4399-bingwahuowa",
+      "b": "web:4399-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:4399-doudizhu",
+      "b": "web:4399-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:4399-miniworld",
+      "b": "web:4399-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:4399-tiaopaoba",
+      "b": "web:4399-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-speed-stars",
+      "b": "web:poki-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-penalty-shooters2",
+      "b": "web:poki-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-retro-bowl",
+      "b": "web:poki-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-table-tennis-go",
+      "b": "web:poki-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-basketball-stars",
+      "b": "web:poki-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-soccer",
+      "b": "web:poki-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-basketball",
+      "b": "web:poki-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-american-football",
+      "b": "web:poki-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-combat-sports",
+      "b": "web:poki-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-table-sports",
+      "b": "web:poki-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-small-world-cup",
+      "b": "web:poki-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-football-legends",
+      "b": "web:poki-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-basketball-legends2020",
+      "b": "web:poki-热榜",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:4399-shenshoujiji",
+      "b": "web:4399-huoxianjingying",
+      "strength": 0.6,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:4399-saierhao",
+      "b": "web:4399-aolaxing",
+      "strength": 0.55,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:4399-aolaxing",
+      "b": "web:4399-luokewangguo",
+      "strength": 0.55,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:4399-aobidao",
+      "b": "web:4399-miniworld",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:4399-doudizhu",
+      "b": "web:4399-lianliankan",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:4399-huangjingkuanggong",
+      "b": "web:4399-lianliankan",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:4399-zaomengxiyou",
+      "b": "web:4399-saierhao",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:4399-tiaopaoba",
+      "b": "web:4399-miniworld",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:4399-bingwahuowa",
+      "b": "web:4399-aobidao",
+      "strength": 0.45,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-penalty-shooters2",
+      "b": "web:poki-penalty2",
+      "strength": 0.55,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-penalty-shooters2",
+      "b": "web:poki-football-legends",
+      "strength": 0.55,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-football-legends",
+      "b": "web:poki-small-world-cup",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-small-world-cup",
+      "b": "web:poki-soccer",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-basketball-stars",
+      "b": "web:poki-basketball-legends2020",
+      "strength": 0.55,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-basketball-legends2020",
+      "b": "web:poki-basketball",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-table-tennis-go",
+      "b": "web:poki-table-sports",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-retro-bowl",
+      "b": "web:poki-football-legends",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-american-football",
+      "b": "web:poki-combat-sports",
+      "strength": 0.45,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-combat-sports",
+      "b": "web:poki-table-sports",
+      "strength": 0.4,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-soccer",
+      "b": "web:poki-football-legends",
+      "strength": 0.45,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-speed-stars",
+      "b": "web:poki-soccer",
+      "strength": 0.4,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-damath-duel",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-emilia-ragdoll",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-farkle",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-gato-botas",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-last-bell",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-dalayman",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-dhaba",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-knights-joust",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-dhaba",
+      "b": "web:makeplay-last-bell",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-dalayman",
+      "b": "web:makeplay-emilia-ragdoll",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-poor-bunny",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-tube-jumpers",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-tag",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-house-of-hazards",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-soccer-legends",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-golf-battle",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-ragdoll-soccer",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-temple-of-boom",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-rooftop-snipers-2",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-shady-bears",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-rowdy-wrestling",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-master-chess",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-soccer-legends",
+      "b": "web:poki-golf-battle",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-ragdoll-soccer",
+      "b": "web:poki-rowdy-wrestling",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-temple-of-boom",
+      "b": "web:poki-rooftop-snipers-2",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-poor-bunny",
+      "b": "web:poki-shady-bears",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-tag",
+      "b": "web:poki-house-of-hazards",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-knights-joust",
+      "b": "web:poki-rooftop-snipers-2",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-bounce-ball",
+      "b": "web:poki-热榜",
+      "strength": 0.7,
+      "myelin": 0,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-idle-evolution",
+      "b": "web:poki-热榜",
+      "strength": 0.7,
+      "myelin": 0,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-escape-pickaxe",
+      "b": "web:poki-热榜",
+      "strength": 0.7,
+      "myelin": 0,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-money-maker",
+      "b": "web:poki-热榜",
+      "strength": 0.7,
+      "myelin": 0,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-idle-evolution",
+      "b": "web:poki-money-maker",
+      "strength": 0.45,
+      "myelin": 0,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-idle-evolution",
+      "b": "web:makeplay-route-riches",
+      "strength": 0.45,
+      "myelin": 0,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-money-maker",
+      "b": "web:makeplay-route-riches",
+      "strength": 0.45,
+      "myelin": 0,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-bucks-stop-here",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.7,
+      "myelin": 0,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-maxed-ever-after",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.7,
+      "myelin": 0,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-scrabble-scramble",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.7,
+      "myelin": 0,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-bid-buy",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.7,
+      "myelin": 0,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-clara-friends3",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.7,
+      "myelin": 0,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-medal-panic-jp",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.7,
+      "myelin": 0,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-puzzle-puddings",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.7,
+      "myelin": 0,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-route-riches",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.7,
+      "myelin": 0,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-ai生成",
+      "b": "web:makeplay-paper-apocalypse",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-ai生成",
+      "b": "web:makeplay-night-shift",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-ai生成",
+      "b": "web:makeplay-gabut",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-ai生成",
+      "b": "web:makeplay-muusman-underfoot",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-ai生成",
+      "b": "web:makeplay-common-ground",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-ai生成",
+      "b": "web:makeplay-room-for-forever",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-ai生成",
+      "b": "web:makeplay-blue-lights-out",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-ai生成",
+      "b": "web:makeplay-ewr-reborn",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-ai生成",
+      "b": "web:makeplay-corta-clara-sonic",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-ai生成",
+      "b": "web:makeplay-dupla-outro-mundo",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:4399-童年",
+      "b": "web:4399-zmxy",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:4399-童年",
+      "b": "web:4399-sanguo-kuaida",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:4399-童年",
+      "b": "web:4399-qiuqiu-hero",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:4399-童年",
+      "b": "web:4399-naikuai",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:4399-童年",
+      "b": "web:4399-xipu",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:4399-童年",
+      "b": "web:4399-mini-world",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-night-shift",
+      "b": "web:makeplay-gabut",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-dlm-dungeon",
+      "b": "web:makeplay-vorix",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-room-for-forever",
+      "b": "web:makeplay-common-ground",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-corta-clara-sonic",
+      "b": "web:makeplay-dupla-outro-mundo",
+      "strength": 0.55,
+      "myelin": 0.55,
+      "state": "weakened"
+    },
+    {
+      "a": "web:4399-naikuai",
+      "b": "web:4399-mini-world",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "weakened"
+    },
+    {
+      "a": "web:4399-qiuqiu-hero",
+      "b": "web:4399-pvz",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-deadly-army",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.7,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-all-hands",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.65,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-every-other-heart",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.65,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-brick-hearth",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.65,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-spook-scoop",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.65,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-zu-pi",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.65,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-moonsteel",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.65,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-last-survived",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.65,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-room-forever-lgbt",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.65,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-brain-test-tricky",
+      "b": "web:poki-热榜",
+      "strength": 0.65,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-google-feud",
+      "b": "web:poki-热榜",
+      "strength": 0.65,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-tens",
+      "b": "web:poki-热榜",
+      "strength": 0.65,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-world-screw",
+      "b": "web:poki-热榜",
+      "strength": 0.65,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-travel-merge",
+      "b": "web:poki-热榜",
+      "strength": 0.65,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-brain-test-5",
+      "b": "web:poki-热榜",
+      "strength": 0.65,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-free-the-key",
+      "b": "web:poki-热榜",
+      "strength": 0.65,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-hexellent",
+      "b": "web:poki-热榜",
+      "strength": 0.65,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-deadly-army",
+      "b": "web:makeplay-spook-scoop",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-spook-scoop",
+      "b": "web:makeplay-room-forever-lgbt",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-brick-hearth",
+      "b": "web:makeplay-every-other-heart",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-every-other-heart",
+      "b": "web:makeplay-moonsteel",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-zu-pi",
+      "b": "web:makeplay-last-survived",
+      "strength": 0.4,
+      "myelin": 0.35,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-tens",
+      "b": "web:poki-hexellent",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-free-the-key",
+      "b": "web:poki-world-screw",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-travel-merge",
+      "b": "web:poki-tens",
+      "strength": 0.4,
+      "myelin": 0.35,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-brain-test-tricky",
+      "b": "web:poki-brain-test-5",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-memoire",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.62,
+      "myelin": 0.62,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-arion-honey",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.62,
+      "myelin": 0.62,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-120coloruno",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.62,
+      "myelin": 0.62,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-pawtrait",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.62,
+      "myelin": 0.62,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-battlebrawlhk",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.62,
+      "myelin": 0.62,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-teia",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.62,
+      "myelin": 0.62,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-colorbball",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.62,
+      "myelin": 0.62,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-pixelhunt",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.62,
+      "myelin": 0.62,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-undergroundgal",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.62,
+      "myelin": 0.62,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-onemoreblock",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.62,
+      "myelin": 0.62,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-defendiman",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.62,
+      "myelin": 0.62,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-holdthunder",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.62,
+      "myelin": 0.62,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-textmode",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.62,
+      "myelin": 0.62,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-crashsandbox",
+      "b": "web:poki-热榜",
+      "strength": 0.62,
+      "myelin": 0.62,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-blockrp",
+      "b": "web:poki-热榜",
+      "strength": 0.62,
+      "myelin": 0.62,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-boba",
+      "b": "web:poki-热榜",
+      "strength": 0.62,
+      "myelin": 0.62,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-myarmybase",
+      "b": "web:poki-热榜",
+      "strength": 0.62,
+      "myelin": 0.62,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-raiseafarm",
+      "b": "web:poki-热榜",
+      "strength": 0.62,
+      "myelin": 0.62,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-littleplanet",
+      "b": "web:poki-热榜",
+      "strength": 0.62,
+      "myelin": 0.62,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-ragdollchaos",
+      "b": "web:poki-热榜",
+      "strength": 0.62,
+      "myelin": 0.62,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-dwerg",
+      "b": "web:poki-热榜",
+      "strength": 0.62,
+      "myelin": 0.62,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-tinybaker",
+      "b": "web:poki-热榜",
+      "strength": 0.62,
+      "myelin": 0.62,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-pandomine",
+      "b": "web:poki-热榜",
+      "strength": 0.62,
+      "myelin": 0.62,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-robocleaner",
+      "b": "web:poki-热榜",
+      "strength": 0.62,
+      "myelin": 0.62,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-sandboxelem",
+      "b": "web:poki-热榜",
+      "strength": 0.62,
+      "myelin": 0.62,
+      "state": "active"
+    },
+    {
+      "a": "web:poki-picnic",
+      "b": "web:poki-热榜",
+      "strength": 0.62,
+      "myelin": 0.62,
+      "state": "active"
+    },
+    {
+      "a": "web:makeplay-memoire",
+      "b": "web:makeplay-arion-honey",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-pawtrait",
+      "b": "web:makeplay-arion-honey",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-onemoreblock",
+      "b": "web:makeplay-pixelhunt",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-battlebrawlhk",
+      "b": "web:makeplay-holdthunder",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-colorbball",
+      "b": "web:makeplay-battlebrawlhk",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-defendiman",
+      "b": "web:makeplay-battlebrawlhk",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-teia",
+      "b": "web:makeplay-undergroundgal",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-textmode",
+      "b": "web:makeplay-teia",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-boba",
+      "b": "web:poki-raiseafarm",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-raiseafarm",
+      "b": "web:poki-littleplanet",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-dwerg",
+      "b": "web:poki-raiseafarm",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-myarmybase",
+      "b": "web:poki-dwerg",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-crashsandbox",
+      "b": "web:poki-sandboxelem",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-ragdollchaos",
+      "b": "web:poki-crashsandbox",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-robocleaner",
+      "b": "web:poki-crashsandbox",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-tinybaker",
+      "b": "web:poki-boba",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-picnic",
+      "b": "web:poki-tinybaker",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-pandomine",
+      "b": "web:poki-littleplanet",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-motel-world-farm",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-clever-preserve",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-esgardia",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-reel-or-deal",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-juragan-dungeon",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-little-alchemist",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-mr-hush",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-one-last-round",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-ride-side-story",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-mercury-made-me",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-flyswatter",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-turbo-trail",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-barn-baron",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-dig-clean",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-platypus-coffee",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-little-farm-world",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-office-manager",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-petnest",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-moms-diary-cooking",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-grass-cutter",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-dogs-life",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-harvest-loop",
+      "b": "web:poki-热榜",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-motel-world-farm",
+      "b": "web:makeplay-juragan-dungeon",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-one-last-round",
+      "b": "web:makeplay-mercury-made-me",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-esgardia",
+      "b": "web:makeplay-ride-side-story",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-barn-baron",
+      "b": "web:poki-little-farm-world",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-little-farm-world",
+      "b": "web:poki-harvest-loop",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-platypus-coffee",
+      "b": "web:poki-moms-diary-cooking",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-office-manager",
+      "b": "web:poki-moms-diary-cooking",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-petnest",
+      "b": "web:poki-dogs-life",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-turbo-trail",
+      "b": "web:poki-grass-cutter",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-street-parkour-copy",
+      "b": "web:makeplay-street-parkour",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-street-parkour",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-street-parkour-copy",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-glow-home-xeno",
+      "b": "web:makeplay-uncharted-world",
+      "strength": 0.42,
+      "myelin": 0.42,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-save-the-kitten",
+      "b": "web:makeplay-clunky-dragon",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-louder-than-rent",
+      "b": "web:makeplay-living-off-ink",
+      "strength": 0.48,
+      "myelin": 0.48,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-idleborn",
+      "b": "web:makeplay-coin-pusher",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-esgardia",
+      "b": "web:makeplay-clunky-dragon",
+      "strength": 0.42,
+      "myelin": 0.42,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-50-steps-to-gold",
+      "b": "web:makeplay-crowd-shock",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-tina-sweet-potato",
+      "b": "web:makeplay-ai生成",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-cat-pizza",
+      "b": "web:poki-热榜",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-war-of-sticks",
+      "b": "web:poki-热榜",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-beach-boxing",
+      "b": "web:poki-热榜",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-buildcraft",
+      "b": "web:poki-热榜",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-dirtnap-sandbox",
+      "b": "web:poki-热榜",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-perfect-hotel",
+      "b": "web:poki-热榜",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-buildcraft",
+      "b": "web:poki-dirtnap-sandbox",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-cat-pizza",
+      "b": "web:poki-monkey-mart",
+      "strength": 0.42,
+      "myelin": 0.42,
+      "state": "weakened"
+    },
+    {
+      "a": "web:poki-cat-pizza",
+      "b": "web:makeplay-save-the-kitten",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-idleborn",
+      "b": "web:poki-idle-mining",
+      "strength": 0.44,
+      "myelin": 0.44,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-crowd-shock",
+      "b": "web:poki-war-of-sticks",
+      "strength": 0.42,
+      "myelin": 0.42,
+      "state": "weakened"
+    },
+    {
+      "a": "web:makeplay-street-parkour",
+      "b": "web:poki-beach-boxing",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    }
+  ],
+  "regions": {
+    "采集": "#80cbc4"
+  },
+  "meta": {
+    "source": "scraped-sites",
+    "seededAt": "2026-07-28",
+    "updatedAt": "2026-08-30",
+    "note": "跨域第十八轮·周日：MakePlay AI 首页 PLAY·THE GALLERY + Poki /zh/模拟",
+    "lastScrape": "2026-08-30",
+    "sites": [
+      "makeplay",
+      "poki"
+    ],
+    "lastUpdate": "2026-08-30"
+  }
+}

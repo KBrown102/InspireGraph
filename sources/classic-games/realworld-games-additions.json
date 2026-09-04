@@ -1,0 +1,161 @@
+{
+  "neurons": [
+    {
+      "id": "classic:marble",
+      "label": "玻璃球",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "玻璃球",
+        "弹珠",
+        "拇指弹射",
+        "进洞得分",
+        "撞球赢子",
+        "手眼精准",
+        "实体博弈"
+      ],
+      "maker": "民间传统",
+      "vendorType": "folk",
+      "medium": "实体"
+    },
+    {
+      "id": "classic:cardslap",
+      "label": "拍卡片",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "拍卡片",
+        "拍画片",
+        "掌风翻面",
+        "空气压力",
+        "手技",
+        "赢取卡片",
+        "童年博弈"
+      ],
+      "maker": "民间传统",
+      "vendorType": "folk",
+      "medium": "实体"
+    },
+    {
+      "id": "classic:spintop",
+      "label": "陀螺",
+      "group": "经典",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "陀螺",
+        "抽陀螺",
+        "旋转对战",
+        "撞击出界",
+        "持久旋转",
+        "实体玩具"
+      ],
+      "maker": "民间传统",
+      "vendorType": "folk",
+      "medium": "实体"
+    },
+    {
+      "id": "classic:mini4wd",
+      "label": "四驱车",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "四驱车",
+        "迷你四驱",
+        "零件拼装",
+        "改装竞速",
+        "赛道对决",
+        "DIY战车"
+      ],
+      "maker": "田宫(Tamiya)·实体玩具",
+      "vendorType": "folk",
+      "medium": "实体"
+    },
+    {
+      "id": "classic:rubberband",
+      "label": "跳皮筋",
+      "group": "经典",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "跳皮筋",
+        "皮筋",
+        "跳跃节奏",
+        "儿歌口令",
+        "柔韧",
+        "集体游戏"
+      ],
+      "maker": "民间传统",
+      "vendorType": "folk",
+      "medium": "实体"
+    },
+    {
+      "id": "classic:slingshot",
+      "label": "弹弓打瓶子",
+      "group": "经典",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "弹弓",
+        "打瓶子",
+        "投射命中",
+        "手眼精准",
+        "物理抛物线",
+        "击破快感"
+      ],
+      "maker": "民间传统",
+      "vendorType": "folk",
+      "medium": "实体"
+    },
+    {
+      "id": "classic:statue",
+      "label": "123木头人",
+      "group": "经典",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "123木头人",
+        "木头人",
+        "动静控制",
+        "反应力",
+        "静止躲动",
+        "集体游戏",
+        "口令"
+      ],
+      "maker": "民间传统",
+      "vendorType": "folk",
+      "medium": "实体"
+    }
+  ],
+  "synapses": [
+    { "a": "classic:marble", "b": "classic:ringtoss", "strength": 0.5, "myelin": 0.5, "state": "active" },
+    { "a": "classic:marble", "b": "classic:pinball", "strength": 0.45, "myelin": 0.4, "state": "active" },
+    { "a": "classic:marble", "b": "classic:slingshot", "strength": 0.55, "myelin": 0.5, "state": "active" },
+    { "a": "classic:marble", "b": "classic:waterring", "strength": 0.4, "myelin": 0.4, "state": "active" },
+    { "a": "classic:cardslap", "b": "classic:memory", "strength": 0.45, "myelin": 0.4, "state": "active" },
+    { "a": "classic:cardslap", "b": "classic:marble", "strength": 0.5, "myelin": 0.45, "state": "active" },
+    { "a": "classic:cardslap", "b": "classic:balloon", "strength": 0.4, "myelin": 0.4, "state": "active" },
+    { "a": "classic:spintop", "b": "classic:marble", "strength": 0.5, "myelin": 0.45, "state": "active" },
+    { "a": "classic:spintop", "b": "classic:mini4wd", "strength": 0.55, "myelin": 0.5, "state": "active" },
+    { "a": "classic:spintop", "b": "classic:pinball", "strength": 0.4, "myelin": 0.4, "state": "active" },
+    { "a": "classic:mini4wd", "b": "classic:grandprix", "strength": 0.65, "myelin": 0.6, "state": "active" },
+    { "a": "classic:mini4wd", "b": "classic:battlecity", "strength": 0.45, "myelin": 0.4, "state": "active" },
+    { "a": "classic:rubberband", "b": "classic:hopscotch", "strength": 0.6, "myelin": 0.55, "state": "active" },
+    { "a": "classic:rubberband", "b": "classic:circus", "strength": 0.4, "myelin": 0.4, "state": "active" },
+    { "a": "classic:slingshot", "b": "classic:contra", "strength": 0.45, "myelin": 0.4, "state": "active" },
+    { "a": "classic:slingshot", "b": "classic:balloon", "strength": 0.5, "myelin": 0.45, "state": "active" },
+    { "a": "classic:statue", "b": "classic:hopscotch", "strength": 0.5, "myelin": 0.45, "state": "active" },
+    { "a": "classic:statue", "b": "classic:rubberband", "strength": 0.5, "myelin": 0.45, "state": "active" },
+    { "a": "classic:statue", "b": "classic:antarctica", "strength": 0.4, "myelin": 0.4, "state": "active" }
+  ]
+}

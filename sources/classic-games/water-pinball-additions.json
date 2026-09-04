@@ -1,0 +1,51 @@
+{
+  "neurons": [
+    {
+      "id": "classic:waterring",
+      "label": "水压套圈水机",
+      "group": "经典",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "水压套圈",
+        "水机",
+        "按键喷水",
+        "浮力上浮",
+        "计时套中",
+        "竖针",
+        "手眼协调",
+        "实体玩具"
+      ],
+      "maker": "多美(TOMY)/通用水机",
+      "vendorType": "generic"
+    },
+    {
+      "id": "classic:pinball3d",
+      "label": "三维弹球·太空弹珠台",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "三维弹球",
+        "太空弹珠台",
+        "挡板",
+        "弹簧发射",
+        "撞柱缓冲器",
+        "坡道",
+        "任务军衔进阶",
+        "重力井"
+      ],
+      "maker": "微软(Microsoft)/Maxis",
+      "vendorType": "third"
+    }
+  ],
+  "synapses": [
+    { "a": "classic:waterring", "b": "classic:ringtoss", "strength": 0.6, "myelin": 0.55, "state": "active" },
+    { "a": "classic:waterring", "b": "classic:pinball", "strength": 0.4, "myelin": 0.4, "state": "active" },
+    { "a": "classic:waterring", "b": "classic:balloon", "strength": 0.4, "myelin": 0.4, "state": "active" },
+    { "a": "classic:pinball3d", "b": "classic:pinball", "strength": 0.7, "myelin": 0.6, "state": "active" },
+    { "a": "classic:pinball3d", "b": "classic:breakout", "strength": 0.5, "myelin": 0.45, "state": "active" }
+  ]
+}

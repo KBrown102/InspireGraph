@@ -1,0 +1,10 @@
+{
+  "neurons": [
+    { "id": "hot:example", "label": "示例热点词", "group": "热点", "weight": 0.6, "freq": 1, "lastSeen": 0, "kw": ["关键词1", "关键词2"] }
+  ],
+  "synapses": [
+    { "a": "hot:example", "b": "hot:merge", "strength": 0.5, "myelin": 0.5, "state": "weakened" }
+  ],
+  "regions": { "热点": "#ffb347" },
+  "meta": {}
+}

@@ -1,0 +1,1850 @@
+{
+  "neurons": [
+    {
+      "id": "classic:lianliankan",
+      "label": "连连看",
+      "group": "经典",
+      "weight": 0.7,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "连连看",
+        "配对",
+        "消除",
+        "图案"
+      ],
+      "maker": "通用/机制",
+      "vendorType": "generic"
+    },
+    {
+      "id": "classic:snake",
+      "label": "贪吃蛇",
+      "group": "经典",
+      "weight": 0.7,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "贪吃蛇",
+        "成长",
+        "路径",
+        "越长越难"
+      ],
+      "maker": "通用/机制",
+      "vendorType": "generic"
+    },
+    {
+      "id": "classic:gomoku",
+      "label": "五子棋",
+      "group": "经典",
+      "weight": 0.65,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "五子棋",
+        "连珠",
+        "棋盘",
+        "对弈"
+      ],
+      "maker": "传统棋类",
+      "vendorType": "generic"
+    },
+    {
+      "id": "classic:checkers",
+      "label": "跳棋",
+      "group": "经典",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "跳棋",
+        "跳跃",
+        "棋盘",
+        "路线规划"
+      ],
+      "maker": "传统棋类",
+      "vendorType": "generic"
+    },
+    {
+      "id": "classic:make24",
+      "label": "计算24",
+      "group": "经典",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "计算24",
+        "算24点",
+        "扑克",
+        "四则运算"
+      ],
+      "maker": "通用/机制",
+      "vendorType": "generic"
+    },
+    {
+      "id": "classic:tetris",
+      "label": "俄罗斯方块",
+      "group": "经典",
+      "weight": 0.75,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "俄罗斯方块",
+        "下落",
+        "消行",
+        "堆叠"
+      ],
+      "maker": "通用/机制",
+      "vendorType": "generic"
+    },
+    {
+      "id": "classic:sudoku",
+      "label": "数独",
+      "group": "经典",
+      "weight": 0.65,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "数独",
+        "九宫格",
+        "数字逻辑",
+        "推理"
+      ],
+      "maker": "通用/机制",
+      "vendorType": "generic"
+    },
+    {
+      "id": "classic:cutrope",
+      "label": "割绳子",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "割绳子",
+        "物理",
+        "剪切",
+        "摆动"
+      ],
+      "maker": "通用/机制",
+      "vendorType": "generic"
+    },
+    {
+      "id": "classic:doushou",
+      "label": "斗兽棋",
+      "group": "经典",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "斗兽棋",
+        "动物棋",
+        "克制链",
+        "大吃小"
+      ],
+      "maker": "传统棋类",
+      "vendorType": "generic"
+    },
+    {
+      "id": "classic:junqi",
+      "label": "军棋",
+      "group": "经典",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "军棋",
+        "军旗",
+        "暗棋",
+        "猜子"
+      ],
+      "maker": "传统棋类",
+      "vendorType": "generic"
+    },
+    {
+      "id": "classic:bubble",
+      "label": "泡泡龙",
+      "group": "经典",
+      "weight": 0.65,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "泡泡龙",
+        "发射",
+        "同色消除",
+        "反弹瞄准"
+      ],
+      "maker": "太东(Taito)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:spotdiff",
+      "label": "找不同",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "找不同",
+        "观察",
+        "细节",
+        "两图对比"
+      ],
+      "maker": "通用/机制",
+      "vendorType": "generic"
+    },
+    {
+      "id": "classic:rubik",
+      "label": "魔方",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "魔方",
+        "还原",
+        "旋转",
+        "空间思维"
+      ],
+      "maker": "传统实物",
+      "vendorType": "generic"
+    },
+    {
+      "id": "classic:balloon",
+      "label": "打气球",
+      "group": "经典",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "打气球",
+        "飞镖",
+        "地摊",
+        "爆裂快感"
+      ],
+      "maker": "地摊/通用",
+      "vendorType": "generic"
+    },
+    {
+      "id": "classic:ringtoss",
+      "label": "套圈",
+      "group": "经典",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "套圈",
+        "投掷",
+        "地摊",
+        "夜市"
+      ],
+      "maker": "地摊/通用",
+      "vendorType": "generic"
+    },
+    {
+      "id": "classic:huarong",
+      "label": "华容道",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "华容道",
+        "滑块",
+        "腾挪",
+        "最少步数"
+      ],
+      "maker": "传统玩法",
+      "vendorType": "generic"
+    },
+    {
+      "id": "classic:tangram",
+      "label": "七巧板",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "七巧板",
+        "拼图",
+        "几何",
+        "拼形"
+      ],
+      "maker": "传统玩法",
+      "vendorType": "generic"
+    },
+    {
+      "id": "classic:sokoban",
+      "label": "推箱子",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "推箱子",
+        "仓库番",
+        "步数规划",
+        "死角"
+      ],
+      "maker": "Thinking Rabbit",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:memory",
+      "label": "记忆翻牌",
+      "group": "经典",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "记忆翻牌",
+        "翻牌配对",
+        "记忆力",
+        "卡片"
+      ],
+      "maker": "通用/机制",
+      "vendorType": "generic"
+    },
+    {
+      "id": "classic:hopscotch",
+      "label": "跳房子",
+      "group": "经典",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "跳房子",
+        "格子",
+        "童年",
+        "地摊"
+      ],
+      "maker": "传统玩法",
+      "vendorType": "generic"
+    },
+    {
+      "id": "classic:pacman",
+      "label": "吃豆人",
+      "group": "经典",
+      "weight": 0.7,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "吃豆人",
+        "迷宫",
+        "追逐",
+        "躲避幽灵"
+      ],
+      "maker": "南梦宫(Namco)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:galaxian",
+      "label": "小蜜蜂",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "小蜜蜂",
+        "射击",
+        "街机",
+        "弹幕"
+      ],
+      "maker": "南梦宫(Namco)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:invaders",
+      "label": "太空侵略者",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "太空侵略者",
+        "幻视入侵",
+        "外星人",
+        "阵列射击"
+      ],
+      "maker": "太东(Taito)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:match3",
+      "label": "消消乐",
+      "group": "经典",
+      "weight": 0.75,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "消消乐",
+        "三消",
+        "交换",
+        "连锁"
+      ],
+      "maker": "通用/机制",
+      "vendorType": "generic"
+    },
+    {
+      "id": "classic:oneline",
+      "label": "一笔连线",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "一笔连线",
+        "一笔画",
+        "路径",
+        "不重复"
+      ],
+      "maker": "通用/机制",
+      "vendorType": "generic"
+    },
+    {
+      "id": "classic:pinball",
+      "label": "弹球",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "弹球",
+        "弹珠台",
+        "挡板",
+        "物理反弹"
+      ],
+      "maker": "通用/机制",
+      "vendorType": "generic"
+    },
+    {
+      "id": "classic:breakout",
+      "label": "打砖块",
+      "group": "经典",
+      "weight": 0.7,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "打砖块",
+        "反弹",
+        "砖墙",
+        "挡板接球"
+      ],
+      "maker": "雅达利(Atari)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:loderunner",
+      "label": "淘金者",
+      "group": "经典",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "淘金者",
+        "挖坑",
+        "金块",
+        "梯子攀爬"
+      ],
+      "maker": "哈德逊(Hudson)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:bomberman",
+      "label": "炸弹人",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "炸弹人",
+        "炸弹",
+        "十字爆炸",
+        "迷宫走位"
+      ],
+      "maker": "哈德逊(Hudson)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:battlecity",
+      "label": "坦克大战",
+      "group": "经典",
+      "weight": 0.65,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "坦克大战",
+        "护基地",
+        "FC",
+        "双人合作"
+      ],
+      "maker": "南梦宫(Namco)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:contra",
+      "label": "魂斗罗",
+      "group": "经典",
+      "weight": 0.65,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "魂斗罗",
+        "横版射击",
+        "30条命",
+        "FC"
+      ],
+      "maker": "科乐美(Konami)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:mario",
+      "label": "超级马里奥",
+      "group": "经典",
+      "weight": 0.75,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "超级马里奥",
+        "平台跳跃",
+        "关卡设计",
+        "金币"
+      ],
+      "maker": "任天堂(Nintendo)",
+      "vendorType": "first"
+    },
+    {
+      "id": "classic:adventure",
+      "label": "冒险岛",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "冒险岛",
+        "横版闯关",
+        "滑板",
+        "水果"
+      ],
+      "maker": "哈德逊(Hudson)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:solitaire",
+      "label": "纸牌",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "纸牌",
+        "接龙",
+        "蜘蛛纸牌",
+        "排序"
+      ],
+      "maker": "通用/机制",
+      "vendorType": "generic"
+    },
+    {
+      "id": "classic:jigsaw",
+      "label": "拼图",
+      "group": "经典",
+      "weight": 0.65,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "拼图",
+        "碎片",
+        "复原画面",
+        "边角策略"
+      ],
+      "maker": "通用/机制",
+      "vendorType": "generic"
+    },
+    {
+      "id": "classic:zelda",
+      "label": "塞尔达传说",
+      "group": "经典",
+      "weight": 0.75,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "塞尔达传说",
+        "动作冒险",
+        "解谜",
+        "开放世界雏形",
+        "电池存档",
+        "非线性"
+      ],
+      "maker": "任天堂(Nintendo)",
+      "vendorType": "first"
+    },
+    {
+      "id": "classic:ninja_gaiden",
+      "label": "忍者龙剑传",
+      "group": "经典",
+      "weight": 0.7,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "忍者龙剑传",
+        "横版动作",
+        "过场动画",
+        "高难度",
+        "连招"
+      ],
+      "maker": "特库摩(Tecmo)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:double_dragon",
+      "label": "双截龙",
+      "group": "经典",
+      "weight": 0.7,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "双截龙",
+        "清版格斗",
+        "近身格斗",
+        "等级解锁招式",
+        "英雄救美"
+      ],
+      "maker": "テクノス(Technos)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:snowbros",
+      "label": "雪人兄弟",
+      "group": "经典",
+      "weight": 0.65,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "雪人兄弟",
+        "冻结成球",
+        "推球连锁",
+        "限时清场",
+        "双人协作"
+      ],
+      "maker": "东普(Toaplan)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:chipndale",
+      "label": "松鼠大作战",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "松鼠大作战",
+        "双人协作",
+        "互扔队友",
+        "卡通平台",
+        "迪士尼"
+      ],
+      "maker": "卡普空(Capcom)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:kunio",
+      "label": "热血系列",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "热血系列",
+        "无厘头体育",
+        "搞笑格斗",
+        "趣味竞技"
+      ],
+      "maker": "テクノス(Technos)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:circus",
+      "label": "马戏团",
+      "group": "经典",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "马戏团",
+        "敏捷跳跃",
+        "火圈",
+        "走钢丝",
+        "节奏"
+      ],
+      "maker": "科乐美(Konami)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:antarctica",
+      "label": "南极大冒险",
+      "group": "经典",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "南极大冒险",
+        "跑酷",
+        "限时躲避",
+        "时间压力",
+        "小企鹅"
+      ],
+      "maker": "哈德逊(Hudson)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:greenberet",
+      "label": "绿色兵团",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "绿色兵团",
+        "近战射击",
+        "潜入",
+        "高难度"
+      ],
+      "maker": "科乐美(Konami)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:jackal",
+      "label": "赤色要塞",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "赤色要塞",
+        "俯视角射击",
+        "吉普车",
+        "解救人质"
+      ],
+      "maker": "科乐美(Konami)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:salamander",
+      "label": "沙罗曼蛇",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "沙罗曼蛇",
+        "太空射击",
+        "飞行射击",
+        "生命系统",
+        "横纵卷轴"
+      ],
+      "maker": "科乐美(Konami)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:kungfu",
+      "label": "功夫",
+      "group": "经典",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "功夫",
+        "格斗雏形",
+        "拳脚跳",
+        "关卡递进",
+        "李小龙"
+      ],
+      "maker": "科乐美(Konami)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:sandaimuji",
+      "label": "三目童子",
+      "group": "经典",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "三目童子",
+        "漫画改编",
+        "金币商店",
+        "创意道具"
+      ],
+      "maker": "太东(Taito)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:drman",
+      "label": "马里奥医生",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "马里奥医生",
+        "药品消除",
+        "同色下落",
+        "益智"
+      ],
+      "maker": "任天堂(Nintendo)",
+      "vendorType": "first"
+    },
+    {
+      "id": "classic:dragonquest",
+      "label": "勇者斗恶龙",
+      "group": "经典",
+      "weight": 0.75,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "勇者斗恶龙",
+        "日式RPG",
+        "回合制",
+        "职业转职",
+        "探索成长"
+      ],
+      "maker": "艾尼克斯(Enix)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:finalfantasy",
+      "label": "最终幻想",
+      "group": "经典",
+      "weight": 0.75,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "最终幻想",
+        "JRPG",
+        "职业系统",
+        "史诗叙事",
+        "回合制"
+      ],
+      "maker": "史克威尔(Square)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:metalmax",
+      "label": "重装机兵",
+      "group": "经典",
+      "weight": 0.65,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "重装机兵",
+        "末日RPG",
+        "战车改造",
+        "开放探索",
+        "多结局"
+      ],
+      "maker": "Crea-Tech/Data East",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:dynastywars",
+      "label": "吞食天地",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "吞食天地",
+        "三国RPG",
+        "策略指令",
+        "部队战术"
+      ],
+      "maker": "卡普空(Capcom)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:chikyuu",
+      "label": "霸王的大陆",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "霸王的大陆",
+        "三国策略",
+        "攻城略地",
+        "武将收服"
+      ],
+      "maker": "南梦宫(Namco)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:captaintsubasa",
+      "label": "天使之翼2",
+      "group": "经典",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "天使之翼",
+        "足球动漫",
+        "指令对战",
+        "必杀射门"
+      ],
+      "maker": "特库摩(Tecmo)",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:grandprix",
+      "label": "大赛车",
+      "group": "经典",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "大赛车",
+        "俯视竞速",
+        "变道超车",
+        "燃料管理"
+      ],
+      "maker": "任天堂(Nintendo)",
+      "vendorType": "first"
+    },
+    {
+      "id": "classic:waterring",
+      "label": "水压套圈水机",
+      "group": "经典",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "水压套圈",
+        "水机",
+        "按键喷水",
+        "浮力上浮",
+        "计时套中",
+        "竖针",
+        "手眼协调",
+        "实体玩具"
+      ],
+      "maker": "多美(TOMY)/通用水机",
+      "vendorType": "generic"
+    },
+    {
+      "id": "classic:pinball3d",
+      "label": "三维弹球·太空弹珠台",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "三维弹球",
+        "太空弹珠台",
+        "挡板",
+        "弹簧发射",
+        "撞柱缓冲器",
+        "坡道",
+        "任务军衔进阶",
+        "重力井"
+      ],
+      "maker": "微软(Microsoft)/Maxis",
+      "vendorType": "third"
+    },
+    {
+      "id": "classic:marble",
+      "label": "玻璃球",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "玻璃球",
+        "弹珠",
+        "拇指弹射",
+        "进洞得分",
+        "撞球赢子",
+        "手眼精准",
+        "实体博弈"
+      ],
+      "maker": "民间传统",
+      "vendorType": "folk",
+      "medium": "实体"
+    },
+    {
+      "id": "classic:cardslap",
+      "label": "拍卡片",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "拍卡片",
+        "拍画片",
+        "掌风翻面",
+        "空气压力",
+        "手技",
+        "赢取卡片",
+        "童年博弈"
+      ],
+      "maker": "民间传统",
+      "vendorType": "folk",
+      "medium": "实体"
+    },
+    {
+      "id": "classic:spintop",
+      "label": "陀螺",
+      "group": "经典",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "陀螺",
+        "抽陀螺",
+        "旋转对战",
+        "撞击出界",
+        "持久旋转",
+        "实体玩具"
+      ],
+      "maker": "民间传统",
+      "vendorType": "folk",
+      "medium": "实体"
+    },
+    {
+      "id": "classic:mini4wd",
+      "label": "四驱车",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "四驱车",
+        "迷你四驱",
+        "零件拼装",
+        "改装竞速",
+        "赛道对决",
+        "DIY战车"
+      ],
+      "maker": "田宫(Tamiya)·实体玩具",
+      "vendorType": "folk",
+      "medium": "实体"
+    },
+    {
+      "id": "classic:rubberband",
+      "label": "跳皮筋",
+      "group": "经典",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "跳皮筋",
+        "皮筋",
+        "跳跃节奏",
+        "儿歌口令",
+        "柔韧",
+        "集体游戏"
+      ],
+      "maker": "民间传统",
+      "vendorType": "folk",
+      "medium": "实体"
+    },
+    {
+      "id": "classic:slingshot",
+      "label": "弹弓打瓶子",
+      "group": "经典",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "弹弓",
+        "打瓶子",
+        "投射命中",
+        "手眼精准",
+        "物理抛物线",
+        "击破快感"
+      ],
+      "maker": "民间传统",
+      "vendorType": "folk",
+      "medium": "实体"
+    },
+    {
+      "id": "classic:statue",
+      "label": "123木头人",
+      "group": "经典",
+      "weight": 0.5,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "123木头人",
+        "木头人",
+        "动静控制",
+        "反应力",
+        "静止躲动",
+        "集体游戏",
+        "口令"
+      ],
+      "maker": "民间传统",
+      "vendorType": "folk",
+      "medium": "实体"
+    },
+    {
+      "id": "classic:survivor",
+      "label": "幸存者like",
+      "group": "经典",
+      "weight": 0.72,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": ["幸存者", "吸血鬼幸存者", "survivor", "割草", "一大片", "自动攻击", "刷怪", "肉鸽"],
+      "maker": "现代独立",
+      "vendorType": "indie",
+      "medium": "数字"
+    },
+    {
+      "id": "classic:wuxia",
+      "label": "武侠RPG",
+      "group": "经典",
+      "weight": 0.7,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": ["武侠", "江湖", "门派", "内功", "轻功", "侠客", "古风RPG"],
+      "maker": "国产",
+      "vendorType": "domestic",
+      "medium": "数字"
+    },
+    {
+      "id": "classic:roguelike",
+      "label": "Roguelike",
+      "group": "经典",
+      "weight": 0.7,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": ["roguelike", "随机生成", "永久死亡", "地牢", "肉鸽", "Random", "重开"],
+      "maker": "现代独立",
+      "vendorType": "indie",
+      "medium": "数字"
+    },
+    {
+      "id": "classic:hide_seek",
+      "label": "捉迷藏",
+      "group": "经典",
+      "weight": 0.6,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "捉迷藏",
+        "躲猫猫",
+        "藏找",
+        "童年",
+        "回忆",
+        "集体游戏",
+        "动静"
+      ],
+      "maker": "民间传统",
+      "vendorType": "folk",
+      "medium": "实体"
+    },
+    {
+      "id": "classic:sandbag",
+      "label": "丢沙包",
+      "group": "经典",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "丢沙包",
+        "沙包",
+        "躲避",
+        "童年",
+        "回忆",
+        "集体游戏",
+        "反应"
+      ],
+      "maker": "民间传统",
+      "vendorType": "folk",
+      "medium": "实体"
+    },
+    {
+      "id": "classic:eagle_chick",
+      "label": "老鹰捉小鸡",
+      "group": "经典",
+      "weight": 0.55,
+      "freq": 1,
+      "lastSeen": 0,
+      "kw": [
+        "老鹰捉小鸡",
+        "母鸡护雏",
+        "童年",
+        "回忆",
+        "集体游戏",
+        "追逐"
+      ],
+      "maker": "民间传统",
+      "vendorType": "folk",
+      "medium": "实体"
+    }
+  ],
+  "synapses": [
+    {
+      "a": "classic:lianliankan",
+      "b": "classic:spotdiff",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "classic:lianliankan",
+      "b": "classic:memory",
+      "strength": 0.55,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "classic:memory",
+      "b": "classic:spotdiff",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:gomoku",
+      "b": "classic:checkers",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "classic:gomoku",
+      "b": "classic:junqi",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "classic:junqi",
+      "b": "classic:doushou",
+      "strength": 0.55,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "classic:sudoku",
+      "b": "classic:make24",
+      "strength": 0.55,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "classic:tetris",
+      "b": "classic:bubble",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "classic:tetris",
+      "b": "classic:snake",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "classic:rubik",
+      "b": "classic:huarong",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "classic:huarong",
+      "b": "classic:sokoban",
+      "strength": 0.55,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "classic:huarong",
+      "b": "classic:tangram",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:balloon",
+      "b": "classic:ringtoss",
+      "strength": 0.6,
+      "myelin": 0.55,
+      "state": "active"
+    },
+    {
+      "a": "classic:ringtoss",
+      "b": "classic:hopscotch",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:cutrope",
+      "b": "classic:bubble",
+      "strength": 0.35,
+      "myelin": 0.35,
+      "state": "weakened"
+    },
+    {
+      "a": "classic:galaxian",
+      "b": "classic:invaders",
+      "strength": 0.65,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "classic:invaders",
+      "b": "classic:battlecity",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "classic:battlecity",
+      "b": "classic:bomberman",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "classic:bomberman",
+      "b": "classic:pacman",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "classic:pacman",
+      "b": "classic:snake",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:contra",
+      "b": "classic:battlecity",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "classic:contra",
+      "b": "classic:mario",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "classic:mario",
+      "b": "classic:adventure",
+      "strength": 0.6,
+      "myelin": 0.55,
+      "state": "active"
+    },
+    {
+      "a": "classic:loderunner",
+      "b": "classic:sokoban",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:loderunner",
+      "b": "classic:mario",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "classic:match3",
+      "b": "classic:lianliankan",
+      "strength": 0.6,
+      "myelin": 0.55,
+      "state": "active"
+    },
+    {
+      "a": "classic:match3",
+      "b": "classic:tetris",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "classic:match3",
+      "b": "classic:bubble",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "classic:breakout",
+      "b": "classic:pinball",
+      "strength": 0.6,
+      "myelin": 0.55,
+      "state": "active"
+    },
+    {
+      "a": "classic:breakout",
+      "b": "classic:bubble",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:pinball",
+      "b": "classic:balloon",
+      "strength": 0.35,
+      "myelin": 0.35,
+      "state": "weakened"
+    },
+    {
+      "a": "classic:oneline",
+      "b": "classic:lianliankan",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:oneline",
+      "b": "classic:sudoku",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "classic:jigsaw",
+      "b": "classic:tangram",
+      "strength": 0.6,
+      "myelin": 0.55,
+      "state": "active"
+    },
+    {
+      "a": "classic:jigsaw",
+      "b": "classic:spotdiff",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "weakened"
+    },
+    {
+      "a": "classic:solitaire",
+      "b": "classic:memory",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "classic:solitaire",
+      "b": "classic:make24",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:zelda",
+      "b": "classic:ninja_gaiden",
+      "strength": 0.55,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "classic:zelda",
+      "b": "classic:dragonquest",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:ninja_gaiden",
+      "b": "classic:mario",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "classic:ninja_gaiden",
+      "b": "classic:greenberet",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:double_dragon",
+      "b": "classic:kunio",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "classic:double_dragon",
+      "b": "classic:kungfu",
+      "strength": 0.55,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "classic:double_dragon",
+      "b": "classic:snowbros",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "classic:snowbros",
+      "b": "classic:chipndale",
+      "strength": 0.55,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "classic:chipndale",
+      "b": "classic:kunio",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:snowbros",
+      "b": "classic:bomberman",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:circus",
+      "b": "classic:antarctica",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "classic:circus",
+      "b": "classic:mario",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:antarctica",
+      "b": "classic:adventure",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "classic:greenberet",
+      "b": "classic:contra",
+      "strength": 0.55,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "classic:greenberet",
+      "b": "classic:jackal",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "classic:jackal",
+      "b": "classic:battlecity",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "classic:jackal",
+      "b": "classic:salamander",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:salamander",
+      "b": "classic:contra",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "classic:salamander",
+      "b": "classic:invaders",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:sandaimuji",
+      "b": "classic:mario",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:drman",
+      "b": "classic:tetris",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "classic:drman",
+      "b": "classic:match3",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:dragonquest",
+      "b": "classic:finalfantasy",
+      "strength": 0.65,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "classic:dragonquest",
+      "b": "classic:dynastywars",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "classic:finalfantasy",
+      "b": "classic:metalmax",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "classic:metalmax",
+      "b": "classic:dynastywars",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:dynastywars",
+      "b": "classic:chikyuu",
+      "strength": 0.6,
+      "myelin": 0.55,
+      "state": "active"
+    },
+    {
+      "a": "classic:chikyuu",
+      "b": "classic:battlecity",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:captaintsubasa",
+      "b": "classic:kunio",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "classic:grandprix",
+      "b": "classic:antarctica",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:grandprix",
+      "b": "classic:battlecity",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:waterring",
+      "b": "classic:ringtoss",
+      "strength": 0.6,
+      "myelin": 0.55,
+      "state": "active"
+    },
+    {
+      "a": "classic:waterring",
+      "b": "classic:pinball",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:waterring",
+      "b": "classic:balloon",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:pinball3d",
+      "b": "classic:pinball",
+      "strength": 0.7,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "classic:pinball3d",
+      "b": "classic:breakout",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "classic:marble",
+      "b": "classic:ringtoss",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "classic:marble",
+      "b": "classic:pinball",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:marble",
+      "b": "classic:slingshot",
+      "strength": 0.55,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "classic:marble",
+      "b": "classic:waterring",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:cardslap",
+      "b": "classic:memory",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:cardslap",
+      "b": "classic:marble",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "classic:cardslap",
+      "b": "classic:balloon",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:spintop",
+      "b": "classic:marble",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "classic:spintop",
+      "b": "classic:mini4wd",
+      "strength": 0.55,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "classic:spintop",
+      "b": "classic:pinball",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:mini4wd",
+      "b": "classic:grandprix",
+      "strength": 0.65,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "classic:mini4wd",
+      "b": "classic:battlecity",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:rubberband",
+      "b": "classic:hopscotch",
+      "strength": 0.6,
+      "myelin": 0.55,
+      "state": "active"
+    },
+    {
+      "a": "classic:rubberband",
+      "b": "classic:circus",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:slingshot",
+      "b": "classic:contra",
+      "strength": 0.45,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "classic:slingshot",
+      "b": "classic:balloon",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "classic:statue",
+      "b": "classic:hopscotch",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "classic:statue",
+      "b": "classic:rubberband",
+      "strength": 0.5,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "classic:statue",
+      "b": "classic:antarctica",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    { "a": "classic:hide_seek", "b": "classic:statue", "strength": 0.6, "myelin": 0.55, "state": "active" },
+    { "a": "classic:hide_seek", "b": "classic:hopscotch", "strength": 0.5, "myelin": 0.45, "state": "active" },
+    { "a": "classic:eagle_chick", "b": "classic:hide_seek", "strength": 0.55, "myelin": 0.5, "state": "active" },
+    { "a": "classic:sandbag", "b": "classic:rubberband", "strength": 0.5, "myelin": 0.45, "state": "active" },
+    { "a": "classic:sandbag", "b": "classic:statue", "strength": 0.45, "myelin": 0.4, "state": "active" },
+    { "a": "classic:hide_seek", "b": "classic:rubberband", "strength": 0.45, "myelin": 0.4, "state": "active" },
+    { "a": "classic:survivor", "b": "classic:wuxia", "strength": 0.55, "myelin": 0.5, "state": "active" },
+    { "a": "classic:survivor", "b": "classic:roguelike", "strength": 0.7, "myelin": 0.65, "state": "active" },
+    { "a": "classic:wuxia", "b": "classic:roguelike", "strength": 0.55, "myelin": 0.5, "state": "active" },
+    { "a": "classic:survivor", "b": "taste:color_green", "strength": 0.3, "myelin": 0.3, "state": "active" },
+    { "a": "classic:roguelike", "b": "taste:hd2d", "strength": 0.5, "myelin": 0.5, "state": "active" },
+    { "a": "classic:wuxia", "b": "taste:color_qunqing", "strength": 0.5, "myelin": 0.5, "state": "active" }
+  ],
+  "regions": {
+    "经典": "#e8a87c"
+  },
+  "meta": {
+    "source": "classic-games",
+    "note": "经典益智/桌游/地摊/街机FC玩法基因库。第一批 2026-07-29 用户点名 15 + 补 5；第二批同日追加街机FC 15 个（吃豆人/小蜜蜂/太空侵略者[用户称'幻视入侵']/消消乐/一笔连线/弹球/打砖块/淘金者/炸弹人/坦克大战/魂斗罗/马里奥/冒险岛/纸牌/拼图），推箱子华容道已在第一批去重; 第三批 2026-08-01 追加 FC 玩法 21 个(塞尔达/忍者龙剑传/双截龙/雪人兄弟/松鼠大作战/热血/马戏团/南极大冒险/绿色兵团/赤色要塞/沙罗曼蛇/功夫/三目童子/马里奥医生/勇者斗恶龙/最终幻想/重装机兵/吞食天地/霸王的大陆/天使之翼2/大赛车); 第四批 2026-08-02 追加 水压套圈水机 + 三维弹球·太空弹珠台(用户点名的水机套圈与3D弹球玩法); 第五批 2026-08-02 追加 7 个实体童年玩法(玻璃球/拍卡片/陀螺/四驱车/跳皮筋/弹弓打瓶子/123木头人)，含 medium=实体 维度(跳房子已存在故跳过)",
+    "vendorTag": "2026-08-01 追加 maker(厂商) + vendorType(first/third/generic) 字段，支持按任天堂第一方/第三方/通用机制筛选。"
+  }
+}

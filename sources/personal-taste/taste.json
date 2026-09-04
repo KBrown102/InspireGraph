@@ -1,0 +1,2124 @@
+{
+  "neurons": [
+    {
+      "id": "taste:aesthetic",
+      "label": "审美",
+      "group": "审美",
+      "weight": 0.85,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "审美",
+        "调性",
+        "画风",
+        "视觉调性",
+        "美学"
+      ]
+    },
+    {
+      "id": "taste:monochrome",
+      "label": "单色叙事",
+      "group": "审美",
+      "weight": 0.92,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "单色",
+        "统一主色",
+        "色块",
+        "同色系",
+        "绿调",
+        "蓝调",
+        "粉调",
+        "色块叙事",
+        "那爱绿"
+      ]
+    },
+    {
+      "id": "taste:impressionist",
+      "label": "印象派后期",
+      "group": "审美",
+      "weight": 0.88,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "印象派",
+        "莫奈",
+        "油画",
+        "笔触",
+        "浮光",
+        "柔光",
+        "梦境",
+        "油画滤镜"
+      ]
+    },
+    {
+      "id": "taste:animeface",
+      "label": "二次元化",
+      "group": "审美",
+      "weight": 0.86,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "二次元",
+        "漫画",
+        "假睫毛",
+        "夸张腮红",
+        "美瞳",
+        "动漫化",
+        "cosplay"
+      ]
+    },
+    {
+      "id": "taste:surreal",
+      "label": "超现实日常",
+      "group": "审美",
+      "weight": 0.88,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "超现实",
+        "日常物品入画",
+        "反常",
+        "诗意日常",
+        "钢琴放水面",
+        "漂浮"
+      ]
+    },
+    {
+      "id": "taste:contrast",
+      "label": "反差萌",
+      "group": "审美",
+      "weight": 0.84,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "反差萌",
+        "萌+刀",
+        "婴儿+血腥",
+        "可爱+危险",
+        "反差",
+        "冲突感",
+        "萌系道具"
+      ]
+    },
+    {
+      "id": "taste:reflective",
+      "label": "倒影写真",
+      "group": "审美",
+      "weight": 0.78,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "倒影",
+        "镜面",
+        "水洼",
+        "镜中",
+        "窗反射",
+        "水面"
+      ]
+    },
+    {
+      "id": "taste:sparkle",
+      "label": "闪耀特效",
+      "group": "审美",
+      "weight": 0.8,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "闪耀",
+        "星星",
+        "bling",
+        "水珠闪光",
+        "光斑",
+        "波光粼粼",
+        "anime sparkle"
+      ]
+    },
+    {
+      "id": "taste:container",
+      "label": "集装箱墙",
+      "group": "审美",
+      "weight": 0.85,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "集装箱",
+        "波纹铁皮",
+        "工业墙",
+        "绿色墙体",
+        "防腐木",
+        "粗粝背景"
+      ]
+    },
+    {
+      "id": "taste:sheetghost",
+      "label": "白床单幽灵",
+      "group": "审美",
+      "weight": 0.82,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "床单",
+        "幽灵",
+        "cos",
+        "手绘",
+        "腮红",
+        "鬼脸",
+        "白布覆盖"
+      ]
+    },
+    {
+      "id": "taste:astronaut",
+      "label": "宇航员人设",
+      "group": "审美",
+      "weight": 0.78,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "宇航员",
+        "航天服",
+        "逃离地球",
+        "头盔",
+        "太空人",
+        "银白"
+      ]
+    },
+    {
+      "id": "taste:vampire",
+      "label": "吸血鬼新娘",
+      "group": "审美",
+      "weight": 0.8,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "吸血鬼",
+        "新娘",
+        "白纱",
+        "尖锐牙",
+        "血色",
+        "哥特",
+        "cosplay 人设"
+      ]
+    },
+    {
+      "id": "taste:lolita",
+      "label": "洛丽塔少女",
+      "group": "审美",
+      "weight": 0.78,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "洛丽塔",
+        "蓬蓬裙",
+        "荷叶边",
+        "女仆",
+        "甜系",
+        "lo装"
+      ]
+    },
+    {
+      "id": "taste:prop",
+      "label": "诗意道具",
+      "group": "审美",
+      "weight": 0.85,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "道具",
+        "花束",
+        "报纸",
+        "留声机",
+        "灯笼",
+        "信件",
+        "老物件",
+        "复古物"
+      ]
+    },
+    {
+      "id": "taste:cosplay",
+      "label": "cos人设宇宙",
+      "group": "审美",
+      "weight": 0.84,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "cosplay",
+        "假发",
+        "角色扮演",
+        "二次元还原",
+        "异色头发",
+        "美瞳"
+      ]
+    },
+    {
+      "id": "taste:elements",
+      "label": "雾气粒子",
+      "group": "审美",
+      "weight": 0.75,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "雾气",
+        "粒子",
+        "尘埃",
+        "光斑",
+        "羽毛",
+        "花瓣",
+        "飘落"
+      ]
+    },
+    {
+      "id": "taste:shell",
+      "label": "脆弱外壳",
+      "group": "审美",
+      "weight": 0.75,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "玻璃",
+        "泡泡",
+        "透明伞",
+        "灯泡",
+        "易碎",
+        "脆弱美感",
+        "透明"
+      ]
+    },
+    {
+      "id": "taste:healing",
+      "label": "治愈底色",
+      "group": "审美",
+      "weight": 0.9,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "治愈",
+        "温柔",
+        "舒缓",
+        "轻声",
+        "不让刺痛",
+        "氛围",
+        "感情缓和"
+      ]
+    },
+    {
+      "id": "taste:girly",
+      "label": "少女心",
+      "group": "审美",
+      "weight": 0.85,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "少女",
+        "少女心",
+        "香香",
+        "蝴蝶结",
+        "泡泡袖",
+        "粉色",
+        "软妹"
+      ]
+    },
+    {
+      "id": "taste:escape",
+      "label": "逃离母题",
+      "group": "审美",
+      "weight": 0.78,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "逃离",
+        "逃",
+        "逃跑",
+        "出逃",
+        "流浪",
+        "睁眼",
+        "焦绿",
+        "焦虑"
+      ]
+    },
+    {
+      "id": "taste:natural",
+      "label": "自然野趣",
+      "group": "审美",
+      "weight": 0.78,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "野外",
+        "草地",
+        "树林",
+        "花海",
+        "溪流",
+        "野花",
+        "自然"
+      ]
+    },
+    {
+      "id": "taste:tailwind",
+      "label": "飘动飘逸",
+      "group": "审美",
+      "weight": 0.78,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "飘",
+        "纱",
+        "头纱",
+        "袖角",
+        "裙子",
+        "风向",
+        "飘逸",
+        "动势"
+      ]
+    },
+    {
+      "id": "taste:softlight",
+      "label": "柔光打光",
+      "group": "审美",
+      "weight": 0.82,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "柔光",
+        "散光",
+        "逆光",
+        "发光",
+        "黑柔",
+        "黑丁丁",
+        "黛黑柔光"
+      ]
+    },
+    {
+      "id": "taste:cine",
+      "label": "电影感构图",
+      "group": "审美",
+      "weight": 0.8,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "电影感",
+        "宽幅",
+        "逆光轮廓",
+        "留白",
+        "原营造",
+        "构图",
+        "框中框"
+      ]
+    },
+    {
+      "id": "taste:style_hiro",
+      "label": "HIROSTOPTIME 风",
+      "group": "审美",
+      "weight": 0.95,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "HIROSTOPTIME",
+        "居酱子爱拍照",
+        "那一抹绿",
+        "那爱绿",
+        "逃离焦绿",
+        "抖音尼脑子瓦特啦"
+      ]
+    },
+    {
+      "id": "taste:color_green",
+      "label": "那爱绿",
+      "group": "审美",
+      "weight": 0.9,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "绿",
+        "那爱绿",
+        "焦绿",
+        "集装箱绿",
+        "绿衣女",
+        "绿集装箱",
+        "乒灯绿"
+      ]
+    },
+    {
+      "id": "taste:color_pink",
+      "label": "梦幻粉",
+      "group": "审美",
+      "weight": 0.82,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "粉",
+        "梦幻粉",
+        "童話粉",
+        "樱花",
+        "公主粉",
+        "马尔济斯粉"
+      ]
+    },
+    {
+      "id": "taste:color_blue",
+      "label": "蓝调",
+      "group": "审美",
+      "weight": 0.84,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "蓝",
+        "蓝调",
+        "忪青",
+        "天蓝",
+        "婴儿蓝",
+        "雾霾蓝",
+        "深海蓝"
+      ]
+    },
+    {
+      "id": "taste:color_yellow",
+      "label": "芒果黄",
+      "group": "审美",
+      "weight": 0.8,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "黄",
+        "芒果黄",
+        "银杏黄",
+        "柠黄",
+        "凉亓黄",
+        "金黄"
+      ]
+    },
+    {
+      "id": "taste:color_red",
+      "label": "生命红",
+      "group": "审美",
+      "weight": 0.75,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "红",
+        "生命红",
+        "救生圈红",
+        "热粉红",
+        "黑红",
+        "西瓜红"
+      ]
+    },
+    {
+      "id": "taste:color_purple",
+      "label": "霜紫",
+      "group": "审美",
+      "weight": 0.74,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "紫",
+        "霜紫",
+        "葡萄紫",
+        "烬紫",
+        "冷淡紫"
+      ]
+    },
+    {
+      "id": "taste:color_white",
+      "label": "留白",
+      "group": "审美",
+      "weight": 0.84,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "白",
+        "留白",
+        "原营造白",
+        "婚纱白",
+        "鱼白",
+        "髙仕白"
+      ]
+    },
+    {
+      "id": "taste:style_water",
+      "label": "水元素主皆",
+      "group": "审美",
+      "weight": 0.78,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "水",
+        "水面",
+        "水池",
+        "倒影",
+        "游泳",
+        "冲浪",
+        "潜水",
+        "水洼"
+      ]
+    },
+    {
+      "id": "taste:style_grass",
+      "label": "草地系列",
+      "group": "审美",
+      "weight": 0.78,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "草地",
+        "绿草地",
+        "麦田",
+        "野花",
+        "原野",
+        "草原"
+      ]
+    },
+    {
+      "id": "taste:style_ginkgo",
+      "label": "银杏系列",
+      "group": "审美",
+      "weight": 0.8,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "银杏",
+        "银杏叶",
+        "金黄",
+        "落叶",
+        "秋天",
+        "金秋"
+      ]
+    },
+    {
+      "id": "taste:style_flower",
+      "label": "花海系列",
+      "group": "审美",
+      "weight": 0.8,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "花海",
+        "郁金香",
+        "花田",
+        "绣球",
+        "花束",
+        "鲜花"
+      ]
+    },
+    {
+      "id": "taste:style_pony",
+      "label": "小动物",
+      "group": "审美",
+      "weight": 0.72,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "小动物",
+        "兔子",
+        "猫",
+        "羊",
+        "玩偶",
+        "吉伊"
+      ]
+    },
+    {
+      "id": "taste:style_sign",
+      "label": "路牌母题",
+      "group": "审美",
+      "weight": 0.74,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "路牌",
+        "指示牌",
+        "路标",
+        "逃离指路",
+        "过绿爱情",
+        "焦绿加油站"
+      ]
+    },
+    {
+      "id": "taste:style_alien",
+      "label": "异𝖙人",
+      "group": "审美",
+      "weight": 0.72,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "异𝖙",
+        "超现实人",
+        "宇航员",
+        "未来人",
+        "维多利亚",
+        "鬼魂"
+      ]
+    },
+    {
+      "id": "taste:monet",
+      "label": "莫奈",
+      "group": "审美",
+      "weight": 0.8,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "莫奈",
+        "印象派",
+        "睡莲",
+        "浮光",
+        "点彩",
+        "户外光",
+        "色彩分割",
+        "吉维尼"
+      ]
+    },
+    {
+      "id": "taste:vangogh",
+      "label": "梵高",
+      "group": "审美",
+      "weight": 0.8,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "梵高",
+        "后印象",
+        "旋涡笔触",
+        "星月夜",
+        "厚涂",
+        "钴蓝",
+        "铬黄",
+        "情绪化",
+        "油画肌理"
+      ]
+    },
+    {
+      "id": "taste:qibaishi",
+      "label": "齐白石",
+      "group": "审美",
+      "weight": 0.78,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "齐白石",
+        "水墨写意",
+        "虾",
+        "贝叶草虫",
+        "文人画",
+        "寥寥数笔",
+        "国画"
+      ]
+    },
+    {
+      "id": "taste:ukiyoe",
+      "label": "浮世绘",
+      "group": "审美",
+      "weight": 0.76,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "浮世绘",
+        "葛饰北斋",
+        "富岳三十六景",
+        "平铺构图",
+        "轮廓线",
+        "木刻"
+      ]
+    },
+    {
+      "id": "taste:stickfigure",
+      "label": "简笔画色块",
+      "group": "审美",
+      "weight": 0.74,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "简笔画",
+        "涂鸦",
+        "色块",
+        "粗线条",
+        "扁平",
+        "蜡笔",
+        "儿童画"
+      ]
+    },
+    {
+      "id": "taste:color_sepia",
+      "label": "怀旧泛黄",
+      "group": "审美",
+      "weight": 0.78,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "怀旧泛黄",
+        "复古黄",
+        "老照片",
+        "sepia",
+        "做旧",
+        "泛黄",
+        "旧时光"
+      ]
+    },
+    {
+      "id": "taste:childhood",
+      "label": "童年回忆",
+      "group": "审美",
+      "weight": 0.88,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "童年回忆",
+        "童年",
+        "儿时",
+        "小时候",
+        "回忆",
+        "怀旧",
+        "弹珠",
+        "跳皮筋"
+      ]
+    },
+    {
+      "id": "taste:mow",
+      "label": "割草",
+      "group": "爽感",
+      "weight": 0.85,
+      "freq": 3,
+      "lastSeen": 0,
+      "kw": [
+        "割草",
+        "无双",
+        "清屏",
+        "扫荡",
+        "一大片",
+        "吸血鬼幸存者",
+        "幸存者like",
+        "以一敌百"
+      ]
+    },
+    {
+      "id": "taste:merge",
+      "label": "合成",
+      "group": "爽感",
+      "weight": 0.85,
+      "freq": 3,
+      "lastSeen": 0,
+      "kw": [
+        "合成",
+        "merge",
+        "二合一",
+        "升级合体",
+        "2048",
+        "大鱼吃小鱼",
+        "滚雪球"
+      ]
+    },
+    {
+      "id": "taste:collect",
+      "label": "收集",
+      "group": "爽感",
+      "weight": 0.85,
+      "freq": 3,
+      "lastSeen": 0,
+      "kw": [
+        "收集",
+        "集齐",
+        "图鉴",
+        "全收集",
+        "捡东西",
+        "收藏",
+        "达成"
+      ]
+    },
+    {
+      "id": "taste:gacha",
+      "label": "抽卡",
+      "group": "爽感",
+      "weight": 0.85,
+      "freq": 3,
+      "lastSeen": 0,
+      "kw": [
+        "抽卡",
+        "开箱",
+        "扭蛋",
+        "盲盒",
+        "随机奖励",
+        "稀有度",
+        "出金",
+        "开包"
+      ]
+    },
+    {
+      "id": "taste:color_tea",
+      "label": "茶红",
+      "group": "审美",
+      "weight": 0.82,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "茶红",
+        "东方红",
+        "茶文化",
+        "爱马仕橙对照",
+        "温润浓烈",
+        "含蓄美学"
+      ]
+    },
+    {
+      "id": "taste:color_taoyao",
+      "label": "桃夭",
+      "group": "审美",
+      "weight": 0.82,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "桃夭",
+        "桃花",
+        "诗经",
+        "马卡龙粉对照",
+        "少女出嫁",
+        "美满憧憬",
+        "娇羞"
+      ]
+    },
+    {
+      "id": "taste:color_tianshui",
+      "label": "天水碧",
+      "group": "审美",
+      "weight": 0.8,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "天水碧",
+        "天青",
+        "Tiffany蓝对照",
+        "自然恩赐",
+        "南唐",
+        "雨过天青",
+        "清透"
+      ]
+    },
+    {
+      "id": "taste:color_zhuyin",
+      "label": "朱殷",
+      "group": "审美",
+      "weight": 0.8,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "朱殷",
+        "深红",
+        "卡迪亚红对照",
+        "悲壮",
+        "赤诚",
+        "牺牲",
+        "酒渍"
+      ]
+    },
+    {
+      "id": "taste:color_qunqing",
+      "label": "群青",
+      "group": "审美",
+      "weight": 0.84,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "群青",
+        "神性蓝",
+        "克莱因蓝对照",
+        "雨过天青",
+        "莫高窟",
+        "千年不褪",
+        "信仰"
+      ]
+    },
+    {
+      "id": "taste:color_xuan",
+      "label": "玄色",
+      "group": "审美",
+      "weight": 0.82,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "玄色",
+        "极黑",
+        "香奈儿黑对照",
+        "天地玄黄",
+        "包容",
+        "天黑",
+        "混沌"
+      ]
+    },
+    {
+      "id": "taste:hd2d",
+      "label": "HD-2D 像素风",
+      "group": "审美",
+      "weight": 0.78,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "HD2D",
+        "歧路旅人",
+        "2.5D像素",
+        "像素光照",
+        "动态像素",
+        "像素风"
+      ]
+    },
+    {
+      "id": "taste:pixel_art",
+      "label": "像素美术",
+      "group": "审美",
+      "weight": 0.76,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "像素",
+        "像素风",
+        "retro",
+        "roguelike sprite",
+        "chunky blocky",
+        "16bit"
+      ]
+    },
+    {
+      "id": "taste:ai_fullstack",
+      "label": "AI 全流程开发",
+      "group": "开发",
+      "weight": 0.8,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "AI开发",
+        "全流程",
+        "独立游戏",
+        "单人开发",
+        "Agent",
+        "十几个模型"
+      ]
+    },
+    {
+      "id": "taste:four_a",
+      "label": "4A 新解",
+      "group": "开发",
+      "weight": 0.78,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "4A",
+        "Time",
+        "Effort",
+        "Patience",
+        "AI放大",
+        "时间努力耐心"
+      ]
+    },
+    {
+      "id": "taste:godoto",
+      "label": "Godot 引擎",
+      "group": "开发",
+      "weight": 0.74,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "Godot",
+        "2D",
+        "开源引擎",
+        "Node系统",
+        "Agent易接管",
+        "独立游戏首选"
+      ]
+    },
+    {
+      "id": "taste:spbd",
+      "label": "sPBD 物理模拟",
+      "group": "开发",
+      "weight": 0.76,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "sPBD",
+        "小步长",
+        "substep",
+        "位置动力学",
+        "布料模拟",
+        "软体",
+        "XPBD",
+        "物理引擎",
+        "PhysX",
+        "刚体堆叠"
+      ]
+    },
+    {
+      "id": "taste:liquid_glass",
+      "label": "液态玻璃UI",
+      "group": "审美",
+      "weight": 0.88,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "液态玻璃",
+        "liquid glass",
+        "折射",
+        "动态模糊",
+        "毛玻璃进阶",
+        "边缘高光",
+        "环境反光",
+        "连续圆角",
+        "通透材质",
+        "glassmorphism",
+        "UI现代感"
+      ]
+    },
+    {
+      "id": "taste:bloom",
+      "label": "辉光后期",
+      "group": "审美",
+      "weight": 0.8,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "辉光",
+        "bloom",
+        "泛光",
+        "发光",
+        "光晕",
+        "点亮",
+        "光污染美学",
+        "neon glow"
+      ]
+    },
+    {
+      "id": "taste:additive",
+      "label": "加色混合",
+      "group": "审美",
+      "weight": 0.74,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "加色混合",
+        "additive blending",
+        "叠加发光",
+        "屏幕混合",
+        "零依赖辉光",
+        "粒子发光"
+      ]
+    },
+    {
+      "id": "taste:nebula",
+      "label": "星云团观感",
+      "group": "审美",
+      "weight": 0.78,
+      "freq": 0,
+      "lastSeen": 0,
+      "kw": [
+        "星云团",
+        "成团发光",
+        "区域光晕",
+        "发光簇",
+        "诗云",
+        "星系",
+        "cosmos",
+        "星点簇"
+      ]
+    }
+  ],
+  "synapses": [
+    {
+      "a": "taste:style_hiro",
+      "b": "taste:monochrome",
+      "strength": 0.9,
+      "myelin": 0.9,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_hiro",
+      "b": "taste:impressionist",
+      "strength": 0.85,
+      "myelin": 0.85,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_hiro",
+      "b": "taste:surreal",
+      "strength": 0.8,
+      "myelin": 0.8,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_hiro",
+      "b": "taste:animeface",
+      "strength": 0.75,
+      "myelin": 0.75,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_hiro",
+      "b": "taste:healing",
+      "strength": 0.88,
+      "myelin": 0.88,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_hiro",
+      "b": "taste:color_green",
+      "strength": 0.95,
+      "myelin": 0.95,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_hiro",
+      "b": "taste:container",
+      "strength": 0.85,
+      "myelin": 0.85,
+      "state": "active"
+    },
+    {
+      "a": "taste:monochrome",
+      "b": "taste:color_green",
+      "strength": 0.95,
+      "myelin": 0.95,
+      "state": "active"
+    },
+    {
+      "a": "taste:monochrome",
+      "b": "taste:color_pink",
+      "strength": 0.8,
+      "myelin": 0.8,
+      "state": "active"
+    },
+    {
+      "a": "taste:monochrome",
+      "b": "taste:color_blue",
+      "strength": 0.85,
+      "myelin": 0.85,
+      "state": "active"
+    },
+    {
+      "a": "taste:monochrome",
+      "b": "taste:color_yellow",
+      "strength": 0.75,
+      "myelin": 0.75,
+      "state": "active"
+    },
+    {
+      "a": "taste:monochrome",
+      "b": "taste:color_purple",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:monochrome",
+      "b": "taste:color_white",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:monochrome",
+      "b": "taste:color_red",
+      "strength": 0.65,
+      "myelin": 0.65,
+      "state": "active"
+    },
+    {
+      "a": "taste:impressionist",
+      "b": "taste:softlight",
+      "strength": 0.85,
+      "myelin": 0.85,
+      "state": "active"
+    },
+    {
+      "a": "taste:impressionist",
+      "b": "taste:tailwind",
+      "strength": 0.75,
+      "myelin": 0.75,
+      "state": "active"
+    },
+    {
+      "a": "taste:impressionist",
+      "b": "taste:style_flower",
+      "strength": 0.75,
+      "myelin": 0.75,
+      "state": "active"
+    },
+    {
+      "a": "taste:surreal",
+      "b": "taste:astronaut",
+      "strength": 0.78,
+      "myelin": 0.78,
+      "state": "active"
+    },
+    {
+      "a": "taste:surreal",
+      "b": "taste:vampire",
+      "strength": 0.78,
+      "myelin": 0.78,
+      "state": "active"
+    },
+    {
+      "a": "taste:surreal",
+      "b": "taste:style_alien",
+      "strength": 0.78,
+      "myelin": 0.78,
+      "state": "active"
+    },
+    {
+      "a": "taste:surreal",
+      "b": "taste:prop",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:contrast",
+      "b": "taste:lolita",
+      "strength": 0.8,
+      "myelin": 0.8,
+      "state": "active"
+    },
+    {
+      "a": "taste:contrast",
+      "b": "taste:vampire",
+      "strength": 0.75,
+      "myelin": 0.75,
+      "state": "active"
+    },
+    {
+      "a": "taste:container",
+      "b": "taste:sheetghost",
+      "strength": 0.9,
+      "myelin": 0.9,
+      "state": "active"
+    },
+    {
+      "a": "taste:container",
+      "b": "taste:color_green",
+      "strength": 0.95,
+      "myelin": 0.95,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_water",
+      "b": "taste:reflective",
+      "strength": 0.8,
+      "myelin": 0.8,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_water",
+      "b": "taste:sparkle",
+      "strength": 0.85,
+      "myelin": 0.85,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_water",
+      "b": "taste:color_blue",
+      "strength": 0.88,
+      "myelin": 0.88,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_ginkgo",
+      "b": "taste:color_yellow",
+      "strength": 0.95,
+      "myelin": 0.95,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_ginkgo",
+      "b": "taste:tailwind",
+      "strength": 0.85,
+      "myelin": 0.85,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_grass",
+      "b": "taste:natural",
+      "strength": 0.9,
+      "myelin": 0.9,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_grass",
+      "b": "taste:color_green",
+      "strength": 0.85,
+      "myelin": 0.85,
+      "state": "active"
+    },
+    {
+      "a": "taste:escape",
+      "b": "taste:style_sign",
+      "strength": 0.9,
+      "myelin": 0.9,
+      "state": "active"
+    },
+    {
+      "a": "taste:escape",
+      "b": "taste:color_green",
+      "strength": 0.85,
+      "myelin": 0.85,
+      "state": "active"
+    },
+    {
+      "a": "taste:healing",
+      "b": "taste:girly",
+      "strength": 0.8,
+      "myelin": 0.8,
+      "state": "active"
+    },
+    {
+      "a": "taste:healing",
+      "b": "taste:softlight",
+      "strength": 0.8,
+      "myelin": 0.8,
+      "state": "active"
+    },
+    {
+      "a": "taste:healing",
+      "b": "taste:natural",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:girly",
+      "b": "taste:color_pink",
+      "strength": 0.85,
+      "myelin": 0.85,
+      "state": "active"
+    },
+    {
+      "a": "taste:girly",
+      "b": "taste:lolita",
+      "strength": 0.8,
+      "myelin": 0.8,
+      "state": "active"
+    },
+    {
+      "a": "taste:girly",
+      "b": "taste:cosplay",
+      "strength": 0.75,
+      "myelin": 0.75,
+      "state": "active"
+    },
+    {
+      "a": "taste:cosplay",
+      "b": "taste:animeface",
+      "strength": 0.85,
+      "myelin": 0.85,
+      "state": "active"
+    },
+    {
+      "a": "taste:cosplay",
+      "b": "taste:vampire",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:animeface",
+      "b": "taste:color_pink",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:prop",
+      "b": "taste:style_sign",
+      "strength": 0.75,
+      "myelin": 0.75,
+      "state": "active"
+    },
+    {
+      "a": "taste:prop",
+      "b": "taste:style_pony",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:tailwind",
+      "b": "taste:elements",
+      "strength": 0.75,
+      "myelin": 0.75,
+      "state": "active"
+    },
+    {
+      "a": "taste:tailwind",
+      "b": "taste:color_pink",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:sparkle",
+      "b": "taste:color_white",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:shell",
+      "b": "taste:tailwind",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_pony",
+      "b": "taste:girly",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_flower",
+      "b": "taste:color_pink",
+      "strength": 0.75,
+      "myelin": 0.75,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_flower",
+      "b": "taste:color_yellow",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:cine",
+      "b": "taste:softlight",
+      "strength": 0.85,
+      "myelin": 0.85,
+      "state": "active"
+    },
+    {
+      "a": "taste:cine",
+      "b": "taste:impressionist",
+      "strength": 0.75,
+      "myelin": 0.75,
+      "state": "active"
+    },
+    {
+      "a": "taste:cine",
+      "b": "taste:tailwind",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_hiro",
+      "b": "taste:color_pink",
+      "strength": 0.75,
+      "myelin": 0.75,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_hiro",
+      "b": "taste:color_blue",
+      "strength": 0.78,
+      "myelin": 0.78,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_hiro",
+      "b": "taste:color_yellow",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_hiro",
+      "b": "taste:style_ginkgo",
+      "strength": 0.75,
+      "myelin": 0.75,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_hiro",
+      "b": "taste:style_water",
+      "strength": 0.78,
+      "myelin": 0.78,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_hiro",
+      "b": "taste:lolita",
+      "strength": 0.72,
+      "myelin": 0.72,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_hiro",
+      "b": "taste:contrast",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_hiro",
+      "b": "taste:girly",
+      "strength": 0.78,
+      "myelin": 0.78,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_hiro",
+      "b": "taste:escape",
+      "strength": 0.78,
+      "myelin": 0.78,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_hiro",
+      "b": "taste:cine",
+      "strength": 0.78,
+      "myelin": 0.78,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_hiro",
+      "b": "taste:girly",
+      "strength": 0.78,
+      "myelin": 0.78,
+      "state": "active"
+    },
+    {
+      "a": "taste:monet",
+      "b": "taste:impressionist",
+      "strength": 0.95,
+      "myelin": 0.95,
+      "state": "active"
+    },
+    {
+      "a": "taste:monet",
+      "b": "taste:softlight",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:monet",
+      "b": "taste:color_yellow",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "taste:vangogh",
+      "b": "taste:impressionist",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:vangogh",
+      "b": "taste:color_blue",
+      "strength": 0.85,
+      "myelin": 0.85,
+      "state": "active"
+    },
+    {
+      "a": "taste:vangogh",
+      "b": "taste:color_yellow",
+      "strength": 0.8,
+      "myelin": 0.8,
+      "state": "active"
+    },
+    {
+      "a": "taste:vangogh",
+      "b": "taste:sparkle",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "taste:qibaishi",
+      "b": "taste:color_white",
+      "strength": 0.8,
+      "myelin": 0.8,
+      "state": "active"
+    },
+    {
+      "a": "taste:qibaishi",
+      "b": "taste:monochrome",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "taste:ukiyoe",
+      "b": "taste:stickfigure",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "taste:ukiyoe",
+      "b": "taste:color_blue",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "taste:ukiyoe",
+      "b": "taste:cine",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "taste:stickfigure",
+      "b": "taste:monochrome",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "taste:stickfigure",
+      "b": "taste:color_white",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "taste:stickfigure",
+      "b": "taste:girly",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "taste:stickfigure",
+      "b": "taste:healing",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "taste:color_sepia",
+      "b": "taste:healing",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:color_sepia",
+      "b": "taste:color_yellow",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "taste:color_sepia",
+      "b": "taste:escape",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "taste:color_sepia",
+      "b": "taste:prop",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "taste:childhood",
+      "b": "classic:hide_seek",
+      "strength": 0.9,
+      "myelin": 0.9,
+      "state": "active"
+    },
+    {
+      "a": "taste:childhood",
+      "b": "classic:sandbag",
+      "strength": 0.85,
+      "myelin": 0.85,
+      "state": "active"
+    },
+    {
+      "a": "taste:childhood",
+      "b": "classic:eagle_chick",
+      "strength": 0.85,
+      "myelin": 0.85,
+      "state": "active"
+    },
+    {
+      "a": "taste:childhood",
+      "b": "classic:statue",
+      "strength": 0.8,
+      "myelin": 0.8,
+      "state": "active"
+    },
+    {
+      "a": "taste:childhood",
+      "b": "classic:rubberband",
+      "strength": 0.8,
+      "myelin": 0.8,
+      "state": "active"
+    },
+    {
+      "a": "taste:childhood",
+      "b": "classic:hopscotch",
+      "strength": 0.8,
+      "myelin": 0.8,
+      "state": "active"
+    },
+    {
+      "a": "taste:childhood",
+      "b": "classic:marble",
+      "strength": 0.75,
+      "myelin": 0.75,
+      "state": "active"
+    },
+    {
+      "a": "taste:childhood",
+      "b": "taste:color_sepia",
+      "strength": 0.82,
+      "myelin": 0.82,
+      "state": "active"
+    },
+    {
+      "a": "taste:childhood",
+      "b": "taste:healing",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:childhood",
+      "b": "taste:stickfigure",
+      "strength": 0.72,
+      "myelin": 0.72,
+      "state": "active"
+    },
+    {
+      "a": "taste:merge",
+      "b": "taste:collect",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "taste:gacha",
+      "b": "taste:collect",
+      "strength": 0.65,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "taste:mow",
+      "b": "taste:merge",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "taste:gacha",
+      "b": "taste:merge",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "taste:monochrome",
+      "b": "taste:collect",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "taste:collect",
+      "b": "taste:color_green",
+      "strength": 0.45,
+      "myelin": 0.45,
+      "state": "active"
+    },
+    {
+      "a": "taste:collect",
+      "b": "taste:color_pink",
+      "strength": 0.42,
+      "myelin": 0.42,
+      "state": "active"
+    },
+    {
+      "a": "taste:collect",
+      "b": "taste:color_blue",
+      "strength": 0.42,
+      "myelin": 0.42,
+      "state": "active"
+    },
+    {
+      "a": "taste:collect",
+      "b": "taste:color_yellow",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_flower",
+      "b": "taste:collect",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "taste:style_flower",
+      "b": "taste:style_pony",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "taste:color_qunqing",
+      "b": "taste:color_xuan",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "taste:color_qunqing",
+      "b": "taste:color_tianshui",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:color_qunqing",
+      "b": "taste:impressionist",
+      "strength": 0.5,
+      "myelin": 0.5,
+      "state": "active"
+    },
+    {
+      "a": "taste:color_taoyao",
+      "b": "taste:color_pink",
+      "strength": 0.78,
+      "myelin": 0.78,
+      "state": "active"
+    },
+    {
+      "a": "taste:color_tea",
+      "b": "taste:color_red",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:color_zhuyin",
+      "b": "taste:color_red",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:color_tianshui",
+      "b": "taste:color_blue",
+      "strength": 0.65,
+      "myelin": 0.65,
+      "state": "active"
+    },
+    {
+      "a": "taste:color_xuan",
+      "b": "taste:color_white",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "taste:hd2d",
+      "b": "taste:pixel_art",
+      "strength": 0.92,
+      "myelin": 0.92,
+      "state": "active"
+    },
+    {
+      "a": "taste:hd2d",
+      "b": "taste:impressionist",
+      "strength": 0.58,
+      "myelin": 0.58,
+      "state": "active"
+    },
+    {
+      "a": "taste:pixel_art",
+      "b": "taste:ukiyoe",
+      "strength": 0.55,
+      "myelin": 0.55,
+      "state": "active"
+    },
+    {
+      "a": "taste:ai_fullstack",
+      "b": "taste:godoto",
+      "strength": 0.85,
+      "myelin": 0.85,
+      "state": "active"
+    },
+    {
+      "a": "taste:ai_fullstack",
+      "b": "taste:four_a",
+      "strength": 0.9,
+      "myelin": 0.9,
+      "state": "active"
+    },
+    {
+      "a": "taste:ai_fullstack",
+      "b": "taste:hd2d",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:godoto",
+      "b": "taste:hd2d",
+      "strength": 0.65,
+      "myelin": 0.65,
+      "state": "active"
+    },
+    {
+      "a": "taste:four_a",
+      "b": "taste:healing",
+      "strength": 0.4,
+      "myelin": 0.4,
+      "state": "active"
+    },
+    {
+      "a": "taste:spbd",
+      "b": "taste:ai_fullstack",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:spbd",
+      "b": "taste:godoto",
+      "strength": 0.75,
+      "myelin": 0.75,
+      "state": "active"
+    },
+    {
+      "a": "taste:spbd",
+      "b": "taste:hd2d",
+      "strength": 0.55,
+      "myelin": 0.55,
+      "state": "active"
+    },
+    {
+      "a": "taste:spbd",
+      "b": "taste:four_a",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "taste:liquid_glass",
+      "b": "taste:aesthetic",
+      "strength": 0.85,
+      "myelin": 0.8,
+      "state": "active"
+    },
+    {
+      "a": "taste:bloom",
+      "b": "taste:style_hiro",
+      "strength": 0.75,
+      "myelin": 0.75,
+      "state": "active"
+    },
+    {
+      "a": "taste:bloom",
+      "b": "taste:impressionist",
+      "strength": 0.65,
+      "myelin": 0.65,
+      "state": "active"
+    },
+    {
+      "a": "taste:bloom",
+      "b": "taste:sparkle",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:additive",
+      "b": "taste:bloom",
+      "strength": 0.9,
+      "myelin": 0.9,
+      "state": "active"
+    },
+    {
+      "a": "taste:additive",
+      "b": "taste:spbd",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "taste:nebula",
+      "b": "taste:style_hiro",
+      "strength": 0.72,
+      "myelin": 0.72,
+      "state": "active"
+    },
+    {
+      "a": "taste:nebula",
+      "b": "taste:color_green",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "taste:nebula",
+      "b": "taste:monochrome",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:bloom",
+      "b": "taste:liquid_glass",
+      "strength": 0.55,
+      "myelin": 0.55,
+      "state": "active"
+    },
+    {
+      "a": "taste:additive",
+      "b": "taste:nebula",
+      "strength": 0.9,
+      "myelin": 0.9,
+      "state": "active"
+    },
+    {
+      "a": "taste:bloom",
+      "b": "taste:aesthetic",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:bloom",
+      "b": "taste:monochrome",
+      "strength": 0.7,
+      "myelin": 0.7,
+      "state": "active"
+    },
+    {
+      "a": "taste:bloom",
+      "b": "taste:color_qunqing",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    },
+    {
+      "a": "taste:additive",
+      "b": "taste:aesthetic",
+      "strength": 0.6,
+      "myelin": 0.6,
+      "state": "active"
+    }
+  ],
+  "regions": {
+    "爽感": "#f48fb1",
+    "审美": "#ff9ecb",
+    "开发": "#4fd1c5"
+  },
+  "meta": {
+    "source": "personal-taste",
+    "note": "用户亲口认证的爽感机制（保留 2026-07-29 原 4 个：割草/合成/收集/抽卡）+ 新增审美子区（2026-08-03 来源：抖音\"尼脑子瓦特啦\"/HIROSTOPTIME 99 张摄影合集风格提取）。审美区记录用户对这位摄影师视觉偏爱的风格基因，用于每日小游戏灵感碰撞。爽感机制备注——割草=力量反馈与清除快感；合成=滚雪球式成长可见；收集=完形强迫与图鉴达成；抽卡=变率奖励（多巴胺峰值来自不确定性）。审美基因备注——核心母题=单色叙事×少女cosplay×日常物品诗意化；治愈底色贯穿所有子系列；最大识别度=集装箱墙+床单幽灵+绿衣少女。设计禅意变体时直接复用为关卡/场景/视觉 mod；不复制侵权，仅取风格基因。；2026-08-04 增补绘画风格基因：莫奈/梵高/齐白石/浮世绘（同步入技能树美术分支 styles/）+ 简笔画色块 + 怀旧泛黄配色。；2026-08-09 增补中国传统色 6 色（茶红/桃夭/天水碧/朱殷/群青/玄色，来源抖音杨大小姐Eva《反对西方色彩霸权》）+ 开发脑区（AI全流程/4A新解/Godot，来源 Nenly 两个月 AI 开发《群侠传》Survivor-like）+ HD-2D 像素风/像素美术（来源老植《AI 像素美术 7 步流程》）；三份来源同步入 knowledge-base/ 创作者观察与独立游戏开发系列笔记、技能树 styles/ 美术分支。；2026-08-12 新增技术方法库分支 references/tech/（与 codex/styles/resources/assets 并列的第 5 类复用库），首条目 sPBD（小步长位置动力学，实时布料/软体/刚体堆叠模拟算法）；同步入开发脑区神经元 taste:spbd，使灵感链路「开发」跳可命中。；2026-08-28 增补辉光/星云团视觉技术 3 节点（辉光后期/加色混合/星云团观感，来源诗云 shiyun.cohenjikan.com 借鉴 + 神经元大脑前端假 bloom 实现），同步入知识库笔记与技能树 tech/bloom-glow；前端 neuron-3d.js 加辉光开关（默认开，可关掉看结构）。"
+  }
+}

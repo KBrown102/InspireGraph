@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>神经元灵感系统 · daily-game v1</title>
+<style>
+  :root{--bg:#0e1116;--panel:#161b22;--line:#232a33;--txt:#e6edf3;--dim:#8b98a5;--accent:#e8a87c;--glow:#ffd9b3;}
+  *{box-sizing:border-box;}
+  html,body{margin:0;height:100%;background:var(--bg);color:var(--txt);
+    font-family:-apple-system,"PingFang SC","Microsoft YaHei",system-ui,sans-serif;}
+  #app{display:flex;height:100vh;overflow:hidden;}
+  #stage{position:relative;flex:1;}
+  canvas{display:block;width:100%;height:100%;}
+  #side{width:360px;background:var(--panel);border-left:1px solid var(--line);
+    display:flex;flex-direction:column;padding:14px;gap:10px;overflow:hidden;}
+  h1{font-size:15px;margin:0;letter-spacing:.5px;} h1 small{color:var(--dim);font-weight:400;font-size:11px;}
+  .row{display:flex;gap:8px;align-items:center;}
+  input[type=text]{flex:1;background:#0b0e13;border:1px solid var(--line);color:var(--txt);
+    padding:8px 10px;border-radius:8px;font-size:13px;outline:none;}
+  input[type=text]:focus{border-color:var(--accent);}
+  button{background:#222a34;color:var(--txt);border:1px solid var(--line);
+    padding:8px 11px;border-radius:8px;font-size:12px;cursor:pointer;transition:.15s;}
+  button:hover{background:#2c3642;border-color:var(--accent);}
+  button.primary{background:var(--accent);color:#1a1208;border-color:var(--accent);font-weight:600;}
+  button.primary:hover{background:var(--glow);}
+  label{font-size:11px;color:var(--dim);display:flex;justify-content:space-between;align-items:center;}
+  input[type=range]{width:100%;accent-color:var(--accent);}
+  .hint{font-size:10.5px;color:var(--dim);line-height:1.5;}
+  .legend{font-size:10px;color:var(--dim);display:flex;flex-wrap:wrap;gap:8px;}
+  .legend i{display:inline-block;width:18px;height:0;border-top-width:2px;border-top-style:solid;vertical-align:middle;margin-right:3px;}
+  #log{flex:1;overflow-y:auto;background:#0b0e13;border:1px solid var(--line);border-radius:8px;
+    padding:8px;font-size:11.5px;line-height:1.6;}
+  #log .item{padding:3px 0;border-bottom:1px dashed #1c232c;color:var(--dim);}
+  #log .item b{color:var(--glow);}
+  #seed{background:#0b0e13;border:1px solid var(--line);border-radius:8px;padding:8px;
+    font-family:ui-monospace,Menlo,monospace;font-size:10px;color:#9fd3a8;white-space:pre-wrap;
+    max-height:140px;overflow:auto;display:none;}
+  .switch{display:flex;align-items:center;gap:6px;font-size:12px;cursor:pointer;user-select:none;}
+  .switch .box{width:34px;height:18px;border-radius:9px;background:#2c3642;position:relative;transition:.2s;}
+  .switch .box::after{content:"";position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;background:#8b98a5;transition:.2s;}
+  .switch.on .box{background:var(--accent);} .switch.on .box::after{left:18px;background:#1a1208;}
+  ::-webkit-scrollbar{width:8px;}::-webkit-scrollbar-thumb{background:#2a323c;border-radius:4px;}
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="stage"><canvas id="cv"></canvas></div>
+  <div id="side">
+    <h1>神经元灵感系统 <small>daily-game v1</small></h1>
+    <div class="hint">神经元<b>大小</b>=权重(频率+近因+对话叠加)；<b>突触</b>连线=关联，<b>断触</b>(灰虚线)=几乎不共现；<b>脑区</b>分五色。打开「可塑性」即自动运行并演化。</div>
+    <div class="row">
+      <input id="words" type="text" placeholder="叠加实时对话，如：安静的水 留白 放下" />
+      <button class="primary" id="seedBtn">注入</button>
+    </div>
+    <div class="row">
+      <button id="flick">⚡ 随机灵感</button>
+      <button id="export">🌱 导出种子</button>
+      <button id="reset">↺ 重置</button>
+    </div>
+    <label class="switch on" id="runSwitch"><span class="box"></span><span>可塑性 / 自动运行</span></label>
+    <label>传播速度 <span id="spdVal">1.0×</span></label>
+    <input id="spd" type="range" min="0.2" max="3" step="0.1" value="1" />
+    <div class="legend">
+      <span><i style="border-color:#e8a87c;border-top-style:solid"></i>active突触</span>
+      <span><i style="border-color:#e8a87c;border-top-style:dashed"></i>weakened</span>
+      <span><i style="border-color:#5a6b7a;border-top-style:dashed"></i>broken断触</span>
+    </div>
+    <div class="row" style="justify-content:space-between">
+      <span class="hint">思考轨迹 / 种子</span>
+      <button id="expBtn" style="padding:4px 8px;">查看种子JSON ▾</button>
+    </div>
+    <div id="seed"></div>
+    <div id="log"></div>
+  </div>
+</div>
+<script src="gamedata.js"></script>
+<script src="engine.js"></script>
+<script>
+"use strict";
+const E = window.NeuronEngine, G = window.GAME_GRAPH;
+// 重建运行时图（补 _i / act / overlay / _byId）
+const graph = { neurons: [], synapses: [], regions: G.regions, meta: G.meta, _byId: {} };
+G.neurons.forEach((n,i)=>{ n._i=i; n.act=0; n.overlay=0; graph.neurons.push(n); graph._byId[n.id]=n; });
+G.synapses.forEach(s=>graph.synapses.push(s));
+const effW = n => Math.max(0.1, Math.min(1, n.weight + n.overlay));
+
+// 布局：按脑区环形簇
+const cv=document.getElementById("cv"), ctx=cv.getContext("2d");
+let W=0,H=0;
+function resize(){const r=cv.getBoundingClientRect();cv.width=r.width*devicePixelRatio;cv.height=r.height*devicePixelRatio;W=cv.width;H=cv.height;layout();}
+function layout(){
+  const groups=Object.keys(G.regions), nG=groups.length, R=Math.min(W,H)*0.37, cx=W/2, cy=H/2;
+  groups.forEach((g,gi)=>{
+    const m=graph.neurons.filter(n=>n.group===g);
+    const base=(gi/nG)*Math.PI*2;
+    m.forEach((n,mi)=>{const a=base+(mi-(m.length-1)/2)*0.42;n.x=cx+Math.cos(a)*R+(gi%2?24:-24);n.y=cy+Math.sin(a)*R;});
+  });
+}
+function hexA(hex,a){const n=parseInt(hex.slice(1),16);return `rgba(${n>>16&255},${n>>8&255},${n&255},${a})`;}
+function draw(){
+  ctx.clearRect(0,0,W,H);ctx.fillStyle="#0e1116";ctx.fillRect(0,0,W,H);
+  for(const e of graph.synapses){
+    const A=graph._byId[e.a], B=graph._byId[e.b]; if(!A||!B) continue;
+    const act=Math.max(A.act,B.act);
+    if(e.state==="broken"){ ctx.strokeStyle="rgba(90,107,122,0.07)";ctx.setLineDash([2,4]);ctx.lineWidth=0.5; }
+    else if(e.state==="weakened"){ ctx.strokeStyle=`rgba(232,168,124,${0.1+e.strength*0.15})`;ctx.setLineDash([3,3]);ctx.lineWidth=0.6+e.strength; }
+    else { ctx.strokeStyle=`rgba(232,168,124,${0.12+act*0.5+e.strength*0.25})`;ctx.setLineDash([]);ctx.lineWidth=0.6+e.strength*2.5; }
+    ctx.beginPath();ctx.moveTo(A.x,A.y);ctx.lineTo(B.x,B.y);ctx.stroke();
+  }
+  ctx.setLineDash([]);
+  for(const n of graph.neurons){
+    const r=4+effW(n)*14+n.act*6, c=G.regions[n.group];
+    if(n.act>0.05){const g=ctx.createRadialGradient(n.x,n.y,0,n.x,n.y,r*3);g.addColorStop(0,hexA(c,n.act*0.55));g.addColorStop(1,"rgba(0,0,0,0)");ctx.fillStyle=g;ctx.beginPath();ctx.arc(n.x,n.y,r*3,0,7);ctx.fill();}
+    ctx.fillStyle=hexA(c,0.35+n.act*0.6+n.overlay*0.3);ctx.beginPath();ctx.arc(n.x,n.y,r,0,7);ctx.fill();
+    ctx.strokeStyle=hexA(c,0.9);ctx.lineWidth=1;ctx.stroke();
+    if(n.act>0.2||n.overlay>0.3){ctx.fillStyle="#fff";ctx.font=`${10+n.act*4}px system-ui`;ctx.textAlign="center";ctx.fillText(n.label,n.x,n.y-r-4);}
+  }
+}
+// 控制
+let speedMul=1, running=true, lastLog="";
+function loop(){
+  if(running){ for(let s=0;s<speedMul;s++) E.step(graph,{plasticity:true}); }
+  draw();
+  const key=E.topActive(graph,3).map(n=>n.label).join("·");
+  if(key&&key!==lastLog){lastLog=key;const el=document.getElementById("log");
+    const d=document.createElement("div");d.className="item";d.innerHTML=`💡 焦点：<b>${key}</b> <span style="float:right">${new Date().toLocaleTimeString()}</span>`;el.prepend(d);if(el.children.length>40)el.lastChild.remove();}
+  requestAnimationFrame(loop);
+}
+function injectWords(t){const hits=E.applyOverlay(graph,t);hits.forEach(id=>graph._byId[id].act=Math.min(1,graph._byId[id].act+0.9));
+  const el=document.getElementById("log");const d=document.createElement("div");d.className="item";
+  d.innerHTML=`✚ 叠加「${t}」→ 点亮 <b>${hits.length?hits.map(id=>graph._byId[id].label).join("、"):"无匹配"}</b>`;el.prepend(d);}
+document.getElementById("seedBtn").onclick=()=>injectWords(document.getElementById("words").value);
+document.getElementById("words").addEventListener("keydown",e=>{if(e.key==="Enter")injectWords(e.target.value);});
+document.getElementById("flick").onclick=()=>{for(let i=0;i<4;i++){const n=graph.neurons[(Math.random()*graph.neurons.length)|0];n.act=Math.min(1,0.4+Math.random()*0.5);}};
+document.getElementById("reset").onclick=()=>{graph.neurons.forEach(n=>{n.act=0;n.overlay=0;});document.getElementById("log").innerHTML="";lastLog="";};
+document.getElementById("spd").oninput=function(){speedMul=+this.value;document.getElementById("spdVal").textContent=speedMul.toFixed(1)+"×";};
+document.getElementById("runSwitch").onclick=function(){running=!running;this.classList.toggle("on",running);};
+document.getElementById("export").onclick=()=>{
+  // 克隆图跑一次模拟（不干扰实时视图），产出种子+思考轨迹
+  const clone={neurons:graph.neurons.map(n=>({...n})),synapses:graph.synapses.map(s=>({...s})),regions:G.regions,meta:G.meta,_byId:{}};
+  clone.neurons.forEach((n,i)=>{n._i=i;clone._byId[n.id]=n;});
+  const {seed,trace}=E.run(clone,{steps:240,seedWords:document.getElementById("words").value,plasticity:true});
+  const el=document.getElementById("log");const d=document.createElement("div");d.className="item";
+  d.innerHTML=`🌱 导出种子：<b>${seed.coreConcepts.map(c=>c.concept).join("·")}</b>`;el.prepend(d);
+  trace.slice(0,6).forEach(t=>{const x=document.createElement("div");x.className="item";x.style.color="#7fa";x.textContent=t;el.prepend(x);});
+  const s=document.getElementById("seed");s.style.display="block";s.textContent=JSON.stringify(seed,null,2);
+};
+document.getElementById("expBtn").onclick=function(){const s=document.getElementById("seed");s.style.display=s.style.display==="none"?"block":"none";};
+window.addEventListener("resize",resize);resize();
+setTimeout(()=>document.getElementById("flick").click(),400);
+loop();
+</script>
+</body>
+</html>
