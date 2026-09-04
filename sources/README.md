@@ -1,23 +1,25 @@
-# 神经元灵感系统 · 多源采集说明
+# InspireGraph · 多源数据说明
 
-灵感不再只来自 daily-games 的历史作品，而是 **4 个来源合并成一张神经元图**：
+图谱由 **5 个数据源 + 内置基础概念基座** 合并成一张神经元图：
 
-| 来源 | 目录 | 内容 | 谁来填 |
-|------|------|------|--------|
-| ① daily-games 历史 | （manifest.json） | 已生成的治愈小游戏主题/机制 | 游戏自动化产出 |
-| ② 自动搜索热点 | `web-hot/web-hot.json` | 当下热门类型/玩法/创意/热点 | **自动采集任务**（WebSearch） |
-| ③ 本地知识库 | `knowledge-base/*.md` → `kb.json` | 你沉淀的游戏设计知识，关键词自动成神经元 | 你/自动采集写入笔记 |
-| ④ 外部网站采集 | `scraped-sites/scraped.json` | 从你给的两个小游戏网站抓的用户作品 | **自动采集任务**（WebFetch） |
+| 来源 | 目录/文件 | 内容 | 谁来填 |
+|------|-----------|------|--------|
+| ① 基础概念基座 | `engine.js` 内置 CONCEPTS | 情绪/意象/机制/风格/元素 5 域核心概念 | 代码内置，始终存在 |
+| ② 热点 | `web-hot/web-hot.json` | 当下热门类型/玩法/创意/热点 | 采集任务（WebSearch） |
+| ③ 知识库 | `knowledge-base/*.md` → `kb.json` | 沉淀的知识/观察，关键词自动成神经元 | 手动 / 采集写入笔记 |
+| ④ 外站采集 | `scraped-sites/scraped.json` | 从外部网站抓取的作品/概念 | 采集任务（WebFetch） |
+| ⑤ 经典玩法 | `classic-games/*.json` | 经典益智/桌游/地摊玩法基因库 | 手工维护 |
+| ⑥ 个人爽感 | `personal-taste/taste.json` | 个人口味的爽感机制 | 手工维护 |
 
 ## 数据流
 
 ```
 各来源 JSON/MD
    └─> collect-kb.cjs 读取知识库 → kb.json
-   └─> 自动采集任务 写 web-hot.json / scraped.json
+   └─> 采集任务 写 web-hot.json / scraped.json
             │
             ▼
-      gen-data.cjs（engine.buildGraph 合并 + 跨源连线）
+      gen-data.cjs（engine.buildGraph 合并 + 跨源连线 + 内置基座）
             │
             ▼
         gamedata.js  ──>  index.html 可视化

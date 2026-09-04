@@ -1,4 +1,4 @@
-// gen-data.cjs — 多源合并：把 daily-games + 热点 + 知识库 + 采集站 汇成一张统一神经元图
+// gen-data.cjs — 多源合并：把 热点/知识库/采集/经典玩法/个人爽感 + 内置基础概念 汇成一张统一神经元图
 // 用法: node gen-data.cjs
 // 产物: gamedata.js (window.GAME_GRAPH)，供 index.html 加载
 const path = require("path");
@@ -7,7 +7,7 @@ const engine = require("./engine.js");
 
 const sourcesDir = path.join(__dirname, "sources");
 const graph = engine.buildGraph({ sourcesDir });
-if (!graph) { console.error("没有任何可用来源（manifest 或 sources 缺失）"); process.exit(1); }
+if (!graph) { console.error("没有任何可用来源（sources 缺失）"); process.exit(1); }
 
 const data = {
   neurons: graph.neurons.map((n) => ({

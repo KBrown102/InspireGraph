@@ -22,7 +22,7 @@
   };
 
   // ============ 概念词典（5 域，kw=检测关键词）============
-  // 来自 daily-games 真实主题/机制归纳；扫描 manifest 的 need/idea/mechanic/title 文本匹配。
+  // 5 域基础概念词典（kw=检测关键词），作为图谱的内置核心基座。
   const CONCEPTS = [
     // 情绪
     { id: "calm",   label: "平静", g: "情绪", kw: ["平静", "静", "安"] },
@@ -77,74 +77,8 @@
 
   const DAY = 86400000;
 
-  // ============ 从 daily-games manifest 抽取图 ============
-  function extractFromManifest(manifestPath) {
-    const fs = require("fs");
-    const raw = fs.readFileSync(manifestPath, "utf8");
-    const data = JSON.parse(raw);
-    const games = data.games || [];
-    const now = Date.now();
-    const byId = {};
-    CONCEPTS.forEach((c, i) => {
-      byId[c.id] = {
-        id: c.id, label: c.label, group: c.g,
-        freq: 0, lastSeen: 0, // 时间戳
-        weight: 0.3, act: 0, overlay: 0,
-        excite: 0.012 + Math.random() * 0.02, _i: i,
-      };
-    });
-    // 共现计数
-    const co = {};
-    const pairKey = (a, b) => (a < b ? a + "|" + b : b + "|" + a);
-
-    games.forEach((g) => {
-      const text = [g.title, g.need, g.idea, g.mechanic].join(" ");
-      const t = Date.parse(g.date) || now;
-      const present = [];
-      CONCEPTS.forEach((c) => {
-        if (c.kw.some((k) => text.includes(k))) {
-          const n = byId[c.id];
-          n.freq += 1;
-          if (t > n.lastSeen) n.lastSeen = t;
-          present.push(c.id);
-        }
-      });
-      for (let i = 0; i < present.length; i++)
-        for (let j = i + 1; j < present.length; j++) {
-          const k = pairKey(present[i], present[j]);
-          co[k] = (co[k] || 0) + 1;
-        }
-    });
-
-    // 计算 weight（频率 + 近因）
-    const maxFreq = Math.max(1, ...CONCEPTS.map((c) => byId[c.id].freq));
-    CONCEPTS.forEach((c) => {
-      const n = byId[c.id];
-      const fN = n.freq / maxFreq;
-      const recN = n.lastSeen ? Math.exp(-(now - n.lastSeen) / (30 * DAY)) : 0;
-      n.weight = Math.max(0.18, Math.min(1, 0.18 + 0.55 * fN + 0.4 * recN));
-    });
-
-    // 构建突触（共现 → strength；弱→断触）
-    const maxCo = Math.max(1, ...Object.values(co));
-    const synapses = [];
-    Object.keys(co).forEach((k) => {
-      const [a, b] = k.split("|");
-      const s = co[k] / maxCo;
-      let state = "active";
-      if (s < 0.1) state = "broken";      // 断触（几乎不共现 → 修剪）
-      else if (s < 0.28) state = "weakened";
-      synapses.push({ a, b, strength: s, myelin: s, state });
-    });
-
-    const neurons = CONCEPTS.map((c) => byId[c.id]);
-    const meta = { gameCount: games.length, builtAt: new Date().toISOString() };
-    return { neurons, synapses, regions: GROUPS, meta, _byId: byId };
-  }
-
   // ============ 基础概念基座（5 域：情绪/意象/机制/风格/元素）============
-  // 原 CONCEPTS 仅在 extractFromManifest（扫描 daily-games 历史共现）中注入；
-  // 本仓库不依赖外部宿主，改为无条件注入一份基础概念图，保证 5 大核心脑区始终存在。
+  // 内置 CONCEPTS 基础概念（情绪/意象/机制/风格/元素）无条件注入，保证 5 大核心脑区始终存在。
   function extractBaseConcepts() {
     const byId = {};
     CONCEPTS.forEach((c, i) => {
@@ -375,13 +309,9 @@
     opts = opts || {};
     const fs = require("fs");
     const path = require("path");
-    // daily-games 是外部宿主项目，其 manifest.json 不随本仓库分发；
-    // 需要注入游戏历史概念时通过 opts.manifestPath 显式传入；缺省只使用本仓库内 sources/ 数据源。
-    const manifestPath = opts.manifestPath;
     const sourcesDir = opts.sourcesDir || path.join(__dirname, "sources");
     const graphs = [];
     graphs.push(extractBaseConcepts()); // 基础概念基座：保证 5 大核心脑区始终存在
-    if (manifestPath && fs.existsSync(manifestPath)) graphs.push(extractFromManifest(manifestPath));
     const srcFiles = [
       { file: "web-hot/web-hot.json", regions: { "热点": "#ffb347" } },
       { file: "knowledge-base/kb.json", regions: { "知识库": "#b39ddb" } },
@@ -602,7 +532,7 @@
   }
 
   const api = {
-    GROUPS, CONCEPTS, extractFromManifest, applyOverlay, effectiveWeight,
+    GROUPS, CONCEPTS, applyOverlay, effectiveWeight,
     step, run, topActive, exportSeed,
     mergeGraphs, linkCrossSources, buildGraph,
     generateChain, findSeed, ROLE_GROUPS, DOMAINS, walkFromNode,
