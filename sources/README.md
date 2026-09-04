@@ -20,7 +20,7 @@
       gen-data.cjs（engine.buildGraph 合并 + 跨源连线）
             │
             ▼
-        gamedata.js  ──>  index.html / index-3d.html 可视化
+        gamedata.js  ──>  index.html 可视化
             │
             ▼
       run.cjs 仿真 → last-run.json + thinking-log.md（灵感种子）

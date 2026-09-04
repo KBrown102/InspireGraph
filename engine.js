@@ -142,6 +142,32 @@
     return { neurons, synapses, regions: GROUPS, meta, _byId: byId };
   }
 
+  // ============ 基础概念基座（5 域：情绪/意象/机制/风格/元素）============
+  // 原 CONCEPTS 仅在 extractFromManifest（扫描 daily-games 历史共现）中注入；
+  // 本仓库不依赖外部宿主，改为无条件注入一份基础概念图，保证 5 大核心脑区始终存在。
+  function extractBaseConcepts() {
+    const byId = {};
+    CONCEPTS.forEach((c, i) => {
+      byId[c.id] = {
+        id: c.id, label: c.label, group: c.g,
+        freq: 1, lastSeen: 0, weight: 0.6, act: 0, overlay: 0,
+        excite: 0.015 + (i % 5) * 0.002, _i: i,
+      };
+    });
+    // 同域两两弱连接（团簇语义）；跨域连线交给 linkCrossSources 负责碰撞
+    const synapses = [];
+    const byGroup = {};
+    CONCEPTS.forEach((c) => { (byGroup[c.g] = byGroup[c.g] || []).push(c.id); });
+    Object.keys(byGroup).forEach((g) => {
+      const ids = byGroup[g];
+      for (let i = 0; i < ids.length; i++)
+        for (let j = i + 1; j < ids.length; j++)
+          synapses.push({ a: ids[i], b: ids[j], strength: 0.35, myelin: 0.35, state: "active" });
+    });
+    const neurons = CONCEPTS.map((c) => byId[c.id]);
+    return { neurons, synapses, regions: GROUPS, meta: { baseConcepts: neurons.length } };
+  }
+
   // ============ 实时对话叠加（确认项1：叠加）============
   // 解析文本，命中概念 → 提升其 overlay（叠加到 weight 上）
   function applyOverlay(graph, text) {
@@ -349,10 +375,13 @@
     opts = opts || {};
     const fs = require("fs");
     const path = require("path");
-    const manifestPath = opts.manifestPath || "E:/WorkSpeace/WorkSpeace_WorkBuddy/daily-games/manifest.json";
+    // daily-games 是外部宿主项目，其 manifest.json 不随本仓库分发；
+    // 需要注入游戏历史概念时通过 opts.manifestPath 显式传入；缺省只使用本仓库内 sources/ 数据源。
+    const manifestPath = opts.manifestPath;
     const sourcesDir = opts.sourcesDir || path.join(__dirname, "sources");
     const graphs = [];
-    if (fs.existsSync(manifestPath)) graphs.push(extractFromManifest(manifestPath));
+    graphs.push(extractBaseConcepts()); // 基础概念基座：保证 5 大核心脑区始终存在
+    if (manifestPath && fs.existsSync(manifestPath)) graphs.push(extractFromManifest(manifestPath));
     const srcFiles = [
       { file: "web-hot/web-hot.json", regions: { "热点": "#ffb347" } },
       { file: "knowledge-base/kb.json", regions: { "知识库": "#b39ddb" } },

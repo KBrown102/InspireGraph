@@ -1,6 +1,6 @@
 // gen-data.cjs — 多源合并：把 daily-games + 热点 + 知识库 + 采集站 汇成一张统一神经元图
 // 用法: node gen-data.cjs
-// 产物: gamedata.js (window.GAME_GRAPH)，供 index.html / index-3d.html 加载
+// 产物: gamedata.js (window.GAME_GRAPH)，供 index.html 加载
 const path = require("path");
 const fs = require("fs");
 const engine = require("./engine.js");

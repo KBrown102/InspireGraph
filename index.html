@@ -1,155 +1,1140 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>神经元灵感系统 · daily-game v1</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>神经元灵感系统 · 3D</title>
 <style>
-  :root{--bg:#0e1116;--panel:#161b22;--line:#232a33;--txt:#e6edf3;--dim:#8b98a5;--accent:#e8a87c;--glow:#ffd9b3;}
-  *{box-sizing:border-box;}
-  html,body{margin:0;height:100%;background:var(--bg);color:var(--txt);
-    font-family:-apple-system,"PingFang SC","Microsoft YaHei",system-ui,sans-serif;}
-  #app{display:flex;height:100vh;overflow:hidden;}
-  #stage{position:relative;flex:1;}
-  canvas{display:block;width:100%;height:100%;}
-  #side{width:360px;background:var(--panel);border-left:1px solid var(--line);
-    display:flex;flex-direction:column;padding:14px;gap:10px;overflow:hidden;}
-  h1{font-size:15px;margin:0;letter-spacing:.5px;} h1 small{color:var(--dim);font-weight:400;font-size:11px;}
-  .row{display:flex;gap:8px;align-items:center;}
-  input[type=text]{flex:1;background:#0b0e13;border:1px solid var(--line);color:var(--txt);
-    padding:8px 10px;border-radius:8px;font-size:13px;outline:none;}
-  input[type=text]:focus{border-color:var(--accent);}
-  button{background:#222a34;color:var(--txt);border:1px solid var(--line);
-    padding:8px 11px;border-radius:8px;font-size:12px;cursor:pointer;transition:.15s;}
-  button:hover{background:#2c3642;border-color:var(--accent);}
-  button.primary{background:var(--accent);color:#1a1208;border-color:var(--accent);font-weight:600;}
-  button.primary:hover{background:var(--glow);}
-  label{font-size:11px;color:var(--dim);display:flex;justify-content:space-between;align-items:center;}
-  input[type=range]{width:100%;accent-color:var(--accent);}
-  .hint{font-size:10.5px;color:var(--dim);line-height:1.5;}
-  .legend{font-size:10px;color:var(--dim);display:flex;flex-wrap:wrap;gap:8px;}
-  .legend i{display:inline-block;width:18px;height:0;border-top-width:2px;border-top-style:solid;vertical-align:middle;margin-right:3px;}
-  #log{flex:1;overflow-y:auto;background:#0b0e13;border:1px solid var(--line);border-radius:8px;
-    padding:8px;font-size:11.5px;line-height:1.6;}
-  #log .item{padding:3px 0;border-bottom:1px dashed #1c232c;color:var(--dim);}
-  #log .item b{color:var(--glow);}
-  #seed{background:#0b0e13;border:1px solid var(--line);border-radius:8px;padding:8px;
-    font-family:ui-monospace,Menlo,monospace;font-size:10px;color:#9fd3a8;white-space:pre-wrap;
-    max-height:140px;overflow:auto;display:none;}
-  .switch{display:flex;align-items:center;gap:6px;font-size:12px;cursor:pointer;user-select:none;}
-  .switch .box{width:34px;height:18px;border-radius:9px;background:#2c3642;position:relative;transition:.2s;}
-  .switch .box::after{content:"";position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;background:#8b98a5;transition:.2s;}
-  .switch.on .box{background:var(--accent);} .switch.on .box::after{left:18px;background:#1a1208;}
-  ::-webkit-scrollbar{width:8px;}::-webkit-scrollbar-thumb{background:#2a323c;border-radius:4px;}
+  /* ═══ 重置 & 全屏 ═══ */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100%; height: 100%; overflow: hidden;
+    background: #07080f; color: #c8d4e8; font-family: 'PingFang SC','Microsoft YaHei',sans-serif;
+  }
+
+  /* ═══ 3D 画布容器 ═══ */
+  #canvasWrap { position: fixed; inset: 0; z-index: 0; }
+  #canvasWrap canvas { display: block; width: 100% !important; height: 100% !important; }
+
+  /* ═══ HUD 覆盖层 ═══ */
+  .hud { position: fixed; z-index: 10; pointer-events: none; }
+  .hud > * { pointer-events: auto; }
+
+  /* ── 左上角：标题 + 搜索 ── */
+  .panel-top-left {
+    top: 16px; left: 16px;
+    display: flex; flex-direction: column; gap: 10px; max-width: 320px;
+  }
+  .brand {
+    font-size: 15px; font-weight: 700; letter-spacing: 1px;
+    color: #7eb8e8; text-shadow: 0 0 20px rgba(100,160,230,0.35);
+  }
+  .brand span { color: #556; font-weight: 400; font-size: 11px; letter-spacing: 0; }
+
+  /* 搜索框 */
+  .search-box {
+    position: relative;
+  }
+  .search-box input {
+    width: 100%; padding: 9px 36px 9px 13px;
+    background: rgba(12,16,28,0.82); border: 1px solid rgba(80,120,180,0.2);
+    border-radius: 8px; color: #c8d4e8; font-size: 14px; outline: none;
+    transition: border-color 0.25s, box-shadow 0.25s;
+  }
+  .search-box input::placeholder { color: #4a5a72; }
+  .search-box input:focus {
+    border-color: rgba(100,160,230,0.5);
+    box-shadow: 0 0 18px rgba(60,120,200,0.15);
+  }
+  .search-box .search-icon {
+    position: absolute; right: 11px; top: 50%; transform: translateY(-50%);
+    color: #4a6380; font-size: 15px;
+  }
+  .search-results {
+    margin-top: 4px; background: rgba(10,14,26,0.92);
+    border: 1px solid rgba(60,100,160,0.2); border-radius: 8px;
+    max-height: 200px; overflow-y: auto; display: none;
+  }
+  .search-results.show { display: block; }
+  .search-result-item {
+    padding: 7px 13px; cursor: pointer; font-size: 13px;
+    border-bottom: 1px solid rgba(60,100,160,0.08);
+    transition: background 0.15s;
+  }
+  .search-result-item:hover { background: rgba(60,100,180,0.12); }
+  .search-result-item .match-label { color: #7eb8e8; font-weight: 600; }
+  .search-result-item .match-reason { color: #5a6a82; font-size: 11px; margin-left: 6px; }
+
+  /* ── 右上角：统计 + 图例 ── */
+  .panel-top-right {
+    top: 16px; right: 16px;
+    display: flex; flex-direction: column; align-items: flex-end; gap: 8px;
+  }
+  .stats-bar {
+    display: flex; gap: 12px; font-size: 11px; color: #5a6a82;
+    background: rgba(10,14,26,0.75); padding: 7px 14px; border-radius: 8px;
+  }
+  .stats-bar b { color: #7eb8e8; font-weight: 600; }
+
+  .legend {
+    background: rgba(10,14,26,0.82); padding: 8px 12px; border-radius: 10px;
+    border: 1px solid rgba(80,120,180,0.22);
+    font-size: 11px; line-height: 1.7; width: 236px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+  }
+  .legend-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
+  .legend-title { color: #7eb8e8; font-weight: 600; font-size: 11px; letter-spacing: 0.3px; }
+  .legend-head-actions { display: flex; gap: 4px; }
+  .chip {
+    width: 22px; height: 22px; display: flex; align-items: center; justify-content: center;
+    border-radius: 6px; border: 1px solid rgba(80,120,180,0.25); background: rgba(12,18,32,0.7);
+    color: #9ab8d8; font-size: 13px; cursor: pointer; transition: all 0.2s; padding: 0; line-height: 1;
+  }
+  .chip:hover { border-color: rgba(80,140,220,0.5); color: #fff; }
+  .chip.active { background: rgba(40,80,150,0.4); border-color: rgba(80,150,230,0.6); color: #7eb8e8; }
+  .legend-body { display: block; }
+  .legend.collapsed .legend-body { display: none; }
+  .legend-chart { display: block; margin: 0 auto 6px; }
+  .legend-list { display: flex; flex-direction: column; gap: 1px; max-height: 168px; overflow-y: auto; }
+  .legend-row { display: flex; align-items: center; gap: 6px; padding: 2px 2px; border-radius: 5px; cursor: pointer; }
+  .legend-row:hover { background: rgba(60,100,180,0.1); }
+  .legend-row input { width: 13px; height: 13px; accent-color: #5090e0; cursor: pointer; margin: 0; flex: 0 0 auto; }
+  .legend-color { width: 9px; height: 9px; border-radius: 50%; flex: 0 0 auto; }
+  .legend-name { flex: 1; color: #aebcd8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .legend-count { color: #5a6a82; font-size: 10px; }
+
+  /* ── 左下角：控制面板 ── */
+  .panel-bottom-left {
+    bottom: 16px; left: 16px;
+    display: flex; flex-direction: column; gap: 8px; max-width: 300px;
+  }
+  .controls {
+    display: flex; gap: 6px; flex-wrap: wrap;
+  }
+  .btn {
+    padding: 7px 14px; border: 1px solid rgba(80,120,180,0.25);
+    border-radius: 6px; background: rgba(12,18,32,0.8); color: #9ab8d8;
+    font-size: 12px; cursor: pointer; transition: all 0.2s;
+    user-select: none;
+  }
+  .btn:hover { background: rgba(30,50,80,0.85); border-color: rgba(80,140,220,0.45); color: #fff; }
+  .btn.active { background: rgba(40,80,150,0.35); border-color: rgba(80,150,230,0.55); color: #7eb8e8; }
+  .btn.danger { border-color: rgba(200,80,80,0.3); color: #d88; }
+  .btn.danger:hover { background: rgba(100,30,30,0.5); }
+
+  /* 实时词输入 */
+  .overlay-input {
+    display: flex; gap: 6px;
+  }
+  .overlay-input input {
+    flex: 1; padding: 7px 11px;
+    background: rgba(12,16,28,0.82); border: 1px solid rgba(80,120,180,0.2);
+    border-radius: 6px; color: #c8d4e8; font-size: 12px; outline: none;
+  }
+  .overlay-input input::placeholder { color: #4a5a72; }
+  .overlay-input input:focus { border-color: rgba(100,160,230,0.45); }
+
+  /* ── 右下角：思考轨迹 + 种子导出 ── */
+  .panel-bottom-right {
+    bottom: 16px; right: 16px;
+    width: 320px; max-height: 40vh;
+    display: flex; flex-direction: column; gap: 6px;
+  }
+  .trace-panel {
+    background: rgba(8,12,22,0.85); border: 1px solid rgba(60,100,160,0.15);
+    border-radius: 10px; padding: 10px 14px;
+    max-height: 280px; overflow-y: auto;
+    font-size: 12px; line-height: 1.7; color: #8a9ab8;
+  }
+  .trace-panel .trace-title {
+    color: #7eb8e8; font-weight: 600; font-size: 11px;
+    margin-bottom: 6px; text-transform: uppercase; letter-spacing: 1px;
+  }
+  .trace-panel .trace-entry { padding: 2px 0; border-bottom: 1px solid rgba(60,100,160,0.06); }
+  .trace-panel .trace-entry:last-child { border-bottom: none; }
+  .trace-panel .trace-time { color: #556; margin-right: 6px; }
+
+  .seed-card {
+    background: linear-gradient(135deg, rgba(15,22,40,0.92), rgba(10,15,28,0.95));
+    border: 1px solid rgba(80,140,220,0.2); border-radius: 10px;
+    padding: 12px 16px; font-size: 12px;
+  }
+  .seed-card .seed-title { color: #7eb8e8; font-weight: 700; font-size: 13px; margin-bottom: 8px; }
+  .seed-concepts { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 8px; }
+  .seed-tag {
+    padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 500;
+    background: rgba(60,100,170,0.2); color: #8ec0f0; border: 1px solid rgba(80,140,220,0.15);
+  }
+  .seed-hint { color: #7a8aa8; font-style: italic; line-height: 1.55; }
+  .seed-actions { display: flex; gap: 6px; margin-top: 8px; }
+
+  /* ── 灵感骰子卡片 ── */
+  .inspire-card {
+    background: linear-gradient(135deg, rgba(20,16,34,0.94), rgba(12,14,28,0.95));
+    border: 1px solid rgba(140,100,200,0.25); border-radius: 10px;
+    padding: 12px 16px; width: 300px; max-height: 46vh; overflow-y: auto;
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  .inspire-title { color: #cda6f0; font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .inspire-title-left { display: flex; align-items: baseline; gap: 8px; }
+  .inspire-close { width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; border-radius: 6px; border: 1px solid rgba(140,100,200,0.25); background: rgba(20,16,34,0.6); color: #a080c0; font-size: 14px; cursor: pointer; transition: all 0.2s; }
+  .inspire-close:hover { background: rgba(180,100,200,0.25); color: #f0e2ff; border-color: rgba(200,130,230,0.5); }
+  .domain-select { background: rgba(12,16,28,0.82); border: 1px solid rgba(100,70,150,0.25); border-radius: 6px; color: #c8d4e8; font-size: 11px; padding: 4px 8px; outline: none; cursor: pointer; }
+  .domain-select option { background: #121420; color: #c8d4e8; }
+  .domain-select:focus { border-color: rgba(170,130,230,0.45); }
+  .inspire-sub { color: #6a5a82; font-weight: 400; font-size: 10px; letter-spacing: 0.5px; }
+  .inspire-chain { display: flex; flex-direction: column; gap: 7px; }
+  .inspire-step { display: flex; flex-direction: column; gap: 2px; }
+  .inspire-role { font-size: 11px; color: #8a7aa8; font-weight: 600; }
+  .inspire-node {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 6px 10px; border-radius: 7px; border: 1px solid;
+    background: rgba(10,14,26,0.6);
+  }
+  .inspire-node.skip { opacity: 0.5; border-style: dashed; justify-content: center; }
+  .inspire-label { font-size: 14px; font-weight: 600; color: #d8e0f0; }
+  .inspire-group { font-size: 11px; }
+  .inspire-via { font-size: 10px; color: #5a6a82; padding-left: 2px; }
+  .inspire-row { display: flex; gap: 6px; }
+  .inspire-row input {
+    flex: 1; padding: 7px 11px; background: rgba(12,16,28,0.82);
+    border: 1px solid rgba(100,70,150,0.25); border-radius: 6px; color: #c8d4e8; font-size: 12px; outline: none;
+  }
+  .inspire-row input::placeholder { color: #4a5a72; }
+  .inspire-row input:focus { border-color: rgba(170,130,230,0.45); }
+
+  /* ── 提示条（顶部居中浮动）── */
+  .toast {
+    position: fixed; top: -50px; left: 50%; transform: translateX(-50%);
+    background: rgba(15,22,40,0.94); border: 1px solid rgba(80,140,220,0.3);
+    border-radius: 10px; padding: 10px 24px; color: #b8cce8; font-size: 13px;
+    z-index: 100; transition: top 0.35s ease; white-space: nowrap;
+    pointer-events: auto;
+  }
+  .toast.show { top: 20px; }
+
+  /* ── 帮助提示（底部居中）── */
+  .help-hint {
+    position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+    color: #3a4a62; font-size: 11px; z-index: 5; pointer-events: none;
+    transition: opacity 0.5s;
+  }
+
+  /* ── 神经元详情卡片（位于图例面板左侧、屏幕居中）── */
+  .neuron-detail {
+    position: fixed; right: 264px; top: 50%; transform: translateY(-50%); z-index: 12;
+    width: 244px; max-height: 72vh; overflow-y: auto;
+    padding: 12px 14px;
+    background: rgba(10,15,28,0.92); border: 1px solid rgba(80,140,220,0.25);
+    border-radius: 10px; font-size: 12px; color: #aab8d4; display: none;
+  }
+  .neuron-detail .nd-title { color: #dbe6ff; font-size: 15px; font-weight: 700; margin-bottom: 8px; padding-right: 18px; }
+  .neuron-detail .nd-row { display: flex; justify-content: space-between; padding: 3px 0; border-bottom: 1px solid rgba(60,100,160,0.08); }
+  .neuron-detail .nd-row:last-child { border-bottom: none; }
+  .neuron-detail .nd-k { color: #5a6a82; }
+  .neuron-detail .nd-v { color: #c8d4e8; font-weight: 600; }
+  .neuron-detail .nd-close { position: absolute; top: 8px; right: 10px; cursor: pointer; color: #6a7e9c; font-size: 16px; line-height: 1; }
+  .neuron-detail .nd-close:hover { color: #fff; }
+  .neuron-detail .nd-conn-title { margin: 10px 0 6px; color: #7eb8e8; font-size: 11px; font-weight: 600; border-top: 1px solid rgba(60,100,160,0.12); padding-top: 8px; }
+  .neuron-detail .nd-conn-list { display: flex; flex-wrap: wrap; gap: 5px; }
+  .neuron-detail .nd-conn-chip {
+    padding: 3px 9px; border-radius: 14px; font-size: 11px; cursor: pointer;
+    border: 1px solid; background: rgba(10,14,26,0.5); transition: all 0.15s;
+    max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .neuron-detail .nd-conn-chip:hover { background: rgba(60,100,180,0.22); filter: brightness(1.25); }
+
+  /* ── 滚动条美化 ── */
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: rgba(60,100,160,0.2); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: rgba(60,100,160,0.35); }
+
+  /* ── 加载遮罩 ── */
+  #loading {
+    position: fixed; inset: 0; z-index: 999;
+    background: #07080f; display: flex; align-items: center; justify-content: center;
+    flex-direction: column; gap: 16px;
+    transition: opacity 0.6s;
+  }
+  #loading.hidden { opacity: 0; pointer-events: none; }
+  .loader { width: 40px; height: 40px; border: 2.5px solid rgba(80,140,220,0.15);
+    border-top-color: #5090e0; border-radius: 50%; animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .loader-text { color: #5a6a82; font-size: 13px; }
+
+  /* ── 深度拖动条 ── */
+  .depth-bar { margin-top: 10px; padding: 8px 10px; background: rgba(20,28,44,0.7);
+    border: 1px solid rgba(120,160,220,0.18); border-radius: 10px; backdrop-filter: blur(8px); }
+  .depth-bar .depth-label { font-size: 12px; color: #8fa6c4; margin-bottom: 6px; display: flex; justify-content: space-between; }
+  .depth-bar .depth-label b { color: #cda6f0; }
+  .depth-bar input[type=range] { width: 100%; accent-color: #b78cf0; cursor: pointer; }
+
+  /* ── 手动链面板 ── */
+  .manual-panel { margin-top: 10px; max-height: 240px; overflow-y: auto; padding: 8px 10px;
+    background: rgba(20,28,44,0.7); border: 1px solid rgba(120,160,220,0.18);
+    border-radius: 10px; backdrop-filter: blur(8px); display: none; }
+  .manual-panel.show { display: block; }
+  .manual-title { font-size: 13px; color: #9fb6d6; margin-bottom: 8px; }
+  .chain-node { display: inline-block; padding: 3px 9px; margin: 3px 4px 3px 0; border-radius: 14px;
+    font-size: 12px; border: 1px solid rgba(140,170,220,0.3); background: rgba(60,90,140,0.25); color: #d7e4f5; }
+  .chain-node.start { border-color: #cda6f0; background: rgba(150,100,200,0.3); color: #f0e2ff; font-weight: 600; }
+  .chain-arrow { color: #6a7e9c; font-size: 12px; margin: 0 2px; }
+
+  /* ── 灵感完善专家抽屉（右侧滑出）── */
+  #briefDrawer {
+    position: fixed; top: 0; right: 0; width: 380px; max-width: 88vw; height: 100%;
+    background: rgba(16,20,34,0.94); border-left: 1px solid rgba(150,100,200,0.35);
+    backdrop-filter: blur(14px); z-index: 200; transform: translateX(102%);
+    transition: transform 0.32s cubic-bezier(.2,.7,.2,1); overflow-y: auto;
+    box-shadow: -8px 0 30px rgba(0,0,0,0.4);
+  }
+  #briefDrawer.open { transform: translateX(0); }
+  .brief-head { padding: 16px 18px 10px; border-bottom: 1px solid rgba(150,100,200,0.2);
+    display: flex; align-items: center; justify-content: space-between; }
+  .brief-head .t { color: #d9c2f5; font-size: 15px; font-weight: 600; }
+  .brief-head .sub { color: #7a8aa6; font-size: 11px; margin-top: 2px; }
+  .brief-close { cursor: pointer; color: #8fa6c4; font-size: 20px; line-height: 1; padding: 2px 6px; border-radius: 6px; }
+  .brief-close:hover { background: rgba(255,255,255,0.08); }
+  .brief-body { padding: 14px 18px 24px; }
+  .brief-body pre { white-space: pre-wrap; word-break: break-word; font-family: "SF Mono", Menlo, Consolas, monospace;
+    font-size: 12.5px; line-height: 1.65; color: #cdd8ea; margin: 0; }
+  .brief-actions { padding: 0 18px 22px; }
+  .brief-actions .btn { width: 100%; margin-top: 8px; border-color: rgba(180,140,230,0.4); color: #cda6f0; }
 </style>
 </head>
 <body>
-<div id="app">
-  <div id="stage"><canvas id="cv"></canvas></div>
-  <div id="side">
-    <h1>神经元灵感系统 <small>daily-game v1</small></h1>
-    <div class="hint">神经元<b>大小</b>=权重(频率+近因+对话叠加)；<b>突触</b>连线=关联，<b>断触</b>(灰虚线)=几乎不共现；<b>脑区</b>分五色。打开「可塑性」即自动运行并演化。</div>
-    <div class="row">
-      <input id="words" type="text" placeholder="叠加实时对话，如：安静的水 留白 放下" />
-      <button class="primary" id="seedBtn">注入</button>
-    </div>
-    <div class="row">
-      <button id="flick">⚡ 随机灵感</button>
-      <button id="export">🌱 导出种子</button>
-      <button id="reset">↺ 重置</button>
-    </div>
-    <label class="switch on" id="runSwitch"><span class="box"></span><span>可塑性 / 自动运行</span></label>
-    <label>传播速度 <span id="spdVal">1.0×</span></label>
-    <input id="spd" type="range" min="0.2" max="3" step="0.1" value="1" />
-    <div class="legend">
-      <span><i style="border-color:#e8a87c;border-top-style:solid"></i>active突触</span>
-      <span><i style="border-color:#e8a87c;border-top-style:dashed"></i>weakened</span>
-      <span><i style="border-color:#5a6b7a;border-top-style:dashed"></i>broken断触</span>
-    </div>
-    <div class="row" style="justify-content:space-between">
-      <span class="hint">思考轨迹 / 种子</span>
-      <button id="expBtn" style="padding:4px 8px;">查看种子JSON ▾</button>
-    </div>
-    <div id="seed"></div>
-    <div id="log"></div>
+
+<!-- 加载遮罩 -->
+<div id="loading"><div class="loader"></div><div class="loader-text">正在构建神经元图谱…</div></div>
+
+<!-- 3D 画布 -->
+<div id="canvasWrap"></div>
+
+<!-- ═══ HUD: 左上角 ═══ -->
+<div class="hud panel-top-left">
+  <div class="brand">神经元灵感系统 <span>· 3D 四维图谱</span></div>
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="搜索概念 / 关键词…" autocomplete="off">
+    <span class="search-icon">⌕</span>
+    <div class="search-results" id="searchResults"></div>
   </div>
 </div>
-<script src="gamedata.js"></script>
-<script src="engine.js"></script>
-<script>
-"use strict";
-const E = window.NeuronEngine, G = window.GAME_GRAPH;
-// 重建运行时图（补 _i / act / overlay / _byId）
-const graph = { neurons: [], synapses: [], regions: G.regions, meta: G.meta, _byId: {} };
-G.neurons.forEach((n,i)=>{ n._i=i; n.act=0; n.overlay=0; graph.neurons.push(n); graph._byId[n.id]=n; });
-G.synapses.forEach(s=>graph.synapses.push(s));
-const effW = n => Math.max(0.1, Math.min(1, n.weight + n.overlay));
 
-// 布局：按脑区环形簇
-const cv=document.getElementById("cv"), ctx=cv.getContext("2d");
-let W=0,H=0;
-function resize(){const r=cv.getBoundingClientRect();cv.width=r.width*devicePixelRatio;cv.height=r.height*devicePixelRatio;W=cv.width;H=cv.height;layout();}
-function layout(){
-  const groups=Object.keys(G.regions), nG=groups.length, R=Math.min(W,H)*0.37, cx=W/2, cy=H/2;
-  groups.forEach((g,gi)=>{
-    const m=graph.neurons.filter(n=>n.group===g);
-    const base=(gi/nG)*Math.PI*2;
-    m.forEach((n,mi)=>{const a=base+(mi-(m.length-1)/2)*0.42;n.x=cx+Math.cos(a)*R+(gi%2?24:-24);n.y=cy+Math.sin(a)*R;});
+<!-- ═══ HUD: 右上角 ═══ -->
+<div class="hud panel-top-right">
+  <div class="stats-bar" id="statsBar">
+    <span>神经元 <b id="statNeurons">0</b></span>
+    <span>突触 <b id="statSynapses">0</b></span>
+    <span>FPS <b id="statFps">--</b></span>
+  </div>
+  <div class="legend" id="legendPanel">
+    <div class="legend-head">
+      <span class="legend-title">🧩 脑区分类</span>
+      <div class="legend-head-actions">
+        <button class="chip active" id="tabCats" title="分类筛选">☰</button>
+        <button class="chip" id="chartBar" title="条形图">▥</button>
+        <button class="chip" id="chartPie" title="饼图">◔</button>
+        <button class="chip" id="legendToggle" title="展开 / 收起">▾</button>
+      </div>
+    </div>
+    <div class="legend-body">
+      <div class="legend-cats" id="legendCats">
+        <div class="legend-list" id="legendList"></div>
+      </div>
+      <div class="legend-chart-wrap" id="legendChartWrap" style="display:none;">
+        <canvas class="legend-chart" id="legendChart"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ HUD: 左下角 ═══ -->
+<div class="hud panel-bottom-left">
+  <div class="controls">
+    <button class="btn" id="btnPlasticity">▶ 可塑性运行</button>
+    <button class="btn" id="btnAutoRotate">🔄 自转</button>
+    <button class="btn active" id="btnGlow">✨ 辉光</button>
+    <button class="btn active" id="btnLines">🔗 连线</button>
+    <button class="btn" id="btnRunSim">⚡ 跑一次模拟</button>
+    <button class="btn danger" id="btnReset">↺ 重置激活</button>
+    <button class="btn" id="btnInspire" style="border-color: rgba(180,140,230,0.4); color:#cda6f0;">🎲 灵感骰子</button>
+  </div>
+  <div class="inspire-card" id="inspireCard" style="display:none;">
+    <div class="inspire-title">
+      <span class="inspire-title-left">🎲 灵感链路 <span class="inspire-sub" id="inspireSub">题材 → 玩法 → 画风 → 配色</span></span>
+      <span style="display:flex;align-items:center;gap:8px;">
+        <select class="domain-select" id="domainSelect" title="切换领域">
+          <option value="game" selected>🎮 小游戏</option>
+          <option value="tool">🛠️ 桌面工具</option>
+          <option value="website">🌐 个人网站</option>
+          <option value="gameplay">🎲 玩法深挖</option>
+        </select>
+        <button class="inspire-close" id="btnInspireClose" title="收起">✕</button>
+      </span>
+    </div>
+    <div class="inspire-chain" id="inspireChain"></div>
+    <div class="inspire-row">
+      <input type="text" id="inspireInput" placeholder="自定义题材，如：童年回忆 / 孤独 / 雨…">
+      <button class="btn" id="btnInspireGo">掷</button>
+    </div>
+  </div>
+  <div class="overlay-input">
+    <input type="text" id="overlayInput" placeholder="输入实时词汇叠加权重…">
+    <button class="btn" id="btnOverlay">注入</button>
+  </div>
+  <div class="depth-bar">
+    <div class="depth-label">🎚 出链深度 <b id="depthVal">2 跳</b></div>
+    <input type="range" id="depthRange" min="1" max="6" step="1" value="2">
+  </div>
+  <div class="manual-panel" id="manualPanel">
+    <div class="manual-title">🔆 手动链（点击图谱节点生成）</div>
+    <div id="manualChain"></div>
+    <div style="margin-top:8px;"><button class="btn" id="btnToBrief" style="border-color: rgba(180,140,230,0.4); color:#cda6f0; width:100%;">→ 送进灵感完善专家</button></div>
+  </div>
+</div>
+
+<!-- ═══ HUD: 右下角 ═══ -->
+<div class="hud panel-bottom-right">
+  <div class="trace-panel" id="tracePanel">
+    <div class="trace-title">🧠 思考轨迹</div>
+    <div id="traceList"><div class="trace-entry" style="color:#556;">等待模拟运行…</div></div>
+  </div>
+  <div class="seed-card" id="seedCard" style="display:none;">
+    <div class="seed-title">💡 灵感种子</div>
+    <div class="seed-concepts" id="seedConcepts"></div>
+    <div class="seed-hint" id="seedHint"></div>
+    <div class="seed-actions">
+      <button class="btn" id="btnExportSeed">📋 复制 JSON</button>
+      <button class="btn" id="btnScreenshot">📷 截图</button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast 提示 -->
+<div class="toast" id="toast"></div>
+
+<!-- ═══ 灵感完善专家抽屉（右侧滑出）═══ -->
+<div id="briefDrawer">
+  <div class="brief-head">
+    <div>
+      <div class="t">🎯 灵感完善专家</div>
+      <div class="sub">翻表三步法 · 神经元种子 → 设计骨架</div>
+    </div>
+    <div class="brief-close" id="briefClose">×</div>
+  </div>
+  <div class="brief-body"><pre id="briefText">点击左侧「送进灵感完善专家」，或点击图谱节点后在此显示设计骨架…</pre></div>
+  <div class="brief-actions">
+    <button class="btn" id="btnCopyBrief">📋 复制骨架</button>
+  </div>
+</div>
+
+<!-- 帮助提示 -->
+<div class="help-hint" id="helpHint">🖱 左键拖动旋转 · 滚轮缩放 · 右键平移 · 点击神经元聚焦（点亮辉光+连线+文字，关联节点可点击跳转，1 分钟自动收起）</div>
+
+<!-- 神经元详情卡片 -->
+<div class="neuron-detail" id="neuronDetail">
+  <span class="nd-close" id="ndClose">✕</span>
+  <div class="nd-title" id="ndTitle"></div>
+  <div class="nd-row"><span class="nd-k">脑区</span><span class="nd-v" id="ndGroup"></span></div>
+  <div class="nd-row"><span class="nd-k">关联突触</span><span class="nd-v" id="ndConn"></span></div>
+  <div class="nd-row"><span class="nd-k">权重</span><span class="nd-v" id="ndWeight"></span></div>
+  <div class="nd-conn-title">🔗 关联神经元（点击跳转）</div>
+  <div class="nd-conn-list" id="ndConnList"></div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+       脚本加载顺序：
+       1. lib/three.min.js (本地 Three.js r128)
+       2. lib/OrbitControls.js (本地 OrbitControls)
+       3. engine.js (核心引擎)
+       4. gamedata.js (真实数据)
+       5. neuron-3d.js (3D 渲染引擎)
+       6. 本页逻辑 (初始化 + UI 绑定)
+     ═══════════════════════════════════════════════════════════ -->
+
+<!-- Three.js r128（本地化，离线可用，避免 CDN 版本路径失效） -->
+<script src="lib/three.min.js"></script>
+<script src="lib/OrbitControls.js"></script>
+
+<!-- 核心引擎 + 数据 -->
+<script src="engine.js"></script>
+<script src="gamedata.js"></script>
+
+<!-- 3D 渲染引擎 -->
+<script src="neuron-3d.js"></script>
+
+<!-- 灵感链路生成器（灵感骰子） -->
+<script src="chain-ui.js"></script>
+
+<!-- 灵感完善专家（手动拨弄 → 设计骨架） -->
+<script src="brief.js"></script>
+
+<!-- ═══ 页面初始化逻辑 ═══ -->
+<script>
+(function () {
+  "use strict";
+
+  // ─── 状态 ───
+  let engine = null;   // Neuron3DEngine 实例
+  let lastSeed = null;
+
+  // ─── DOM 引用 ───
+  const $ = (id) => document.getElementById(id);
+  const canvasWrap = $("canvasWrap");
+  const searchInput = $("searchInput");
+  const searchResults = $("searchResults");
+  const statNeurons = $("statNeurons");
+  const statSynapses = $("statSynapses");
+  const statFps = $("statFps");
+  const legendPanel = $("legendPanel");
+  const legendToggle = $("legendToggle");
+  const tabCats = $("tabCats");
+  const chartBar = $("chartBar");
+  const chartPie = $("chartPie");
+  const legendChart = $("legendChart");
+  const legendList = $("legendList");
+  const legendCats = $("legendCats");
+  const legendChartWrap = $("legendChartWrap");
+  const btnPlasticity = $("btnPlasticity");
+  const btnAutoRotate = $("btnAutoRotate");
+  const btnGlow = $("btnGlow");
+  const btnLines = $("btnLines");
+  const btnRunSim = $("btnRunSim");
+  const btnReset = $("btnReset");
+  const overlayInput = $("overlayInput");
+  const btnOverlay = $("btnOverlay");
+  const traceList = $("traceList");
+  const seedCard = $("seedCard");
+  const seedConcepts = $("seedConcepts");
+  const seedHint = $("seedHint");
+  const btnExportSeed = $("btnExportSeed");
+  const btnScreenshot = $("btnScreenshot");
+  const toast = $("toast");
+  const helpHint = $("helpHint");
+  const loading = $("loading");
+  const neuronDetail = $("neuronDetail");
+  const ndTitle = $("ndTitle");
+  const ndGroup = $("ndGroup");
+  const ndConn = $("ndConn");
+  const ndWeight = $("ndWeight");
+  const ndClose = $("ndClose");
+  const ndConnList = $("ndConnList");
+  const btnInspire = $("btnInspire");
+  const inspireCard = $("inspireCard");
+  const inspireChain = $("inspireChain");
+  const inspireInput = $("inspireInput");
+  const btnInspireGo = $("btnInspireGo");
+  const btnInspireClose = $("btnInspireClose");
+  const inspireSub = $("inspireSub");
+  const domainSelect = $("domainSelect");
+  let currentDomain = "game";
+
+  // 手动拨弄 + 灵感完善专家
+  const depthRange = $("depthRange");
+  const depthVal = $("depthVal");
+  const manualPanel = $("manualPanel");
+  const manualChain = $("manualChain");
+  const btnToBrief = $("btnToBrief");
+  const briefDrawer = $("briefDrawer");
+  const briefText = $("briefText");
+  const briefClose = $("briefClose");
+  const btnCopyBrief = $("btnCopyBrief");
+  let manualWalk = null;   // 当前手动链结果
+
+  // ─── 初始化 ───
+  function init() {
+    if (!window.GAME_GRAPH) {
+      showToast("❌ 错误：gamedata.js 未加载");
+      hideLoading();
+      return;
+    }
+    if (!window.NeuronEngine) {
+      showToast("❌ 错误：engine.js 未加载");
+      hideLoading();
+      return;
+    }
+    if (!window.Neuron3DEngine) {
+      showToast("❌ 错误：neuron-3d.js 未加载");
+      hideLoading();
+      return;
+    }
+
+    // 创建 3D 引擎
+    engine = new Neuron3DEngine(canvasWrap, window.GAME_GRAPH);
+
+    // 绑定回调
+    engine.onNeuronClick = onNeuronClick;
+    // 聚焦 1 分钟自动收起时，同步自转按钮高亮状态
+    engine.onFocusExit = function (autoRotate) {
+      btnAutoRotate.classList.toggle("active", autoRotate);
+      if (neuronDetail) neuronDetail.style.display = "none"; // 自动收起时也收掉详情卡片
+    };
+    window.engine = engine; // 调试/集成接入点
+
+    // 同步自动旋转默认态到按钮高亮
+    if (engine.controls && engine.controls.autoRotate) {
+      btnAutoRotate.classList.add("active");
+    }
+
+    // 神经元详情卡片关闭 = 取消选中，整个系统恢复之前运转
+    if (ndClose) {
+      ndClose.addEventListener("click", function () {
+        neuronDetail.style.display = "none";
+        if (engine && typeof engine.exitFocus === "function") engine.exitFocus();
+      });
+    }
+
+    // 构建 UI
+    buildLegend();
+    updateStats();
+
+    // 定时刷新统计
+    setInterval(updateStats, 2000);
+
+    // 隐藏帮助提示（5秒后）
+    setTimeout(() => { helpHint.style.opacity = "0"; }, 8000);
+
+    // 隐藏加载
+    setTimeout(hideLoading, 600);
+
+    showToast("✨ 神经元图谱已就绪 — " + engine.neurons.length + " 个神经元，" + engine.synapses.length + " 条突触");
+  }
+
+  function hideLoading() {
+    loading.classList.add("hidden");
+    setTimeout(() => { loading.style.display = "none"; }, 600);
+  }
+
+  // ─── 图例 + 类别筛选 + 分布图 ───
+  let catData = [];        // [{name, color, count}]
+  let chartType = "bar";   // "bar" | "pie"
+  let legendTab = "cats";  // "cats" | "bar" | "pie"
+
+  function buildLegend() {
+    const graph = window.GAME_GRAPH || {};
+    const regions = graph.regions || {};
+    const counts = {};
+    (graph.neurons || []).forEach((n) => {
+      const g = n.group || "元素";
+      counts[g] = (counts[g] || 0) + 1;
+    });
+    catData = Object.keys(regions).map((name) => ({
+      name, color: regions[name], count: counts[name] || 0,
+    })).sort((a, b) => b.count - a.count);
+
+    // 类别复选列表（勾选 = 显示该脑区）
+    let html = "";
+    catData.forEach((c) => {
+      html += `<label class="legend-row" title="${c.name}">
+        <input type="checkbox" data-group="${c.name}" checked>
+        <span class="legend-color" style="background:${c.color}"></span>
+        <span class="legend-name">${c.name}</span>
+        <span class="legend-count">${c.count}</span>
+      </label>`;
+    });
+    legendList.innerHTML = html || '<div style="color:#556">无脑区数据</div>';
+
+    legendList.querySelectorAll('input[type=checkbox]').forEach((cb) => {
+      cb.addEventListener("change", () => {
+        if (engine && typeof engine.setGroupVisible === "function") {
+          engine.setGroupVisible(cb.dataset.group, cb.checked);
+        }
+        renderCategoryChart(chartType); // 隐藏的类别在图里同步变淡
+      });
+    });
+
+    // 页签切换：分类（复选） / 条形图 / 饼图（条形图左侧加「☰分类」页签，复选框归入该页签）
+    tabCats.addEventListener("click", () => switchLegendTab("cats"));
+    chartBar.addEventListener("click", () => switchLegendTab("bar"));
+    chartPie.addEventListener("click", () => switchLegendTab("pie"));
+
+    // 折叠 / 展开
+    legendToggle.addEventListener("click", () => {
+      legendPanel.classList.toggle("collapsed");
+      legendToggle.textContent = legendPanel.classList.contains("collapsed") ? "▸" : "▾";
+    });
+
+    // 默认显示"分类"页签（复选框）
+    switchLegendTab("cats");
+  }
+
+  /** 切换图例页签：cats=复选筛选 / bar=条形图 / pie=饼图 */
+  function switchLegendTab(tab) {
+    legendTab = tab;
+    const isCats = tab === "cats";
+    const isChart = !isCats;
+    if (legendCats) legendCats.style.display = isCats ? "block" : "none";
+    if (legendChartWrap) legendChartWrap.style.display = isChart ? "block" : "none";
+    if (tabCats) tabCats.classList.toggle("active", isCats);
+    if (chartBar) chartBar.classList.toggle("active", tab === "bar");
+    if (chartPie) chartPie.classList.toggle("active", tab === "pie");
+    if (isChart) renderCategoryChart(tab);
+  }
+
+  function renderCategoryChart(type) {
+    chartType = type;
+    chartBar.classList.toggle("active", type === "bar");
+    chartPie.classList.toggle("active", type === "pie");
+    const canvas = legendChart;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    const W = 212;
+
+    if (type === "bar") {
+      const rowH = 15;
+      const h = Math.max(90, catData.length * rowH + 6);
+      canvas.width = W * dpr; canvas.height = h * dpr;
+      canvas.style.width = W + "px"; canvas.style.height = h + "px";
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.clearRect(0, 0, W, h);
+      const maxC = Math.max(1, ...catData.map((c) => c.count));
+      const labelW = 60, countW = 24, barMax = W - labelW - countW;
+      ctx.font = "10px sans-serif";
+      catData.forEach((c, i) => {
+        const y = i * rowH + 4;
+        const hidden = engine && engine.groupVisible && engine.groupVisible[c.name] === false;
+        ctx.globalAlpha = hidden ? 0.28 : 1;
+        ctx.fillStyle = "#aab8d4"; ctx.textAlign = "left";
+        ctx.fillText(c.name, 0, y + 8);
+        const bw = (c.count / maxC) * barMax;
+        ctx.fillStyle = c.color;
+        ctx.fillRect(labelW, y, Math.max(1, bw), 9);
+        ctx.fillStyle = "#8fa6c4"; ctx.textAlign = "right";
+        ctx.fillText(c.count, W - 2, y + 8);
+        ctx.textAlign = "left";
+      });
+      ctx.globalAlpha = 1;
+    } else {
+      const h = 120;
+      canvas.width = W * dpr; canvas.height = h * dpr;
+      canvas.style.width = W + "px"; canvas.style.height = h + "px";
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.clearRect(0, 0, W, h);
+      const total = catData.reduce((s, c) => s + c.count, 0) || 1;
+      const cx = W / 2, cy = h / 2, R = Math.min(W, h) / 2 - 6;
+      let ang = -Math.PI / 2;
+      catData.forEach((c) => {
+        const a2 = ang + (c.count / total) * Math.PI * 2;
+        const hidden = engine && engine.groupVisible && engine.groupVisible[c.name] === false;
+        ctx.beginPath();
+        ctx.moveTo(cx, cy);
+        ctx.arc(cx, cy, R, ang, a2);
+        ctx.closePath();
+        ctx.fillStyle = c.color;
+        ctx.globalAlpha = hidden ? 0.22 : 0.9;
+        ctx.fill();
+        ang = a2;
+      });
+      ctx.globalAlpha = 1;
+      // 甜甜圈中心挖空 + 总数
+      ctx.beginPath(); ctx.arc(cx, cy, R * 0.52, 0, Math.PI * 2);
+      ctx.fillStyle = "#0a0e1a"; ctx.fill();
+      ctx.fillStyle = "#cdd8ea"; ctx.font = "11px sans-serif"; ctx.textAlign = "center";
+      ctx.fillText(total + " 节点", cx, cy + 4); ctx.textAlign = "left";
+    }
+  }
+
+  // ─── 统计更新 ───
+  function updateStats() {
+    if (!engine) return;
+    const s = engine.getStats();
+    statNeurons.textContent = s.neuronCount;
+    statSynapses.textContent = s.synapseCount + ` <span style="color:#666;font-weight:400">(${s.activeSynapses}活/${s.brokenSynapses}断)</span>`;
+    statFps.textContent = s.fps;
+  }
+
+  // ─── Toast ───
+  let toastTimer = null;
+  function showToast(msg) {
+    toast.textContent = msg;
+    toast.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove("show"), 3000);
+  }
+
+  // ─── 搜索 ───
+  let searchTimer = null;
+  searchInput.addEventListener("input", function () {
+    clearTimeout(searchTimer);
+    const q = this.value.trim();
+    if (!q) { searchResults.classList.remove("show"); engine.clearSearch(); return; }
+    searchTimer = setTimeout(() => doSearch(q), 250);
   });
-}
-function hexA(hex,a){const n=parseInt(hex.slice(1),16);return `rgba(${n>>16&255},${n>>8&255},${n&255},${a})`;}
-function draw(){
-  ctx.clearRect(0,0,W,H);ctx.fillStyle="#0e1116";ctx.fillRect(0,0,W,H);
-  for(const e of graph.synapses){
-    const A=graph._byId[e.a], B=graph._byId[e.b]; if(!A||!B) continue;
-    const act=Math.max(A.act,B.act);
-    if(e.state==="broken"){ ctx.strokeStyle="rgba(90,107,122,0.07)";ctx.setLineDash([2,4]);ctx.lineWidth=0.5; }
-    else if(e.state==="weakened"){ ctx.strokeStyle=`rgba(232,168,124,${0.1+e.strength*0.15})`;ctx.setLineDash([3,3]);ctx.lineWidth=0.6+e.strength; }
-    else { ctx.strokeStyle=`rgba(232,168,124,${0.12+act*0.5+e.strength*0.25})`;ctx.setLineDash([]);ctx.lineWidth=0.6+e.strength*2.5; }
-    ctx.beginPath();ctx.moveTo(A.x,A.y);ctx.lineTo(B.x,B.y);ctx.stroke();
+
+  searchInput.addEventListener("focus", function () {
+    if (this.value.trim()) searchResults.classList.add("show");
+  });
+
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest(".search-box")) {
+      searchResults.classList.remove("show");
+    }
+  });
+
+  function doSearch(query) {
+    if (!engine) return;
+    const results = engine.search(query);
+
+    // 显示搜索结果下拉
+    if (results.length === 0) {
+      searchResults.innerHTML = '<div class="search-result-item" style="color:#666">无匹配结果</div>';
+    } else {
+      let html = "";
+      results.slice(0, 10).forEach((r) => {
+        const n = engine.byId[r.id];
+        if (!n) return;
+        html += `<div class="search-result-item" data-id="${r.id}">
+          <span class="match-label">${n.label}</span>
+          <span class="match-reason">${n.group}</span>
+        </div>`;
+      });
+      if (results.length > 10) html += `<div class="search-result-item" style="color:#556">还有 ${results.length - 10} 个结果…</div>`;
+      searchResults.innerHTML = html;
+    }
+    searchResults.classList.add("show");
+
+    // 结果项点击 → 飞过去
+    searchResults.querySelectorAll(".search-result-item[data-id]").forEach(function (el) {
+      el.addEventListener("click", function () {
+        const id = this.dataset.id;
+        const n = engine.byId[id];
+        if (n && n.pos) engine.flyTo(n.pos.clone());
+        searchResults.classList.remove("show");
+        searchInput.value = n.label;
+      });
+    });
   }
-  ctx.setLineDash([]);
-  for(const n of graph.neurons){
-    const r=4+effW(n)*14+n.act*6, c=G.regions[n.group];
-    if(n.act>0.05){const g=ctx.createRadialGradient(n.x,n.y,0,n.x,n.y,r*3);g.addColorStop(0,hexA(c,n.act*0.55));g.addColorStop(1,"rgba(0,0,0,0)");ctx.fillStyle=g;ctx.beginPath();ctx.arc(n.x,n.y,r*3,0,7);ctx.fill();}
-    ctx.fillStyle=hexA(c,0.35+n.act*0.6+n.overlay*0.3);ctx.beginPath();ctx.arc(n.x,n.y,r,0,7);ctx.fill();
-    ctx.strokeStyle=hexA(c,0.9);ctx.lineWidth=1;ctx.stroke();
-    if(n.act>0.2||n.overlay>0.3){ctx.fillStyle="#fff";ctx.font=`${10+n.act*4}px system-ui`;ctx.textAlign="center";ctx.fillText(n.label,n.x,n.y-r-4);}
+
+  // ─── 控制按钮 ───
+
+  btnPlasticity.addEventListener("click", function () {
+    if (!engine) return;
+    engine.setPlasticity(!engine.plasticityOn);
+    this.classList.toggle("active", engine.plasticityOn);
+    this.textContent = engine.plasticityOn ? "⏸ 暂停可塑性" : "▶ 可塑性运行";
+    showToast(engine.plasticityOn ? "🧠 可塑性已开启 — 图谱将随时间演化" : "⏹ 可塑性已暂停");
+  });
+
+  btnAutoRotate.addEventListener("click", function () {
+    if (!engine) return;
+    engine.controls.autoRotate = !engine.controls.autoRotate;
+    this.classList.toggle("active", engine.controls.autoRotate);
+    showToast(engine.controls.autoRotate ? "🔄 自动旋转已开启" : "🔄 自动旋转已关闭");
+  });
+
+  btnGlow.addEventListener("click", function () {
+    if (!engine) return;
+    const on = engine.setGlowEnabled(!engine.glowEnabled);
+    this.classList.toggle("active", on);
+    showToast(on ? "✨ 辉光已开启" : "🌑 辉光已关闭（结构视图）");
+  });
+
+  btnLines.addEventListener("click", function () {
+    if (!engine) return;
+    const on = engine.setLinesEnabled(!engine.linesEnabled);
+    this.classList.toggle("active", on);
+    showToast(on ? "🔗 连线已显示" : "🚫 连线已隐藏（节点视图）");
+  });
+
+  btnRunSim.addEventListener("click", function () {
+    if (!engine) return;
+    const words = overlayInput.value.trim();
+
+    // 运行一次完整模拟
+    const result = engine.runSimulation(200, words);
+    if (!result) { showToast("❌ 模拟失败"); return; }
+    lastSeed = result.seed;
+
+    // 显示思考轨迹
+    showTrace(result.trace);
+
+    // 显示种子
+    showSeed(result.seed);
+
+    // 将激活状态应用到视觉（run 已经改了 graph 的 act/heat）
+    showToast(`⚡ 模拟完成 — Top 概念：${result.top.map(t => t.label).join(" · ")}`);
+  });
+
+  btnReset.addEventListener("click", function () {
+    if (!engine) return;
+    engine.resetActivation();
+    traceList.innerHTML = '<div class="trace-entry" style="color:#556">已重置，等待下次模拟…</div>';
+    seedCard.style.display = "none";
+    overlayInput.value = "";
+    showToast("↺ 所有激活值已重置");
+  });
+
+  // ─── 实时词叠加 ───
+  btnOverlay.addEventListener("click", function () {
+    if (!engine) return;
+    const text = overlayInput.value.trim();
+    if (!text) { showToast("请先输入词汇"); return; }
+    const hits = engine.applyOverlay(text);
+    if (hits.length > 0) {
+      const labels = hits.map(id => (engine.byId[id] || {}).label).filter(Boolean);
+      showToast(`💉 已注入 ${hits.length} 个神经元：${labels.join(" · ")}`);
+    } else {
+      showToast("⚠️ 未命中任何概念，试试别的词");
+    }
+  });
+
+  overlayInput.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") btnOverlay.click();
+  });
+
+  // ─── 灵感骰子 ───
+  function toggleInspireCard(forceOpen) {
+    if (!window.InspirationChain || !window.InspirationChain.available) {
+      showToast("❌ 灵感链路模块未加载"); return;
+    }
+    const isOpen = inspireCard.style.display === "flex";
+    if (forceOpen === true || !isOpen) {
+      inspireCard.style.display = "flex";
+      rollInspiration(inspireInput.value.trim());
+    } else {
+      inspireCard.style.display = "none";
+    }
   }
-}
-// 控制
-let speedMul=1, running=true, lastLog="";
-function loop(){
-  if(running){ for(let s=0;s<speedMul;s++) E.step(graph,{plasticity:true}); }
-  draw();
-  const key=E.topActive(graph,3).map(n=>n.label).join("·");
-  if(key&&key!==lastLog){lastLog=key;const el=document.getElementById("log");
-    const d=document.createElement("div");d.className="item";d.innerHTML=`💡 焦点：<b>${key}</b> <span style="float:right">${new Date().toLocaleTimeString()}</span>`;el.prepend(d);if(el.children.length>40)el.lastChild.remove();}
-  requestAnimationFrame(loop);
-}
-function injectWords(t){const hits=E.applyOverlay(graph,t);hits.forEach(id=>graph._byId[id].act=Math.min(1,graph._byId[id].act+0.9));
-  const el=document.getElementById("log");const d=document.createElement("div");d.className="item";
-  d.innerHTML=`✚ 叠加「${t}」→ 点亮 <b>${hits.length?hits.map(id=>graph._byId[id].label).join("、"):"无匹配"}</b>`;el.prepend(d);}
-document.getElementById("seedBtn").onclick=()=>injectWords(document.getElementById("words").value);
-document.getElementById("words").addEventListener("keydown",e=>{if(e.key==="Enter")injectWords(e.target.value);});
-document.getElementById("flick").onclick=()=>{for(let i=0;i<4;i++){const n=graph.neurons[(Math.random()*graph.neurons.length)|0];n.act=Math.min(1,0.4+Math.random()*0.5);}};
-document.getElementById("reset").onclick=()=>{graph.neurons.forEach(n=>{n.act=0;n.overlay=0;});document.getElementById("log").innerHTML="";lastLog="";};
-document.getElementById("spd").oninput=function(){speedMul=+this.value;document.getElementById("spdVal").textContent=speedMul.toFixed(1)+"×";};
-document.getElementById("runSwitch").onclick=function(){running=!running;this.classList.toggle("on",running);};
-document.getElementById("export").onclick=()=>{
-  // 克隆图跑一次模拟（不干扰实时视图），产出种子+思考轨迹
-  const clone={neurons:graph.neurons.map(n=>({...n})),synapses:graph.synapses.map(s=>({...s})),regions:G.regions,meta:G.meta,_byId:{}};
-  clone.neurons.forEach((n,i)=>{n._i=i;clone._byId[n.id]=n;});
-  const {seed,trace}=E.run(clone,{steps:240,seedWords:document.getElementById("words").value,plasticity:true});
-  const el=document.getElementById("log");const d=document.createElement("div");d.className="item";
-  d.innerHTML=`🌱 导出种子：<b>${seed.coreConcepts.map(c=>c.concept).join("·")}</b>`;el.prepend(d);
-  trace.slice(0,6).forEach(t=>{const x=document.createElement("div");x.className="item";x.style.color="#7fa";x.textContent=t;el.prepend(x);});
-  const s=document.getElementById("seed");s.style.display="block";s.textContent=JSON.stringify(seed,null,2);
-};
-document.getElementById("expBtn").onclick=function(){const s=document.getElementById("seed");s.style.display=s.style.display==="none"?"block":"none";};
-window.addEventListener("resize",resize);resize();
-setTimeout(()=>document.getElementById("flick").click(),400);
-loop();
+
+  btnInspire.addEventListener("click", function () { toggleInspireCard(); });
+  btnInspireClose.addEventListener("click", function () { inspireCard.style.display = "none"; });
+
+  domainSelect.addEventListener("change", function () {
+    currentDomain = this.value;
+    const domains = window.InspirationChain.DOMAINS || {};
+    const d = domains[currentDomain] || domains.game;
+    inspireSub.textContent = d.label;
+    rollInspiration(inspireInput.value.trim());
+  });
+
+  btnInspireGo.addEventListener("click", function () {
+    rollInspiration(inspireInput.value.trim());
+  });
+  inspireInput.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") rollInspiration(this.value.trim());
+  });
+
+  // ─── 深度拖动条 ───
+  function getDepth() { return parseInt(depthRange.value, 10) || 2; }
+  function renderDepthLabel() {
+    const d = getDepth();
+    depthVal.textContent = d + " 跳";
+  }
+  depthRange.addEventListener("input", renderDepthLabel);
+  renderDepthLabel();
+
+  // ─── 手动链渲染 ───
+  function renderManualChain(walk) {
+    if (!walk || !walk.start) { manualPanel.classList.remove("show"); return; }
+    let html = `<span class="chain-node start">${walk.start.label}</span>`;
+    const rest = (walk.nodes || []).slice(1);
+    rest.forEach(function (n, i) {
+      html += `<span class="chain-arrow">→</span><span class="chain-node" title="${n.group}">${n.label}</span>`;
+    });
+    manualChain.innerHTML = html;
+    manualPanel.classList.add("show");
+  }
+
+  // ─── 灵感完善专家抽屉 ───
+  function openBrief(text) {
+    briefText.textContent = text;
+    briefDrawer.classList.add("open");
+  }
+  briefClose.addEventListener("click", function () { briefDrawer.classList.remove("open"); });
+  btnCopyBrief.addEventListener("click", function () {
+    fallbackCopy(briefText.textContent);
+  });
+
+  // 「送进灵感完善专家」：把当前手动链 → 翻表三步法 → 骨架
+  btnToBrief.addEventListener("click", function () {
+    if (!manualWalk) { showToast("⚠️ 先点击图谱节点生成手动链"); return; }
+    if (!window.InspirationBrief) { showToast("❌ 灵感完善专家模块未加载"); return; }
+    const brief = window.InspirationBrief.build(manualWalk);
+    if (!brief.ok) { showToast("❌ " + brief.error); return; }
+    openBrief(brief.text);
+  });
+
+  function rollInspiration(kw) {
+    if (!window.InspirationChain || !window.InspirationChain.available) {
+      showToast("❌ 灵感链路模块未加载"); return;
+    }
+    const res = window.InspirationChain.generate(kw, { domain: currentDomain });
+    // 同步副标题到当前领域
+    const domains = window.InspirationChain.DOMAINS || {};
+    const d = domains[currentDomain] || domains.game;
+    inspireSub.textContent = d.label;
+    let html = "";
+    res.chain.forEach(function (step, i) {
+      const isSeed = i === 0;
+      if (step.neuron) {
+        const g = (window.GAME_GRAPH.regions && window.GAME_GRAPH.regions[step.neuron.group]) || "#556";
+        html += `<div class="inspire-step">
+          <div class="inspire-role">${isSeed ? "🌱 " : "→ "} ${step.role}</div>
+          <div class="inspire-node" data-id="${step.neuron.id}" style="border-color:${g};">
+            <span class="inspire-label">${step.neuron.label}</span>
+            <span class="inspire-group" style="color:${g}">${step.neuron.group}</span>
+          </div>
+          <div class="inspire-via">${step.via}</div>
+        </div>`;
+      } else {
+        html += `<div class="inspire-step">
+          <div class="inspire-role">→ ${step.role}</div>
+          <div class="inspire-node skip"><span class="inspire-label">✕ 跳过</span></div>
+          <div class="inspire-via">${step.via}</div>
+        </div>`;
+      }
+    });
+    inspireChain.innerHTML = html;
+    inspireChain.scrollTop = 0;
+    // 点击链路节点 → 在 3D 星图里飞过去并提示
+    inspireChain.querySelectorAll(".inspire-node[data-id]").forEach(function (el) {
+      el.style.cursor = "pointer";
+      el.addEventListener("click", function () {
+        const id = el.dataset.id;
+        const n = engine.byId[id];
+        if (n && n.pos) { engine.flyTo(n.pos.clone()); showToast("🎯 飞向：" + n.label); }
+      });
+    });
+    showToast("🎲 灵感链路已生成 — 从「" + res.seed.label + "」出发");
+  }
+
+  // ─── 思考轨迹显示 ───
+  function showTrace(trace) {
+    if (!trace || trace.length === 0) {
+      traceList.innerHTML = '<div class="trace-entry" style="color:#556">无轨迹记录</div>';
+      return;
+    }
+    let html = "";
+    trace.forEach(function (entry, i) {
+      html += `<div class="trace-entry"><span class="trace-time">#${i + 1}</span>${entry}</div>`;
+    });
+    traceList.innerHTML = html;
+  }
+
+  // ─── 种子显示 ───
+  function showSeed(seed) {
+    seedCard.style.display = "block";
+
+    // 概念标签
+    let tagsHtml = "";
+    (seed.coreConcepts || []).forEach(function (c) {
+      tagsHtml += `<span class="seed-tag">${c.concept} <small style="color:#689;font-weight:400">热${c.heat}</small></span>`;
+    });
+    seedConcepts.innerHTML = tagsHtml || '<span style="color:#666">无焦点概念</span>';
+
+    // prompt 提示
+    seedHint.textContent = seed.promptHint || "";
+
+    // 导出按钮
+    btnExportSeed.onclick = function () {
+      const json = JSON.stringify(seed, null, 2);
+      navigator.clipboard.writeText(json).then(
+        function () { showToast("📋 种子 JSON 已复制到剪贴板"); },
+        function () { fallbackCopy(json); }
+      );
+    };
+
+    btnScreenshot.onclick = function () {
+      const url = engine.screenshot();
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "neuron-" + Date.now() + ".png";
+      a.click();
+      showToast("📷 截图已保存");
+    };
+  }
+
+  function fallbackCopy(text) {
+    const ta = document.createElement("textarea");
+    ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); showToast("📋 已复制（fallback）"); } catch (_) { showToast("❌ 复制失败，请手动选择复制"); }
+    document.body.removeChild(ta);
+  }
+
+  // ─── 神经元点击：手动拨弄出链 ───
+  function onNeuronClick(neuron, point) {
+    if (!neuron || !neuron.id) return;
+    const depth = getDepth();
+    showToast(`🔆 ${neuron.label} [${neuron.group}] · 出链 ${depth} 跳`);
+
+    // 填充神经元详情侧栏（标题/脑区/关联数/权重）
+    fillDetailCard(neuron);
+
+    const graph = window.GAME_GRAPH;
+    if (!graph) { showToast("❌ 图谱数据未加载"); return; }
+    if (!window.NeuronEngine || !window.NeuronEngine.walkFromNode) {
+      showToast("❌ engine.js 未提供 walkFromNode"); return;
+    }
+    manualWalk = window.NeuronEngine.walkFromNode(graph, neuron.id, depth);
+    renderManualChain(manualWalk);
+
+    // 进入聚焦模式：点亮辉光+连线、镜头拉近锁定、显示本节点与关联节点文字标签
+    if (engine && typeof engine.focusNeuron === "function") {
+      const neighbors = engine.focusNeuron(neuron);
+      renderDetailConnections(neuron, neighbors);
+    }
+  }
+
+  /** 填充详情卡片的基础字段（标题 / 脑区 / 关联数 / 权重） */
+  function fillDetailCard(neuron) {
+    const g0 = window.GAME_GRAPH || {};
+    let conn = 0;
+    if (g0.synapses) for (const s of g0.synapses) { if (s.a === neuron.id || s.b === neuron.id) conn++; }
+    const gcol = (g0.regions && g0.regions[neuron.group]) || "#7eb8e8";
+    if (ndTitle) {
+      ndTitle.textContent = neuron.label;
+      ndGroup.textContent = neuron.group || "—";
+      ndGroup.style.color = gcol;
+      ndConn.textContent = conn + " 条";
+      ndWeight.textContent = (neuron.weight != null ? neuron.weight.toFixed(2) : "—");
+      neuronDetail.style.display = "block";
+    }
+  }
+
+  /** 渲染关联神经元列表（彩色 chip，可点击跳转到子节点） */
+  function renderDetailConnections(neuron, neighbors) {
+    if (!ndConnList) return;
+    if (!neighbors || neighbors.length === 0) {
+      ndConnList.innerHTML = '<div style="color:#556;font-size:11px;padding:4px 0;">无关联神经元</div>';
+      return;
+    }
+    const regions = (window.GAME_GRAPH && window.GAME_GRAPH.regions) || {};
+    let html = "";
+    neighbors.slice(0, 48).forEach((nb) => {
+      const gcol = regions[nb.group] || "#7eb8e8";
+      html += `<span class="nd-conn-chip" data-id="${nb.id}" title="${nb.label} · ${nb.group}" style="border-color:${gcol};color:${gcol};">${nb.label}</span>`;
+    });
+    ndConnList.innerHTML = html;
+    ndConnList.querySelectorAll(".nd-conn-chip").forEach((el) => {
+      el.addEventListener("click", function () {
+        const id = this.dataset.id;
+        const n = engine.byId[id];
+        if (!n) return;
+        // 重新聚焦子节点：镜头拉近 + 点亮其关联 + 刷新卡片与列表
+        const nb2 = engine.focusNeuron(n);
+        fillDetailCard(n);
+        renderDetailConnections(n, nb2);
+      });
+    });
+  }
+
+  // ─── 启动 ───
+  // 等 DOM 和所有脚本都就绪后初始化
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    // 如果脚本在 body 底部，DOMContentLoaded 可能已经触发过
+    // 用 setTimeout 确保 engine.js / gamedata.js 已执行完
+    setTimeout(init, 100);
+  }
+
+})();
 </script>
+
 </body>
 </html>
