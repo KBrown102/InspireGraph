@@ -2,6 +2,8 @@
 
 > **v1.0.0 · 产品思路 demo** —— 用于演示「多源概念 → 概念图谱 → 灵感种子」的表现形式与功能，非正式产品。
 
+> 🕹️ **在线演示**：[https://KBrown102.github.io/InspireGraph/](https://KBrown102.github.io/InspireGraph/)（GitHub Pages）
+
 把「灵感诞生」做成可运行、可观测的机制：多源扫描（热点 / 知识库 / 采集站 / 经典玩法 / 个人爽感 / 基础概念），长出一群**带权重的神经元**（概念），它们之间用**突触**相连（共现→关联，几乎不共现→断触），按**脑区**分块；开「可塑性」就自己跑、自己演化，产出灵感种子。
 
 **一句话定位**：同一张概念图谱，承载任意创作方向；摇骰子 / 跑模拟，让概念跨域碰撞出灵感链。
@@ -88,3 +90,7 @@ node gen-data.cjs
 
 - **Three.js 已本地化**：`lib/three.min.js`(r128) + `lib/OrbitControls.js`(r128)。原 CDN 引用 `three@0.160.0` 的 `OrbitControls.js` 在 r148+ 已被官方移除（仅留 ESM 版），会导致 `THREE.OrbitControls is not a constructor` 整页崩溃；本地化后离线也能开，版本也锁死不再踩坑。
 - **调试接入点**：`index.html` 的 `init()` 把引擎实例挂到 `window.engine`，便于外部脚本 / 自动化直接调用 `window.engine.search()` 等。
+
+## 许可证
+
+本项目使用 MIT License，详见 [LICENSE](./LICENSE) 文件。
